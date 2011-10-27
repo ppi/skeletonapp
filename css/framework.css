@@ -1,0 +1,39 @@
+.ppi-flash-success { background-color: #edffec; color: #000000; }
+.ppi-flash-failure { background-color: #ffecec; color: #000000; }
+
+.ppiMessages {
+
+
+    color:#000000;
+    cursor:pointer;
+    margin:0;
+    padding:3px 10px;
+    position:fixed;
+    top:30px;
+    width:400px;
+    z-index:8000;
+    font-size: 1.2em;
+}
+
+.ppiMessagesSuccess {
+    background:none repeat scroll 0 0 #edffec;
+    border:4px solid green;
+}
+
+.ppiMessagesFailure {
+    background:none repeat scroll 0 0 #ffecec;
+    border:4px solid red;
+}
+
+
+.closeMessages {
+    float:right;
+    margin-top:17px;
+}
+
+.closeMessages a {
+	color:#666666;
+	cursor:pointer;
+	font-size:86%;
+	text-decoration:none;
+}
