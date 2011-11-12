@@ -2,10 +2,6 @@
 	RewriteEngine on
 	Options +FollowSymLinks
 
-	#RewriteBase /
-
-	RewriteRule ^controllers$ docs/controllers
-
 	RewriteCond %{REQUEST_URI} !css|scripts|images|install
         RewriteRule .* index.php
 </IfModule>
