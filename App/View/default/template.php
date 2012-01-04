@@ -1,33 +1,26 @@
 <?php
 if(isset($isAjax) && $isAjax == true):
-	include_once($viewDir . $actionFile);
-else:
+	include $viewDir . $actionFile;
+	return;
+endif;
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-	<script type="text/javascript">var baseUrl = "<?php echo $baseUrl; ?>";</script>
-	<?php include_once($viewDir . 'framework/javascript.php'); ?>
-	<?php include_once($viewDir . 'framework/stylesheet.php'); ?>
-	<title>PPI framework | Open Source PHP Framework</title>
 
-</head>
-
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>	<html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>	<html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<?php include($viewDir . 'elements/head.php'); ?>
 <body>
-		<header>
-			<h3>Header content here</h3>
-		</header>
+	<?php include($viewDir . 'elements/header.php'); ?>
+	<div id="wrapper">
+		<?php include $viewDir . 'framework/flashmessage.php' ?>
+		<?php include $viewDir . $actionFile; ?>
+	</div>
+	<?php include($viewDir . 'elements/footer.php'); ?>
 
-		<div id="wrapper" style="padding: 25px; 1px solid grey;">
-		<?php include $viewDir . "framework/flashmessage.php" ?>
-		<?php include_once($viewDir . $actionFile); ?>
-		</div>
-
-		<footer>
-			<h3>Footer content here</h3>
-		</footer>
-
-	</body>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="<?= $baseUrl; ?>scripts/libs/jquery-1.6.2.min.js"><\/script>')</script>
+	<?php include($viewDir . 'framework/javascript.php'); ?>
+</body>
 </html>
-<?php endif; ?>
