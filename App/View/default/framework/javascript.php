@@ -1,9 +1,5 @@
-<?php
-$coreJSFiles = array('jquery1.4.2.min', 'generic');
-if (!empty($coreJSFiles)) {
-	$javascriptFiles = array_unique(array_merge($coreJSFiles, $core['files']['js']));
-	?>
-	<script type="text/javascript" src="<?php echo $baseUrl; ?>scripts/js.php?mod=<?php echo implode(',', $javascriptFiles); ?>"></script>
-	<?php 
-}
-?>
+<script type="text/javascript" src="<?= $baseUrl; ?>scripts/bootstrap/bootstrap-dropdown.js"></script>
+<script type="text/javascript" src="<?= $baseUrl; ?>scripts/generic.js"></script>
+<?php if (!empty($core['files']['js'])): ?>
+<script type="text/javascript" src="<?php echo $baseUrl; ?>scripts/js.php?mod=<?php echo implode(',', $core['files']['js']); ?>"></script>
+<?php endif; ?>

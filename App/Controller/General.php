@@ -9,7 +9,8 @@ class General extends Application {
 	}
 
 	function showdefault() {
-		$this->render('framework/default');
+		$currentUrl = $this->_request->getUrl();
+		echo $this->render('framework/default', compact('currentUrl'), array('partial' => true));
 	}
 
 	function about() { die('about'); }
