@@ -8,7 +8,7 @@
 		<p><strong>Oh snap! You got an error!</strong></p>
 		<p>Your application isn't configured yet. We suggest you read below to resolve this matter!</p>
 		<ul class="steps">
-			<li><p>Update <b>system.baseUrl</b> in your <b>general.ini</b> config file to match: <b><?=$currentUrl;?></b></p></li>
+			<li><p>Update <b>system.base_url</b> in your <b>general.ini</b> config file to match: <b><?=$currentUrl;?></b></p></li>
 			<li><p>Next remove the <b>default section</b> from your <b>routes.php</b> file.</p></li>
 		</ul>
 		<div class="alert-actions">
