@@ -1,0 +1,3 @@
+User_Manage_Create:
+    pattern:  /user/manage/create
+    defaults: { _controller: "User:Manage:create"}
