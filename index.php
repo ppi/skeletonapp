@@ -4,6 +4,7 @@ include('PPI/PPI/init.php');
 
 $app = new PPI\App();
 $app->moduleConfig = include 'app/modules.config.php';
+$app->config = include 'app/app.config.php';
 
 //$app->moduleOptions = array('configGlobPath' => 'app/config/*.config.php');
 $app->boot()->dispatch();
