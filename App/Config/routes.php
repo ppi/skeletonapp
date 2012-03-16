@@ -13,11 +13,6 @@ $routes['/manage/users/edit/(:num)']   = 'manage/edituser/$1';
 $routes['/manage/users/view/(:num)']   = 'manage/viewuser/$1';
 $routes['/manage/users/delete/(:num)'] = 'manage/deleteuser/$1';
 
-$routes['/manage/tourneys/create']        = 'manage/createtourney';
-$routes['/manage/tourneys/edit/(:num)']   = 'manage/edittourney/$1';
-$routes['/manage/tourneys/view/(:num)']   = 'manage/viewtourney/$1';
-$routes['/manage/tourneys/delete/(:num)'] = 'manage/deletetourney/$1';
-
 $routes['/manage/content/create']        = 'manage/createcontent';
 $routes['/manage/content/edit/(:num)']   = 'manage/editcontent/$1';
 $routes['/manage/content/view/(:num)']   = 'manage/viewcontent/$1';
