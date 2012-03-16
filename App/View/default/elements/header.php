@@ -29,8 +29,6 @@
 						<li><a href="<?=$baseUrl;?>account">View Account</a></li>
 						<li><a href="<?=$baseUrl; ?>account/edit">Edit Account</a></li>
 						<li class="divider"></li>
-						<li><a href="<?=$baseUrl;?>my/talks">My Talks</a></li>
-						<li class="divider"></li>
 						<li><a href="<?=$baseUrl;?>user/logout">Log out</a></li>
 					</ul>
 				</li>

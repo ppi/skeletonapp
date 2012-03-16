@@ -3,7 +3,7 @@
 		<fieldset>
 			<legend>Create Content</legend>
 			<div class="control-group">
-				<label class="control-label" for="talkTitle">Title</label>
+				<label class="control-label" for="contentTitle">Title</label>
 				<div class="controls">
 					<input type="text" class="input-xlarge validate[required]" id="contentTitle" name="contentTitle">
 					<span rel="contentTitle" class="help-inline"></span>

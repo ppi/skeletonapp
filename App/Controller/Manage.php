@@ -13,7 +13,7 @@ class Manage extends Application {
 			$this->redirect('');
 		}
 		
-		$this->addCSS('user/talk', 'user/account', 'manage/listing');
+		$this->addCSS('user/account', 'manage/listing');
 		$this->addJS('libs/jquery-validationEngine-en', 'libs/jquery-validationEngine', 'app/manage/form');
 	}
 	
@@ -213,7 +213,7 @@ class Manage extends Application {
 		$section       = 'content';
 		
 		$this->addCSS('manage/content');
-		$this->render('manage/index', compact('talks', 'subPage', 'section', 'talkDurations'));
+		$this->render('manage/index', compact('allContent', 'subPage', 'section'));
 		
 	}
 	
@@ -263,7 +263,6 @@ class Manage extends Application {
 		
 		$cs = $this->getContentStorage();
 
-		// -- Get the talk --
 		$content = $cs->getContentFromID($contentID);
 		
 		$cs->delete(array('id' => $content->getID()));
