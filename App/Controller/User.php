@@ -4,7 +4,7 @@ class User extends Application {
 
 	function preDispatch() {
 		
-		$this->addCSS('user/talk', 'user/account');
+		$this->addCSS('user/account');
 		$this->addJS('libs/jquery-validationEngine-en', 'libs/jquery-validationEngine', 'app/user/general');
 	}
 	

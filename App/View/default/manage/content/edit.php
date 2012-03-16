@@ -2,9 +2,9 @@
 		
 	<form class="form-horizontal" style="margin-bottom: 0;" action="" method="post" id="manage-form">
 		<fieldset>
-			<legend>Edit Your Talk</legend>
+			<legend>Edit Your Content</legend>
 			<div class="control-group">
-				<label class="control-label" for="talkTitle">Title</label>
+				<label class="control-label" for="contentTitle">Title</label>
 				<div class="controls">
 					<input type="text" class="input-xlarge validate[required]" id="contentTitle" name="contentTitle" value="<?=$helper->escape($content->getTitle()); ?>">
 					<span rel="contentTitle" class="help-inline"></span>
@@ -12,7 +12,7 @@
 			</div>
 			
 			<div class="control-group">
-				<label class="control-label" for="talkAbstract">Content</label>
+				<label class="control-label" for="contentContent">Content</label>
 				<div class="controls">
 					<textarea class="input-xlarge validate[required]" id="contentContent" name="contentContent"><?=$helper->escape($content->getContent()); ?></textarea>
 					<span rel="contentContent" class="help-inline"></span>

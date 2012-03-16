@@ -1,4 +1,4 @@
-<div class="well view-talk">
+<div class="well view-users">
 	<h2><?= $helper->escape($user->getFullName()); ?></h2>
 	<?php if($user->hasJobTitle()): ?>
 	<p><b><?= $helper->escape($user->getJobTitle()); ?> at <?=$helper->escape($user->getCompanyName()); ?></b></p>

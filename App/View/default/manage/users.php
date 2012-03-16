@@ -3,7 +3,7 @@
 	<h3>You have not created any users yet. &nbsp; &nbsp; <a class="btn" href="<?=$baseUrl;?>manage/users/create"><i class="icon-plus-sign"></i> Create User</a></h3>
 <?php else: ?>
 	
-	<p>Create a talk: <a class="btn" href="<?=$baseUrl;?>manage/users/create"><i class="icon-plus-sign"></i> Create User</a></p>
+	<p>Create a user: <a class="btn" href="<?=$baseUrl;?>manage/users/create"><i class="icon-plus-sign"></i> Create User</a></p>
 	
 	<table class="table table-striped table-bordered table-condensed">
 		<thead>

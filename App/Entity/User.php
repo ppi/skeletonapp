@@ -70,13 +70,6 @@ class User {
 	
 	protected $_enabled = null;
 	
-	/**
-	 * Talks
-	 * 
-	 * @var array
-	 */
-	protected $_talks = array();
-	
 	function __construct(array $data) {
 		foreach ($data as $key => $value) {
 			if (property_exists($this, '_' . $key)) {
@@ -87,18 +80,6 @@ class User {
 	
 	function getID() {
 		return $this->_id;
-	}
-	
-	function getTalks() {
-		return $this->_talks;
-	}
-	
-	function hasTalks() {
-		return !empty($this->_talks);
-	}
-	
-	function setTalks($talks) {
-		$this->_talks = $talks;
 	}
 	
 	function getTwitterHandle() {
