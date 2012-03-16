@@ -7,11 +7,170 @@
 #wrapper {
 	width: 1000px;
 	margin: 0 auto;
-	margin-top: 50px;
 	min-height: 400px;
 }
 
 
 body {
-	background-color: #F1F1F1;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.navbar-text a {
+	color: white;
+}
+
+.container > .content {
+	background-color: #fff;
+	padding: 20px;
+	margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+	-webkit-border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+	box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+legend img {
+	position: relative;
+	margin-right: 8px;
+	top: -2px;
+}
+
+.user-info {
+	
+}
+
+.user-info {
+	
+}
+
+.user-info dt {
+	float: left;
+	font-weight: bold;
+	margin-right: 10px;
+	padding: 3px;
+	width: 80px;
+}
+
+.user-info dd a {
+	color: #06E;
+}
+.user-info dd {
+	margin: 2px 0;
+	padding: 3px 0;
+}
+
+.editaccount .biography textarea {
+	height: 300px;
+	width: 490px;
+}
+
+.block {
+	padding-bottom: 5px;
+	margin-bottom: 18px;
+	background: white url(../images/generic/block-background.gif) bottom center repeat-x;
+}
+
+.block .block_head {
+	height: 54px;
+	line-height: 54px;
+	background: url(../images/generic/block-head.gif) 0 0 repeat-x;
+	overflow: hidden;
+}
+
+.block .block_head .bheadl {
+	width: 20px;
+	height: 54px;
+	float: left;
+	background: url(../images/generic/block-head-left.gif) top left no-repeat;
+}
+
+.block .block_head .bheadr {
+	width: 20px;
+	height: 54px;
+	float: right;
+	background: url(../images/generic/block-head-right.gif) top right no-repeat;
+}
+
+.block .block_head h2 {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #555;
+	text-shadow: 1px 1px 0 white;
+	float: left;
+	line-height: 54px;
+}
+
+.block .block_content {
+	overflow: hidden;
+	background: white;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	padding: 10px 20px 0;
+}
+
+.block .bendl {
+	width: 5px;
+	height: 5px;
+	background: url(../images/generic/block-end-left.gif) bottom left no-repeat;
+	float: left;
+}
+
+.block .bendr {
+	width: 5px;
+	height: 5px;
+	background: url(../images/generic/block-end-right.gif) bottom left no-repeat;
+	float: right;
+}
+
+/* -- Form Validation Cleanup -- */
+.formError {
+	display: none;
+}
+
+/* --- Voting Sortable Stuf --- */
+#sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+#sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
+html>body #sortable li { height: 1.5em; line-height: 1.2em; }
+.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+
+#sortable .handle {
+	background: url(../images/generic/vote-move.png) no-repeat;
+	width: 16px;
+	display: block;
+	float: left;
+	margin-right: 6px;
+	margin-top: 3px;
+	height: 16px;
+}
+
+#sortable li p {
+	margin-top: 2px;
+}
+
+/** -- Form Validation -- **/
+.control-group .help-inline {
+	display: block;
+	margin-top: 5px;
+}
+
+/** -- Bootstrap Mods -- **/
+.actions-button  a.view-button,
+.actions-button a.view-button:visited {
+	color: white;
+}
+
+.view-user .actions-button,
+.view-talk .actions-button {
+	position: absolute;
+	top: 20px;
+	width: 80px;
+	right: 20px;
+}
+
+.users-talk,
+.view-talk {
+	position: relative;
 }
