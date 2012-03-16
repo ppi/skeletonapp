@@ -2,7 +2,7 @@
 	font-size: 1.2em;
 }
 .home-grid .grid-item p.desc {
-	width: 192px;
+	width: 281px;
 }
 .home-grid .grid-item img {
 	float: left;
@@ -10,6 +10,7 @@
 }
 .home-grid .grid-item div {
 	overflow: hidden;
+	width: 281px;
 }
 .home-grid .first-row .grid-item {
 	margin-bottom: 30px;
@@ -36,10 +37,13 @@
 
 .home-success .success-message {
 	font-size: 1.2em;
+	margin-top: 18px;
 }
 
 .home-success .success-icon {
 	position: absolute;
 	top: 12px;
 	right: 12px;
+	width: 52px;
+	height: 52px;
 }
