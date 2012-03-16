@@ -12,9 +12,5 @@ class General extends Application {
 		$currentUrl = $this->_request->getUrl();
 		echo $this->render('framework/default', compact('currentUrl'), array('partial' => true));
 	}
-
-	function about() { die('about'); }
-
-	function advertising() { die('advertising'); }
-
+	
 }

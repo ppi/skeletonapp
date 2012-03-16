@@ -1,4 +1,4 @@
-<div class="alert-message block-message success home-success">
+<div class="alert-success alert home-success">
 	<img src="<?= $baseUrl; ?>images/home/success-icon.png" alt="Success Icon" class="success-icon">
 	<p class="success-message"><strong>Well done!</strong> You successfully installed the PPI Skeleton Application.</p>
 <!--	<div class="alert-actions">-->
