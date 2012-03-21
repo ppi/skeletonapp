@@ -8,9 +8,7 @@ class Manage extends BaseController {
 	}
 	
 	function createAction() {
-		$content = 'Create Action Is Here';
-		return $content;
-		
+		$this->redirect($this->generateUrl('Homepage'));
 	}
 	
 }
