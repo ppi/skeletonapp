@@ -148,7 +148,7 @@ class Manage extends Application {
 	protected function edituser_save($userID) {
 
 		$post = $this->post();
-		$requiredKeys = array('userName', 'email', 'firstName', 'lastName');
+		$requiredKeys = array('email', 'firstName', 'lastName');
 		$errors = array();
 		foreach($requiredKeys as $field) {
 			if(!isset($post[$field]) || empty($post[$field])) {
