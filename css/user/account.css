@@ -1,0 +1,7 @@
+.sidebar-nav .nav-list li.active a {
+	color: white;
+}
+.sidebar-nav .nav-list a,
+.sidebar-nav .nav-list a:visited {
+	color: #005580;
+}
