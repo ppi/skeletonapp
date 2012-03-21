@@ -4,7 +4,9 @@ use PPI\Module\RoutesProviderInterface,
 	PPI\Module\Module as BaseModule,
 	PPI\Autoload;
 
-class Module extends BaseModule implements RoutesProviderInterface {
+class Module extends BaseModule {
+	
+	protected $_moduleName = 'User';
 	
 	function init($e) {
 		Autoload::add(__NAMESPACE__, dirname(__DIR__));
