@@ -162,7 +162,7 @@ html>body #sortable li { height: 1.5em; line-height: 1.2em; }
 	color: white;
 }
 
-.view-user .actions-button {
+.view-users .actions-button {
 	position: absolute;
 	top: 20px;
 	width: 80px;
