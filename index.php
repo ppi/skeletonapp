@@ -6,7 +6,9 @@ $app = new PPI\App();
 $app->moduleConfig = include 'app/modules.config.php';
 $app->config = include 'app/app.config.php';
 
-//$app->moduleOptions = array('configGlobPath' => 'app/config/*.config.php');
+// Do you want twig engine enabled?
+//$app->templatingEngine = 'twig';
+
 $app->boot()->dispatch();
 
 $end = microtime(true);
