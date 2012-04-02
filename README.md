@@ -22,7 +22,9 @@ In the ``/sql/`` folde there's a ``user`` table for you to insert into a mysql D
 
 You can manage these users if your user account has the ``users.is_admin`` flag set to 1, by browsing to ``/manage/users/``.
 
-For questions, support, problems.
+
+
+### For questions, support, problems.
 
 * irc.freenode.net #ppi
 * ask on stackoverflow with the tags 'ppi' or 'ppi framework'
