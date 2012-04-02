@@ -1,19 +1,31 @@
-Step 1
---------
-You need a checkout of the PPI framework.
-Check this out to a folder for example: /var/www/ppi-framework/
+# Installing the PPI Skeleton App
 
-Checkout the PPI Skeleton App to a folder for example: /var/www/ppi-skeleton-app/
+* Download the skeleton app into a folder your document root, such as /var/www/skeleton
+* Download the PPI framework somewhere in your document root, such as /var/www/skeleton/PPI
+* Success! you just installed PPI.
 
-Update your skeleton app's index.php to include the framework's path/init.php file.
-For example: include_once('../ppi-framework/PPI/init.php');
+## Configuring the skeleton app
 
+#### Update your app's base url 
 
-Step 2
---------
--> You need to update the skeleton apps config file to suit your HTTP path.
-The config file is located: /var/www/ppi-skeleton-app/App/Config/general.ini
-This config file has two sections, [development] and [production]. By default you'll be editing [development]
-system.base_url = http://localhost/ppi-skeleton-app/  <-- Note this must end in a slash.
+Update the config file at ``App/Config/general.ini`` modify ``system.base_url`` to match something like ``http://localhost/skeleton/``. It must end in a forward slash.
 
-You are ready to go!
+#### Using the default user features
+
+In the ``/sql/`` folde there's a ``user`` table for you to insert into a mysql DB. This lets you utilize various features such as
+
+* User Registration (/user/register)
+* User Login (/user/login)
+* View Account (/account)
+* Edit Account (/account/edit)
+* Edit Password (/account/edit/password)
+
+You can manage these users if your user account has the ``users.is_admin`` flag set to 1, by browsing to ``/manage/users/``.
+
+For questions, support, problems.
+
+* irc.freenode.net #ppi
+* ask on stackoverflow with the tags 'ppi' or 'ppi framework'
+* create an 'issue' on the framework's issues area at http://github.com/ppi/framework/issues
+* @ppi_framework on twitter.
+* email dragoonis@php.net
