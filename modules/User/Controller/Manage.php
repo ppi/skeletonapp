@@ -5,16 +5,22 @@ use PPI\Module\Controller as BaseController;
 
 class Manage extends BaseController {
 	
-	function indexAction() {
+	protected $userStorage;
+	
+	public function indexAction() {
 		return $this->render('User:manage:index.html.php');
 	}
 	
-	function indextwigAction() {
+	public function indextwigAction() {
 		return $this->render('User:manage:index.html.twig');
 	}
 	
-	function createAction() {
+	public function createAction() {
 		$this->redirect($this->generateUrl('Homepage'));
+	}
+	
+	public function setUserStorage($storage) {
+		$this->userStorage = $storage;
 	}
 	
 }
