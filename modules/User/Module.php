@@ -1,8 +1,11 @@
 <?php
 namespace User;
+
 use PPI\Module\RoutesProviderInterface,
 	PPI\Module\Module as BaseModule,
-	PPI\Autoload;
+	PPI\Autoload,
+	PPI\Module\Service;
+
 
 class Module extends BaseModule {
 	
@@ -36,11 +39,12 @@ class Module extends BaseModule {
 	 * @return array
 	 */
 	function initServices() {
-		$config = $this->getConfig();
-		$services = array(
-			'mailerClass' => isset($config['mailerClass']) ? $config['mailerClass'] : 'swift'
+
+		return array(
+			'UserStorage' => new Service('User\Storage\User'),
+			'UserEntity'  => new Service('User\Entity\User')
 		);
-		return $services;
+		
 	}
 	
 }
