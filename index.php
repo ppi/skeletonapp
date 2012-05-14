@@ -9,6 +9,8 @@ $app->config = include 'app/app.config.php';
 // Do you want twig engine enabled?
 //$app->templatingEngine = 'twig';
 
+$app->useDataSource = true;
+
 $app->boot()->dispatch();
 
 $end = microtime(true);
