@@ -113,4 +113,20 @@ class User extends BaseStorage {
 		return $this->insert($userData);
 	}
 	
+	/**
+	 * Get entity objects from all users rows
+	 * 
+	 * @return array
+	 */
+	public function getAll() {
+		
+		$entities = array();
+		$rows = $this->fetchAll();
+		foreach($rows as $row) {
+			$entities[] = new UserEntity($row);
+		}
+		return $entities;
+		
+	}
+	
 }
