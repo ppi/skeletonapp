@@ -20,8 +20,8 @@ class Module extends BaseModule {
 	 * 
 	 * @return \Symfony\Component\Routing\RouteCollection
 	 */
-	function getRoutes() {
-		return $this->loadYamlRoutes(__DIR__ . '/config/routes.yml');
+	public function getRoutes() {
+		return $this->loadYamlRoutes(__DIR__ . '/resources/config/routes.yml');
 	}
 	
 	/**
@@ -29,8 +29,8 @@ class Module extends BaseModule {
 	 * 
 	 * @return array
 	 */
-	function getConfig() {
-		return $this->loadYamlConfig(__DIR__ . '/config/config.yml');
+	public function getConfig() {
+		return $this->loadYamlConfig(__DIR__ . '/resources/config/config.yml');
 	}
 	
 	/**
