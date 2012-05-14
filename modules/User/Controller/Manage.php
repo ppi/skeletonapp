@@ -5,16 +5,32 @@ use PPI\Module\Controller as BaseController;
 
 class Manage extends BaseController {
 	
-	function indexAction() {
+	protected $userStorage;
+	
+	public function indexAction() {
+		
 		return $this->render('User:manage:index.html.php');
 	}
 	
-	function indextwigAction() {
+	public function indextwigAction() {
 		return $this->render('User:manage:index.html.twig');
 	}
 	
-	function createAction() {
+	public function createAction() {
+		
+		if($this->is('post')) {
+			$us = $this->getUserStorage();
+			$post = $this->post();
+			$us->insert(array(
+				
+			));
+		}
+		
 		$this->redirect($this->generateUrl('Homepage'));
+	}
+	
+	protected function getUserStorage() {
+		return new \User\Storage\User($this->getService('DataSource'));
 	}
 	
 }
