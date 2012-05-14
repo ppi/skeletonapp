@@ -1,3 +1,0 @@
-Admin_Index:
-    pattern:  /admin
-    defaults: { _controller: "Admin:Index:index"}

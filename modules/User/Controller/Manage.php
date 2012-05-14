@@ -8,6 +8,7 @@ class Manage extends BaseController {
 	protected $userStorage;
 	
 	public function indexAction() {
+		
 		return $this->render('User:manage:index.html.php');
 	}
 	
@@ -16,11 +17,20 @@ class Manage extends BaseController {
 	}
 	
 	public function createAction() {
+		
+		if($this->is('post')) {
+			$us = $this->getUserStorage();
+			$post = $this->post();
+			$us->insert(array(
+				
+			));
+		}
+		
 		$this->redirect($this->generateUrl('Homepage'));
 	}
 	
-	public function setUserStorage($storage) {
-		$this->userStorage = $storage;
+	protected function getUserStorage() {
+		return new \User\Storage\User($this->getService('DataSource'));
 	}
 	
 }
