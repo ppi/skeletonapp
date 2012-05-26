@@ -1,5 +1,5 @@
 <?php
 return array(
 	'activeModules'   => array('User'),
-	'listenerOptions' => array('module_paths' => array('./modules'))
+	'listenerOptions' => array('module_paths' => array('./modules'), 'routingEnabled' => true),
 );
