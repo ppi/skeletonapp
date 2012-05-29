@@ -1,7 +1,0 @@
-.buildpath
-.project
-.settings
-.idea
-App/Cache/*
-App/Config/general.ini
-App/Config/connections.php
