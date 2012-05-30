@@ -1,0 +1,8 @@
+Homepage:
+    pattern:  /
+    defaults: { _controller: "Application:Index:index"}
+    
+       
+Homepage_Twig:
+    pattern:  /twig
+    defaults: { _controller: "Application:Index:indextwig"}
