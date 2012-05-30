@@ -1,5 +1,4 @@
 <?php
-$start = microtime(true);
 
 // All relative paths start from the main directory, not from /public/
 chdir(dirname(__DIR__));
@@ -19,7 +18,3 @@ $app->config = include 'app/app.config.php';
 //$app->useDataSource = true;
 
 $app->boot()->dispatch();
-
-$end = microtime(true);
-
-die('Taken: ' . number_format($end - $start, 5));
