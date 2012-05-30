@@ -17,15 +17,7 @@ PPI doesn't just stop at the PHP side of things, the skeleton application comes 
 Installation
 ------------
 
-Drop this skeleton app into your document root somewhere.
-
-As all PPI2 dependencies are pulled in via composer you will need to pull down the PPI Framework into your 'PPI' folder.
-
-``` bash
-cd PPI && git clone git://github.com/ppi/framework.git .;
-```
-
-Now you need to run the composer library to obtain the vendor dependencies that PPI requires.
+Drop this skeleton app into your document root somewhere. You need to run the composer library to obtain the vendor dependencies that PPI requires.
 
 ``` bash
 curl -s http://getcomposer.org/installer | php
