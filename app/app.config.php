@@ -1,6 +1,6 @@
 <?php
 $config = array(
-	'environment'            => 'production',
+	'environment'            => 'development',
 	'templating.engine'      => 'php',
 	'datasource.connections' => include (__DIR__ . '/datasource.config.php')
 );

@@ -1,12 +1,3 @@
 User_Manage_Create:
     pattern:  /user/manage/create
     defaults: { _controller: "User:Manage:create"}
-    
-Homepage:
-    pattern:  /
-    defaults: { _controller: "User:Manage:index"}
-    
-       
-Homepage_Twig:
-    pattern:  /twig
-    defaults: { _controller: "User:Manage:indextwig"}
