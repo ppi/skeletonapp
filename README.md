@@ -16,15 +16,23 @@ PPI doesn't just stop at the PHP side of things, the skeleton application comes 
 
 Installation
 ------------
-As PPI2 is in development you have to switch over to the 2.0 branches on both the skeletonapp and framework repos.
-Clone this repo, drop it in your document root somewhere.
 
-cd /var/www; mkdir skeletonapp; git clone <ppi_skeletonapp_repo_url> .; git checkout 2.0
+Drop this skeleton app into your document root somewhere.
 
-Then you need to download PPI repo and switch that to 2.0 branch
-cd PPI; git clone <ppi_framework_repo_url>; git checkout 2.0
+As all PPI2 dependencies are pulled in via composer you will need to pull down the PPI Framework into your 'PPI' folder.
 
-That's it! Now just browse to http://localhost/skeletonapp
+``` bash
+cd PPI && git clone git://github.com/ppi/framework.git .;
+```
+
+Now you need to run the composer library to obtain the vendor dependencies that PPI requires.
+
+``` bash
+curl -s http://getcomposer.org/installer | php
+php composer.phar install
+```
+
+Ideally you'll want to set up a vhost on your httpd web server to point your domain to the /public/ folder of your PPI skeleton app, but for now you're still able to browse to http://localhost/skeletonapp/public/
 
 Documentation
 -------------
@@ -36,4 +44,4 @@ PPI is an open source, community-driven project. If you'd like to contribute, pl
 
 Requirements
 ------------
-* PHP 5.3.0+
+* PHP 5.3.2+
