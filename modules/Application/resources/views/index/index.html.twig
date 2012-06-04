@@ -1,5 +1,12 @@
 {% extends '::base.html.twig' %}
 
 {% block body %}
-<h4>Action twig content: HELLO WORLD FROM TWIG</h4>
+
+	<h4>Action twig content: HELLO WORLD FROM TWIG</h4>
+
+	{{ asset('css/general.css') }}
+
+	<a href="{{ path('Homepage') }}">Home</a>
+
 {% endblock %}
+
