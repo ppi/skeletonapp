@@ -52,6 +52,13 @@ class User {
 	 * @var null|integer
 	 */
 	protected $_is_admin = null;
+
+	/**
+	 * The user's enabled flag
+	 * 
+	 * @var null
+	 */
+	protected $_enabled = null;
 	
 	function __construct(array $data) {
 		

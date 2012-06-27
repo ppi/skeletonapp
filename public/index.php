@@ -15,6 +15,6 @@ $app->config = include 'app/app.config.php';
 //$app->templatingEngine = 'twig';
 
 // If you are using the DataSource component, enable this
-//$app->useDataSource = true;
+$app->useDataSource = true;
 
 $app->boot()->dispatch();
