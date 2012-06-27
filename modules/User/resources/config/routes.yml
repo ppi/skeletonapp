@@ -1,3 +1,7 @@
 User_Manage_Create:
     pattern:  /user/manage/create
     defaults: { _controller: "User:Manage:create"}
+    
+Users_List:
+    pattern:  /user/list
+    defaults: { _controller: "User:Manage:list"}
