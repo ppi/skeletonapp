@@ -2,6 +2,6 @@
 
 namespace User\Storage;
 
-use PPI\DataSource\PDO\ActiveQuery;
+use PPI\DataSource\ActiveQuery;
 
 class Base extends ActiveQuery {}

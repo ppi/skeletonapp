@@ -8,8 +8,13 @@ class Manage extends BaseController {
 	protected $userStorage;
 	
 	public function indexAction() {
-		
 		return $this->render('User:manage:index.html.php');
+	}
+	
+	public function listAction() {
+		
+		$users = $this->getUserStorage()->getAll();
+		return $this->render('Application:index:index.html.php', compact('users'));
 	}
 	
 	public function indextwigAction() {
