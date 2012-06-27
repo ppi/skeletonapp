@@ -14,7 +14,7 @@ class Manage extends BaseController {
 	public function listAction() {
 		
 		$users = $this->getUserStorage()->getAll();
-		return $this->render('Application:index:index.html.php', compact('users'));
+		return $this->render('User:manage:list.html.php', compact('users'));
 	}
 	
 	public function indextwigAction() {
