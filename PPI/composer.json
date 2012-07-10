@@ -1,5 +1,6 @@
 {
-	"require": {
-		"ppi/ppi": "dev-master"
-	}
+    "require": {
+        "ppi/ppi": "dev-master"
+    },
+    "minimum-stability": "dev"
 }
