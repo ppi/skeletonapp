@@ -10,10 +10,10 @@ if(!file_exists($composerPath)) {
 }
 
 // Composer generated file include
-require 'vendor/autoload.php';
+$composer = require 'vendor/autoload.php';
 
 // Adding PPI autoloader so modules may add themself to the autoload process on-the-fly
 PPI\Autoload::config(array(
-	'loader'    => new \Symfony\Component\ClassLoader\UniversalClassLoader(),
+	'loader'    => $composer
 ));
 PPI\Autoload::register();
