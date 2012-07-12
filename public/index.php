@@ -4,7 +4,7 @@
 chdir(dirname(__DIR__));
 
 // Lets include PPI
-include('PPI/init.php');
+include('app/init.php');
 
 // Initialise our PPI App
 $app = new PPI\App();
