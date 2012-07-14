@@ -1,0 +1,11 @@
+{extends '::base.html.smarty'}
+
+{block "body"}
+
+    <h4>Action smarty content: HELLO WORLD FROM SMARTY</h4>
+
+    <p>{'css/general.css'|asset}</p>
+
+    <p><a href="{'Homepage'|path}">Home</a></p>
+
+{/block}
