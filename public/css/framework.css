@@ -1,0 +1,29 @@
+#error-page {
+	width: 500px;
+	margin: 0 auto;
+	position: relative;
+	background: white;
+	height: 500px;
+}
+
+#error-page .desc {
+	position: absolute;
+	top: 130px;
+	left: 50px;
+}
+
+#error-page .image-404 {
+	position: absolute;
+	bottom: 12px;
+	right: 12px;
+}
+
+#error-page .oops {
+	position: absolute;
+	left: 12px;
+	top: 12px;
+}
+
+body {
+	background-color: #EBEBEB;
+}
