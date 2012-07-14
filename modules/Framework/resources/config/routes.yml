@@ -1,0 +1,3 @@
+404_Page:
+    pattern: /404
+    defaults: { _controller: "Framework:Error:show404" }  
