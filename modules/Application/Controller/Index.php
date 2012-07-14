@@ -15,6 +15,11 @@ class Index extends BaseController
         return $this->render('Application:index:index.html.twig');
     }
 
+    public function indexsmartyAction()
+    {
+        return $this->render('Application:index:index.html.smarty');
+    }
+
     public function createAction()
     {
         if ($this->is('post') && $this->is('ajax')) {
