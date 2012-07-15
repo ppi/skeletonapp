@@ -1,1 +1,8 @@
-/* some content */
+header {
+	margin-bottom: 50px;
+}
+
+#action-content {
+	height: 500px;
+	border: 1px solid #CCC;
+}

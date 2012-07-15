@@ -1,3 +1,4 @@
 <?php $view->extend('::base.html.php'); ?>
 
-<h4>Action content: HELLO WORLD</h4>
+<h1 class="lead">My PPI Skeleton App</h1>
+<p>Homepage Content</p>
