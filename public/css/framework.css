@@ -1,0 +1,75 @@
+#error-page {
+	width: 500px;
+	margin: 25px auto 0 auto;
+	position: relative;
+	background: white;
+	height: 430px;
+}
+
+#error-page .error-container {
+	height: 430px;
+	box-shadow: 5px 5px 5px #888;
+	
+}
+
+#error-page .desc p {
+	color: #AAA;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#error-page .desc {
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	font-size: 1.2em;
+}
+
+#error-page .image-404 {
+	position: absolute;
+	bottom: 15px;
+	right: 12px;
+}
+
+#error-page .oops {
+	position: absolute;
+	left: 12px;
+	top: 12px;
+	height: 70px;
+	font-size: 4.5em;
+	font-family: "Arial";
+	padding: 0;
+	margin: 0;
+	color: #CCC;
+}
+
+#error-page .ppi-line a:hover {
+	text-decoration: underline;
+}
+#error-page .ppi-line a {
+	color: #AAA;
+	text-decoration: none;
+}
+
+#error-page .ppi-line p {
+	font-family: "Arial";
+	font-size: 1.2em;
+	padding-bottom: 5px;
+	position: absolute;
+	top: 5px;
+	left: 50px;
+	padding: 0;
+	margin: 0;
+}
+#error-page .ppi-line {
+	margin-top: 12px;
+	color: white;
+	position: relative;
+}
+
+#error-page .ppi-line img {
+	height: 29px;
+}
+
+body {
+	background-color: #EBEBEB;
+}
