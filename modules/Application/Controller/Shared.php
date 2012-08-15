@@ -49,31 +49,31 @@ class Shared extends BaseController
     /**
      * Get the user storage
      * 
-     * @return \User\Storage\User
+     * @return \UserModule\Storage\User
      */
     protected function getUserStorage()
     {
-        return new \User\Storage\User($this->getService('DataSource'));
+        return new \UserModule\Storage\User($this->getService('DataSource'));
     }
 
     /**
      * Get the forgot user storage
      * 
-     * @return \User\Storage\UserForgot
+     * @return \UserModule\Storage\UserForgot
      */
     protected function getUserForgotStorage()
     {
-        return new \User\Storage\UserForgot($this->getService('DataSource'));
+        return new \UserModule\Storage\UserForgot($this->getService('DataSource'));
     }
 
     /**
      * Get the user activation storage
      * 
-     * @return \User\Storage\UserActivation
+     * @return \UserModule\Storage\UserActivation
      */
     protected function getUserActivationStorage()
     {
-        return new \User\Storage\UserActivation($this->getService('DataSource'));
+        return new \UserModule\Storage\UserActivation($this->getService('DataSource'));
     }
 
     
