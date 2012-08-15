@@ -1,3 +1,7 @@
-vendor
+# PPI directories
+vendor/*
+*/logs/*
+*/cache/*
 
+# Backup files created by IDEs
 *~
