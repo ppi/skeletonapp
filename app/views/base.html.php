@@ -13,7 +13,7 @@
     <title><?php $view['slots']->output('title', 'PPI Skeleton Project') ?></title>
     
     <!-- CSS Stuff -->
-    <link href="<?=$view['assets']->getUrl('css/twitter-bootstrap-2.0.4.css');?>" rel="stylesheet">
+    <link href="<?=$view['assets']->getUrl('css/libs/twitter-bootstrap-2.0.4.css');?>" rel="stylesheet">
     <link href="<?=$view['assets']->getUrl('css/main.css');?>" rel="stylesheet">
     <?php $view['slots']->output('include_css'); ?>
     <!-- /CSS Stuff -->
@@ -34,7 +34,7 @@
         <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
-                    <a class="brand" href="#">PPI Skeleton Project</a>
+                    <a class="brand" href="<?=$view['router']->generate('Homepage');?>">PPI Skeleton Project</a>
                     <ul class="nav">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>

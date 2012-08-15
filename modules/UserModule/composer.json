@@ -1,0 +1,24 @@
+{
+    "name": "ppi/user-module",
+    "description": "The PPI Framework User Module",
+    "homepage": "http://www.ppi.io",
+    "license": "MIT",
+    "keywords": ["framework", "user"],
+    "type": "library",
+    "authors": [
+        {
+            "name": "Paul Dragoonis",
+            "email": "paul@ppi.io"
+        }
+    ],
+    "target-dir": "modules/User",
+    "require": {
+		"ppi/framework": "dev-master",
+        "swiftmailer/swiftmailer": ">=4.2.0,<4.3-dev"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
