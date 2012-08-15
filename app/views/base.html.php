@@ -10,7 +10,7 @@
     <meta name="description" content="PPI Skeleton Project">
     <meta name="viewport" content="width=device-width">
     
-    <title><?php $view['slots']->output('title', 'PPI Skeleton Project') ?></title>
+    <title><?php $view['slots']->output('title', 'PPI Skeleton Application') ?></title>
     
     <!-- CSS Stuff -->
     <link href="<?=$view['assets']->getUrl('css/libs/twitter-bootstrap-2.0.4.css');?>" rel="stylesheet">
@@ -20,6 +20,11 @@
     
     <!-- JS Head Stuff -->
     <script src="<?=$view['assets']->getUrl('js/libs/modernizr-2.5.3.min.js');?>"></script>
+    <script type="text/javascript">
+        var ppi = {
+            baseUrl: '<?=$view['router']->generate('Homepage');?>'
+        }
+    </script>
     <?php $view['slots']->output('include_js_head'); ?>
     <!-- /JS Head Stuff -->
     
@@ -34,7 +39,7 @@
         <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
-                    <a class="brand" href="<?=$view['router']->generate('Homepage');?>">PPI Skeleton Project</a>
+                    <a class="brand" href="<?=$view['router']->generate('Homepage');?>">PPI Skeleton Application</a>
                     <ul class="nav">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -53,6 +58,8 @@
                                 <li><a href="<?=$view['router']->generate('User_Account');?>">View Profile</a></li>
                                 <li><a href="<?=$view['router']->generate('User_Edit_Account');?>">Edit Profile</a></li>
                                 <li><a href="<?=$view['router']->generate('User_Edit_Password');?>">Change Password</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<?=$view['router']->generate('User_Manage_List');?>">Manage Users</a></li>
                                 <li class="divider"></li>
                                 <li><a href="<?=$view['router']->generate('User_Logout');?>">Logout</a></li>
                             </ul>

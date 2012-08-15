@@ -65,3 +65,31 @@ User_Edit_Password:
 User_Edit_Password_Save:
     pattern: /editpasswordsave
     defaults: { _controller: "User:Account:editpasswordsave"}
+    
+User_Manage_List:
+    pattern: /users/manage
+    defaults: { _controller: "User:Manage:list"}
+    
+User_Manage_Edit:
+    pattern: /users/manage/edit/{id}
+    defaults: { _controller: "User:Manage:edit"}
+    
+User_Manage_Delete:
+    pattern: /users/manage/delete/{id}
+    defaults: { _controller: "User:Manage:delete"}
+    
+User_Manage_Create:
+    pattern: /users/manage/create
+    defaults: { _controller: "User:Manage:create"}
+    
+User_Manage_Create_Save:
+    pattern: /users/manage/createsave
+    defaults: { _controller: "User:Manage:createsave"}
+    requirements:
+        _method: POST
+    
+User_Manage_Edit_Save:
+    pattern: /users/manage/editsave/{id}
+    defaults: { _controller: "User:Manage:editsave"}
+    requirements:
+        _method: POST

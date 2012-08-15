@@ -299,7 +299,7 @@ class Auth extends SharedController
         $emailContent = $this->render('UserModule:auth:signupemail.html.php', compact('toUser', 'activationLink'));
         
         // Send the activation email to the user
-        $helper = new \User\Classes\Email();
+        $helper = new \UserModule\Classes\Email();
         $config = $this->getConfig();
         $helper->sendEmail($fromUser, $toUser, $config['signupEmail']['subject'], $emailContent);
         
@@ -327,7 +327,7 @@ class Auth extends SharedController
         $emailContent = $this->render('UserModule:auth:forgotpwemail.html.php', compact('toUser', 'forgotLink'));
         
         // Send the activation email to the user
-        $helper = new \User\Classes\Email();
+        $helper = new \UserModule\Classes\Email();
         $config = $this->getConfig();
         $helper->sendEmail($fromUser, $toUser, $config['forgotEmail']['subject'], $emailContent);
         

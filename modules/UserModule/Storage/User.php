@@ -57,6 +57,25 @@ class User extends BaseStorage
             ->execute()
             ->fetch($this->getFetchMode());
     }
+    
+    public function getAllWithLevels()
+    {
+        
+        $entities = array();
+        $rows = $this->createQueryBuilder()
+            ->select('u.*, ul.title user_level_title')
+            ->from($this->getTableName(), 'u')
+            ->leftJoin('u', 'user_level', 'ul', 'u.user_level_id = ul.id')
+            ->execute()
+            ->fetchAll($this->getFetchMode());
+        
+        foreach ($rows as $row) {
+            $entities[] = new UserEntity($row);
+        }
+
+        return $entities;
+        
+    }
 
     /**
      * Get a user entity by the email address
@@ -90,6 +109,25 @@ class User extends BaseStorage
             ->from($this->getTableName(), 'u')
             ->andWhere('u.email = :email')
             ->setParameter(':email', $email)
+            ->execute()
+            ->fetch($this->getFetchMode());
+
+        return $row['total'] > 0;
+    }
+    
+    /**
+     * Check if a user record exists by User ID
+     *
+     * @param integer $id
+     * @return bool
+     */
+    public function existsByID($id)
+    {
+        $row = $this->createQueryBuilder()
+            ->select('count(id) as total')
+            ->from($this->getTableName(), 'u')
+            ->andWhere('u.id = :id')
+            ->setParameter(':id', $id)
             ->execute()
             ->fetch($this->getFetchMode());
 

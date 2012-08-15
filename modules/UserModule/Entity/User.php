@@ -47,11 +47,18 @@ class User
     protected $_salt = null;
 
     /**
-     * The user's state ID
+     * The user's level ID
      * 
      * @var null
      */
-    protected $_user_state_id = null;
+    protected $_user_level_id = null;
+
+    /**
+     * User Level Title
+     * 
+     * @var null
+     */
+    protected $_user_level_title = null;
 
 
     public function __construct(array $data)
@@ -94,14 +101,18 @@ class User
         return $this->_email;
     }
     
-    public function getUserState()
-    {
-        return $this->_user_state_id;
-    }
-    
     public function getSalt()
     {
         return $this->_salt;
+    }
+    
+    public function getLevelID()
+    {
+        return $this->_user_level_id;
+    }
+    
+    public function getLevelTitle() {
+        return $this->_user_level_title;
     }
 
 }

@@ -17,6 +17,7 @@ header {
 
 .box-header {
 	border: none;
+	position: relative;
 	padding-top: 5px;
 	border-bottom: 1px solid #DEDEDE;
 	border-radius: 3px 3px 0 0;

@@ -28,7 +28,7 @@ class Index extends SharedController
 
     protected function getUserStorage()
     {
-        return new \User\Storage\User($this->getService('DataSource'));
+        return new \UserModule\Storage\User($this->getService('DataSource'));
     }
 
 }
