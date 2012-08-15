@@ -1,5 +1,6 @@
 {
 	"require": {
+		"ppi/user-module": "dev-master",
 		"ppi/framework": "dev-master"
 	},
 	"minimum-stability": "dev",

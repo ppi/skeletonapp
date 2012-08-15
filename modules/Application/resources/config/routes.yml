@@ -2,6 +2,10 @@ Homepage:
     pattern:  /
     defaults: { _controller: "Application:Index:index"}
 
+Homepage_Flashes:
+    pattern:  /flashes
+    defaults: { _controller: "Application:Index:indexWithFlashes"}
+
 Homepage_Twig:
     pattern:  /twig
     defaults: { _controller: "Application:Index:indextwig"}

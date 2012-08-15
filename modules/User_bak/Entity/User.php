@@ -12,25 +12,25 @@ class User
     protected $_id = null;
 
     /**
-     * The Username
-     *
-     * @var null|string
+     * The user title ('Mr', 'Mrs')
+     * 
+     * @var null
      */
-    protected $_username = null;
-
+    protected $_title = null;
+    
     /**
      * The First Name
      *
      * @var null|string
      */
-    protected $_firstName = null;
+    protected $_firstname = null;
 
     /**
      * The Last Name
      *
      * @var null|string
      */
-    protected $_lastName = null;
+    protected $_lastname = null;
 
     /**
      * The Email Address
@@ -38,7 +38,7 @@ class User
      * @var null|string
      */
     protected $_email = null;
-
+    
     /**
      * The Users Salt
      *
@@ -47,18 +47,12 @@ class User
     protected $_salt = null;
 
     /**
-     * Are they an admin
-     *
-     * @var null|integer
-     */
-    protected $_is_admin = null;
-
-    /**
-     * The user's enabled flag
-     *
+     * The user's state ID
+     * 
      * @var null
      */
-    protected $_enabled = null;
+    protected $_user_state_id = null;
+
 
     public function __construct(array $data)
     {
@@ -74,15 +68,20 @@ class User
     {
         return $this->_id;
     }
+    
+    public function getTitle()
+    {
+        return $this->_title;
+    }
 
     public function getFirstName()
     {
-        return $this->_firstName;
+        return $this->_firstname;
     }
 
     public function getLastName()
     {
-        return $this->_lastName;
+        return $this->_lastname;
     }
 
     public function getFullName()
@@ -94,19 +93,15 @@ class User
     {
         return $this->_email;
     }
-
-    public function getUsername()
+    
+    public function getUserState()
     {
-        return $this->_username;
+        return $this->_user_state_id;
+    }
+    
+    public function getSalt()
+    {
+        return $this->_salt;
     }
 
-    public function isAdmin()
-    {
-        return $this->_is_admin == 1;
-    }
-
-    public function isEnabled()
-    {
-        return $this->_enabled == 1;
-    }
 }

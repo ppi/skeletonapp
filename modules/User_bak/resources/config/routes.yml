@@ -1,0 +1,67 @@
+User_Signup:
+    pattern: /signup
+    defaults: { _controller: "User:Auth:signup"}
+        
+User_Signup_Save:
+    pattern: /signupsave
+    defaults: { _controller: "User:Auth:signupsave"}
+    requirements:
+        _method: POST
+
+User_Logout:
+    pattern: /logout
+    defaults: { _controller: "User:Auth:logout"}
+
+User_Login:
+    pattern: /login
+    defaults: { _controller: "User:Auth:login"}
+    
+User_Login_Check:
+    pattern: /logincheck
+    defaults: { _controller: "User:Auth:logincheck"}
+    requirements:
+        _method: POST
+        
+User_Activate:
+    pattern: /activate/{token}
+    defaults: { _controller: "User:Auth:activate"}
+    
+User_Forgot_Password:
+    pattern: /forgotpw
+    defaults: { _controller: "User:Auth:forgotpw"}
+    
+User_Forgot_Password_Send:
+    pattern: /forgotpwsend
+    defaults: { _controller: "User:Auth:forgotpwsend"}
+    requirements:
+        _method: POST
+    
+User_Forgot_Password_Check:
+    pattern: /forgotpwcheck/{token}
+    defaults: { _controller: "User:Auth:forgotpwcheck"}
+    
+User_Forgot_Password_Save:
+    pattern: /forgotpwsave
+    defaults: { _controller: "User:Auth:forgotpwsave"}
+    requirements:
+        _method: POST
+        
+User_Account:
+    pattern: /account
+    defaults: { _controller: "User:Account:view"}
+    
+User_Edit_Account:
+    pattern: /editaccount
+    defaults: { _controller: "User:Account:edit"}
+    
+User_Edit_Account_Save:
+    pattern: /editaccountsave
+    defaults: { _controller: "User:Account:editsave"}
+    
+User_Edit_Password:
+    pattern: /editpassword
+    defaults: { _controller: "User:Account:editpassword"}
+    
+User_Edit_Password_Save:
+    pattern: /editpasswordsave
+    defaults: { _controller: "User:Account:editpasswordsave"}

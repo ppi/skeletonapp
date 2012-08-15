@@ -1,8 +1,47 @@
+#page-content {
+	width: 940px;
+	margin: 0 auto;
+}
+
 header {
 	margin-bottom: 50px;
 }
 
-#action-content {
-	height: 500px;
-	border: 1px solid #CCC;
+.box {
+	border: 1px solid #DEDEDE;
+	border-radius: 3px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	box-shadow: 0 0 10px #BDBDBD;
+}
+
+.box-header {
+	border: none;
+	padding-top: 5px;
+	border-bottom: 1px solid #DEDEDE;
+	border-radius: 3px 3px 0 0;
+	height: 12px;
+	min-height: 12px;
+	margin-bottom: 0;
+	font-weight: bold;
+	font-size: 16px;
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 0)), color-stop(100%,rgba(0, 0, 0, 0.1)));
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(0, 0, 0, 0.1) 100%);
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(0, 0, 0, 0.1) 100%);
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(0, 0, 0, 0.1) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgba(0, 0, 0, 0.1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#1a000000',GradientType=0 );
+}
+
+.box-content {
+	padding: 10px;
+}
+
+.box-header h2 {
+	font-size: 15px;
+	width: auto;
+	clear: none;
+	float: left;
+	line-height: 25px;
 }
