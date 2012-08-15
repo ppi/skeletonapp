@@ -1,22 +1,25 @@
 {
+    "name": "ppi/framework",
+    "description": "The PPI Skeleton Application - A pre-built application around the PPI Framework. Lots of extra goodies",
+    "homepage": "http://www.ppi.io",
+    "license": "MIT",
+    "keywords": ["framework", "ppi", "skeletonapp", "bootstrap", "html5", "jquery", "mustache"],
+    "type": "library",
+    "authors": [
+        {
+            "name": "Paul Dragoonis",
+            "email": "paul@ppi.io"
+        }
+    ],
 	"require": {
 		"ppi/user-module": "dev-master",
 		"ppi/framework": "dev-master"
 	},
-	"minimum-stability": "dev",
-	
-	"repositories": [{
-		"type": "package",
-		"package": {
-			"name": "ppi/zendframework",
-			"version": "2.0.0-beta5",
-			"dist": {
-				"url": "http://packages.zendframework.com/releases/ZendFramework-2.0.0beta5/ZendFramework-2.0.0beta5-minimal.zip",
-				"type": "zip"
-			},
-			"autoload": {
-				"psr-0": { "Zend": "library" }
-			}
+	"extra": {
+		"branch-alias": {
+			"dev-master": "2.0-dev"
 		}
-	}]
+	}
+	"minimum-stability": "dev"
+	
 }
