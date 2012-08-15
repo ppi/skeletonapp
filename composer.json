@@ -20,6 +20,20 @@
 			"dev-master": "2.0-dev"
 		}
 	},
+	"repositories": [{
+		"type": "package",
+		"package": {
+			"name": "ppi/zendframework",
+			"version": "2.0.0-beta5",
+			"dist": {
+				"url": "http://packages.zendframework.com/releases/ZendFramework-2.0.0beta5/ZendFramework-2.0.0beta5-minimal.zip",
+				"type": "zip"
+			},
+			"autoload": {
+				"psr-0": { "Zend": "library" }
+			}
+		}
+	}],
 	"minimum-stability": "dev"
 	
 }
