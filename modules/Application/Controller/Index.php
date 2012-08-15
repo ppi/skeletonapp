@@ -1,9 +1,9 @@
 <?php
 namespace Application\Controller;
 
-use PPI\Module\Controller as BaseController;
+use Application\Controller\Shared as SharedController;
 
-class Index extends BaseController
+class Index extends SharedController
 {
     public function indexAction()
     {
@@ -19,22 +19,11 @@ class Index extends BaseController
     {
         return $this->render('Application:index:index.html.smarty');
     }
-
-    public function createAction()
-    {
-        if ($this->is('post') && $this->is('ajax')) {
-            $us = $this->getUserStorage();
-            $post = $this->post();
-            $us->insert(array(
-                'name'             => $post['name'],
-                'email'            => $post['email'],
-                'enabled'          => 1,
-                'ip_address'       => $this->getIP(),
-                'referrer_user_id' => $this->session('referrerUserID')
-            ));
-        }
-
-        $this->redirect($this->generateUrl('Homepage'));
+    
+    public function indexWithFlashesAction() {
+//        $this->setFlash('warning', 'This is your warning, don\'t let the dogs out again !!');
+//        $this->setFlash('error', 'This is your error, someone let the dogs out !!');
+        return $this->render('Application:index:index.html.php');
     }
 
     protected function getUserStorage()

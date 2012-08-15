@@ -46,17 +46,21 @@
                     </form>
                     
                     <ul class="nav pull-right">
-                        <li class="dropdown" id="menu1">
+                        <?php if($isLoggedIn): ?>
+                        <li class="dropdown" id="userDropdownMenu">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">My Account <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">My Articles</a></li>
+                                <li><a href="<?=$view['router']->generate('User_Account');?>">View Profile</a></li>
+                                <li><a href="<?=$view['router']->generate('User_Edit_Account');?>">Edit Profile</a></li>
+                                <li><a href="<?=$view['router']->generate('User_Edit_Password');?>">Change Password</a></li>
                                 <li class="divider"></li>
-                                <li><a href="#">Edit Profile</a></li>
-                                <li><a href="#">Edit Account</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Logout</a></li>
+                                <li><a href="<?=$view['router']->generate('User_Logout');?>">Logout</a></li>
                             </ul>
                         </li>
+                        <?php else: ?>
+                        <li><a class="" title="" href="<?=$view['router']->generate('User_Login');?>">Login</a></li>
+                        <li><a class="" title="" href="<?=$view['router']->generate('User_Signup');?>">Register</a></li>
+                        <?php endif; ?>
                     </ul>
                     
                 </div>
@@ -66,16 +70,44 @@
 
     
 
-    <div class="container well" id="action-content">
+    <div class="container" id="page-content">
+        
+        <!-- Begin Flash Message Injection -->
+        <?php
+        $flashNames = array('info' => 'info', 'success' => 'success', 'error' => 'error', 'warning' => 'block', 'notice' => 'block');
+        $flashHeadings = array('info' => 'Heads Up!', 'error' => 'Oops!', 'success' => 'Well done!', 'block' => 'Warning!');
+        
+        if($view['session']->hasFlashes()):
+        ?>
+        <div class="flashes">
+        <?php
+            foreach($view['session']->getFlashes() as $flashName => $flashes):
+                $alertClass = isset($flashNames[$flashName]) ? $flashNames[$flashName] : 'info';
+                foreach($flashes as $flash):
+        ?>
+                <div class="alert alert-<?=$alertClass?>">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <i class="icon-info-sign"></i>
+                    <strong class="alert-heading"><?=$flashHeadings[$alertClass];?></strong>
+                    <span><?=$flash;?></span>
+                </div>    
+        <?php
+                    endforeach;
+            endforeach;
+        ?>
+        </div>
+        <!-- End of Flash Message Injection -->
+        <?php
+        endif;
+        ?>
         
         <!-- Begin dynamic page output -->
-        
+        <div id="action-content">
         <?php $view['slots']->output('_content'); ?>
-        
+        </div>
         <!-- End dynamic page output -->
         
     </div>
-
     
     
     <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
@@ -84,6 +116,7 @@
     
     <!-- JS Body Stuff -->
     <script src="<?=$view['assets']->getUrl('js/libs/bootstrap-dropdown.js');?>"></script>
+    <script src="<?=$view['assets']->getUrl('js/libs/bootstrap-alert.js');?>"></script>
     <?php $view['slots']->output('include_js_body'); ?>
     <!-- /JS Body Stuff -->
 
