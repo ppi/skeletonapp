@@ -5,6 +5,10 @@ jQuery(document).ready(function($) {
 	// When you try to delete a package
 	$manage.find('.deleteUser').on('click', function(e) {
 		
+		if(!confirm('Are you sure? No going back now!')) {
+			return false;
+		}
+		
 		e.preventDefault();
 		var elem = $(this);
 		

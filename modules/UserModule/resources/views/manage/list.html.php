@@ -42,7 +42,7 @@
                         <td><?=$view->escape($user->getLevelTitle());?></td>
                         <td>
                             <a href="<?=$view['router']->generate('User_Manage_Edit', array('id' => $user->getID()));?>" title="" class="btn"><i class="icon-edit"></i></a>
-                            <a href="#" title="Delete" class="btn deleteUser" data-userid="<?=$user->getID();?>" onclick="return confirm('Are you sure? No going back now!');"><i class="icon-remove"></i></a>
+                            <a href="#" title="Delete" class="btn deleteUser" data-userid="<?=$user->getID();?>"><i class="icon-remove"></i></a>
                         </td>
                     </tr>
                     <?php endforeach; ?>
