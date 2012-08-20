@@ -5,3 +5,6 @@ vendor/*
 
 # Backup files created by IDEs
 *~
+
+# Mac OS X hidden files
+.DS_Store
