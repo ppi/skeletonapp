@@ -32,6 +32,17 @@ class Module extends BaseModule
     {
         return $this->loadYamlRoutes(__DIR__ . '/resources/config/routes.yml');
     }
+    
+    public function getServiceConfig()
+    {
+        return array('factories' => array(
+            
+            'userEntity' => function($sm) {
+                return new UserModule\Entity\User();
+            }
+            
+        ));
+    }
 
 
 
