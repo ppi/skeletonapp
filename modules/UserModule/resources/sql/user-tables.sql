@@ -8,7 +8,7 @@ CREATE TABLE `user` (
   `password` varchar(255) DEFAULT NULL,
   `salt` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `user_state_id` (`user_level_id`)
+  KEY `user_level_id` (`user_level_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `user_activation_token` (
@@ -36,3 +36,10 @@ CREATE TABLE `user_level` (
   `title` varchar(64) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `user_level` (`id`,`title`)
+VALUES
+	(1, 'Member'),
+	(2, 'Administrator'),
+	(3, 'Developer');
+
