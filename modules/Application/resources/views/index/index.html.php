@@ -1,7 +1,7 @@
 <?php $view->extend('::base.html.php'); ?>
 
 
-<div class="box">
+<div class="box" id="homepage">
     
     <div class="box-header well">
         <h2>Welcome to the PPI Skeleton Application</h2>
@@ -19,10 +19,10 @@
             </div>
             <div class="span4">
                 <h3>Twitter Bootstrap</h3>
-                <p>The best UI toolkit around. Excellent for making forms, menus, tables and much much more. Hey this page here is built using it :).</p>
+                <p>The best UI toolkit around. Excellent for making forms, menus, tables and much much more. This is the latest bootstrap v2.1. This page here is built using it :)</p>
             </div>
             <div class="span4">
-                <h3>jQuery 1.7 (latest)</h3>
+                <h3>jQuery 1.8 (latest)</h3>
                 <p>Every web project needs jQuery, we have bundled the latest jquery here for you.</p>
             </div>
         </div>

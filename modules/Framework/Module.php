@@ -1,9 +1,8 @@
 <?php
 namespace Framework;
 
-use 
-	PPI\Module\Module as BaseModule,
-	PPI\Autoload;
+use PPI\Module\Module as BaseModule;
+use PPI\Autoload;
 
 
 class Module extends BaseModule {

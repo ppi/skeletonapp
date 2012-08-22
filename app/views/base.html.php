@@ -13,7 +13,7 @@
     <title><?php $view['slots']->output('title', 'PPI Skeleton Application') ?></title>
     
     <!-- CSS Stuff -->
-    <link href="<?=$view['assets']->getUrl('css/libs/twitter-bootstrap-2.0.4.css');?>" rel="stylesheet">
+    <link href="<?=$view['assets']->getUrl('css/libs/bootstrap.min.css');?>" rel="stylesheet">
     <link href="<?=$view['assets']->getUrl('css/main.css');?>" rel="stylesheet">
     <?php $view['slots']->output('include_css'); ?>
     <!-- /CSS Stuff -->
@@ -118,12 +118,11 @@
     
     
     <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="<?=$view['assets']->getUrl('js/libs/jquery-1.7.1.min.js');?>"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="<?=$view['assets']->getUrl('js/libs/jquery-1.8.0.min.js');?>"><\/script>')</script>
     
     <!-- JS Body Stuff -->
-    <script src="<?=$view['assets']->getUrl('js/libs/bootstrap-dropdown.js');?>"></script>
-    <script src="<?=$view['assets']->getUrl('js/libs/bootstrap-alert.js');?>"></script>
+    <script src="<?=$view['assets']->getUrl('js/libs/bootstrap.min.js');?>"></script>
     <?php $view['slots']->output('include_js_body'); ?>
     <!-- /JS Body Stuff -->
 
