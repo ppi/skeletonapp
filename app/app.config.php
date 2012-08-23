@@ -1,7 +1,7 @@
 <?php
 $config = array(
     'environment'            => 'development',
-    'templating.engine'      => 'php',
+    'templating.engines'     => array('php', 'smarty', 'twig'),
     'datasource.connections' => include (__DIR__ . '/datasource.config.php')
 );
 
