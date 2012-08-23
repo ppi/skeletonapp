@@ -28,8 +28,7 @@ Ideally you'll want to set up a vhost on your httpd web server to point your dom
 
 Documentation
 -------------
-The documentation for PPI 2.0 is yet to be released. We are busy working on the code first.
-We're really looking for someone to assist on making docs, if this interests you, please contact paul@ppi.io
+We have began documenting ppi2, you can see how far we've gotten at http://www.ppi.io/docs
 
 Contributing
 ------------
@@ -37,4 +36,4 @@ Fork the repo, push your changes to your fork, and submit a pull request.
 
 Requirements
 ------------
-* PHP 5.3.3+ (this is due to the high php version dependency on symfony2)
+* PHP 5.3.3+ (this is the base requirement of symfony2, so we must comply with that)
