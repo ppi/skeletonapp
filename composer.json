@@ -12,6 +12,7 @@
         }
     ],
     "require": {
+		"swiftmailer/swiftmailer": ">=4.2.0,<4.3-dev",
         "ppi/framework": "dev-master"
     },
     "extra": {
