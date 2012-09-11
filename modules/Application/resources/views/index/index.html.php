@@ -14,7 +14,7 @@
         </div>     
         <div class="row-fluid">            
             <div class="span4">
-                <h3>HTML5 Bolierplate</h3>
+                <h3>HTML5 Boilerplate</h3>
                 <p>This gives you a great base HTML skeleton template to work with. Fully backwards compatible but built to work with the latest html5 standards</p>
             </div>
             <div class="span4">
