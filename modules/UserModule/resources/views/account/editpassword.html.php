@@ -49,7 +49,7 @@
         </div>
                 
         <div class="form-actions buttons-area">
-            <input type="submit" class="step1 btn btn-large" value="Create Account">
+            <input type="submit" class="step1 btn btn-large" value="Update Password">
         </div>
 
     </form>
