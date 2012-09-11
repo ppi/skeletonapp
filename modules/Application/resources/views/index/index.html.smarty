@@ -1,6 +1,6 @@
-{extends '::base.html.smarty'}
+{extends 'file:::base.html.smarty'}
 
-
+{block name="content"}
 <div class="box" id="homepage">
 
     <div class="box-header well">
@@ -42,13 +42,10 @@
         </div>
         <hr>
 
-
     </div>
 
 </div>
-
-
-
+{/block}
 
 {block name='include_js_body'}
 <script type="text/javascript" src="{'js/home.js'|asset}"></script>

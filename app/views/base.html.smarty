@@ -10,7 +10,7 @@
     <meta name="description" content="PPI Skeleton Project">
     <meta name="viewport" content="width=device-width">
 
-    <title>{$title|default:'PPI Skeleton Application'}></title>
+    <title>{block name="title"}PPI Skeleton Application{/block}></title>
 
     <!-- CSS Stuff -->
     <link href="{'css/libs/bootstrap.min.css'|asset}" rel="stylesheet">
@@ -83,30 +83,26 @@
         {$flashNames=['info' => 'info', 'success' => 'success', 'error' => 'error', 'warning' => 'block', 'notice' => 'block']}
         {$flashHeadings=['info' => 'Heads Up!', 'error' => 'Oops!', 'success' => 'Well done!', 'block' => 'Warning!']}
 
-        {if $app.session->hasFlashes()}
+        {if $app.session && count($app.session->getFlashBag())}
         <div class="flashes">
-        <?php
-            foreach($view['session']->getFlashes() as $flashName => $flashes):
-                $alertClass = isset($flashNames[$flashName]) ? $flashNames[$flashName] : 'info';
-                foreach($flashes as $flash):
-        ?>
-                <div class="alert alert-<?=$alertClass?>">
+            {foreach $app.session->getFlashBag()->all() as $flashName => $flashes}
+                {$alertClass=$flashNames[$flashName]|default:'info'}
+                {foreach $flashes as $flash}
+                <div class="alert alert-{$alertClass}">
                     <button type="button" class="close" data-dismiss="alert">×</button>
                     <i class="icon-info-sign"></i>
-                    <strong class="alert-heading"><?=$flashHeadings[$alertClass];?></strong>
-                    <span><?=$flash;?></span>
+                    <strong class="alert-heading">{$flashHeadings[$alertClass]}></strong>
+                    <span>{$flash}></span>
                 </div>
-        <?php
-                    endforeach;
-            endforeach;
-        ?>
+                {/foreach}
+            {/foreach}
         </div>
         <!-- End of Flash Message Injection -->
         {/if}
 
         <!-- Begin dynamic page output -->
         <div id="action-content">
-        <?php $view['slots']->output('_content'); ?>
+        {block name="content"}{/block}
         </div>
         <!-- End dynamic page output -->
 
