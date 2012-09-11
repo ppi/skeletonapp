@@ -58,7 +58,7 @@
         </div>
                 
         <div class="form-actions buttons-area">
-            <input type="submit" class="step1 btn btn-large" value="Create Account">
+            <input type="submit" class="step1 btn btn-large" value="Save Changes">
         </div>
 
     </form>
