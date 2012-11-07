@@ -8,7 +8,7 @@ Homepage_Flashes:
 
 Homepage_Twig:
     pattern:  /twig
-    defaults: { _controller: "Application:Index:indextwig"}
+    defaults: { _controller: "Application:Index:twig"}
     
 Homepage_Mustache:
     pattern:  /mustache
@@ -16,4 +16,4 @@ Homepage_Mustache:
 
 Homepage_Smarty:
     pattern:  /smarty
-    defaults: { _controller: "Application:Index:indexsmarty"}
+    defaults: { _controller: "Application:Index:smarty"}
