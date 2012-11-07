@@ -1,7 +1,8 @@
 # PPI directories
 vendor/*
 */logs/*
-*/cache/*
+app/cache/*
+.idea/*
 
 # Backup files created by IDEs
 *~
