@@ -4,7 +4,7 @@ $config = array(
     'templating.engines'     => array('php', 'smarty', 'twig'),
     'templating.globals'     => array(
         'ga_tracking' => 'UA-XXXXX-X'),
-    'datasource.connections' => include (__DIR__ . '/datasource.config.php')
+    'datasource.connections' => include (__DIR__ . '/datasource.php')
 );
 
 // Are we in debug mode ?
