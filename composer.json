@@ -12,8 +12,8 @@
         }
     ],
     "require": {
-		"swiftmailer/swiftmailer": ">=4.2.0,<4.3-dev",
-        "ppi/framework": "dev-master"
+        "swiftmailer/swiftmailer": ">=4.2.0,<4.3-dev",
+        "ppi/framework": "dev-config-2.0"
     },
     "extra": {
         "branch-alias": {
@@ -24,9 +24,9 @@
         "type": "package",
         "package": {
             "name": "ppi/zendframework",
-            "version": "2.0.0-rc4",
+            "version": "2.0.3",
             "dist": {
-                "url": "http://packages.zendframework.com/releases/ZendFramework-2.0.0rc4/ZendFramework-minimal-2.0.0rc4.zip",
+                "url": "http://packages.zendframework.com/releases/ZendFramework-2.0.3/ZendFramework-minimal-2.0.3.zip",
                 "type": "zip"
             },
             "autoload": {
