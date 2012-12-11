@@ -3,10 +3,14 @@
 
 include 'init.php';
 
+$config = include 'app.config.php';
+
 use PPI\Console\Command\ModuleCommand;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
 $application = new Application();
-$application->add(new ModuleCommand());
+$application->add(new ModuleCommand(array(
+    'skeleton.module.path' => $config['skeleton.module.path']
+)));
 $application->run();
