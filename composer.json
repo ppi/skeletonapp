@@ -13,7 +13,7 @@
     ],
     "require": {
         "swiftmailer/swiftmailer": ">=4.2.0,<4.3-dev",
-        "ppi/framework": "2.1.*@beta"
+        "ppi/framework": "2.1.x-dev"
     },
     "extra": {
         "branch-alias": {
