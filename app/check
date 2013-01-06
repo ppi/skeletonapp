@@ -1,0 +1,131 @@
+#!/usr/bin/env php
+<?php
+
+require_once dirname(__FILE__).'/FrameworkRequirements.php';
+
+/**
+ * Command Line Colors (Bash only).
+ * Adapted from https://gist.github.com/1315354
+ *
+ * @author Vítor Brandão <noisebleed@noiselabs.org>
+ */
+class CLI
+{
+    protected static $foregroundColors = array(
+        'bold'         => '1',    'dim'         => '2',
+        'black'        => '0;30', 'darkGray'    => '1;30',
+        'blue'         => '0;34', 'lightBlue'   => '1;34',
+        'green'        => '0;32', 'lightGreen'  => '1;32',
+        'cyan'         => '0;36', 'lightCyan'   => '1;36',
+        'red'          => '0;31', 'lightRed'    => '1;31',
+        'purple'       => '0;35', 'lightPurple' => '1;35',
+        'brown'        => '0;33', 'yellow'      => '1;33',
+        'lightGray'    => '0;37', 'white'       => '1;37',
+        'normal'       => '0;39',
+    );
+
+    protected static $backgroundColors = array(
+        'black'        => '40',   'red'          => '41',
+        'green'        => '42',   'yellow'       => '43',
+        'blue'         => '44',   'magenta'      => '45',
+        'cyan'         => '46',   'lightGray'    => '47',
+    );
+
+    protected static $options = array(
+        'underline'    => '4',    'blink'         => '5',
+        'reverse'      => '7',    'hidden'        => '8',
+    );
+
+    public static function __callStatic($foregroundColor, $args) {
+
+        $string = $args[0];
+        if ('\\' == DIRECTORY_SEPARATOR) {
+            return $string;
+        }
+        $coloredString = "";
+
+        // Check if given foreground color found
+        if (isset(self::$foregroundColors[$foregroundColor]) ) {
+            $coloredString .= "\033[" . self::$foregroundColors[$foregroundColor] . "m";
+        } else {
+            return $string; // $foregroundColor is not a valid color
+        }
+
+        array_shift($args);
+        foreach( $args as $option ){
+            // Check if given background color found
+            if (isset(self::$backgroundColors[$option])) {
+                $coloredString .= "\033[" . self::$backgroundColors[$option] . "m";
+            } elseif (isset(self::$options[$option])) {
+                $coloredString .= "\033[" . self::$options[$option] . "m";
+            }
+        }
+
+        // Add string and end coloring
+        $coloredString .= $string . "\033[0m";
+
+        return $coloredString;
+    }
+
+    public static function bell($count = 1) {
+        echo str_repeat("\007", $count);
+    }
+}
+
+$ppiRequirements = new FrameworkRequirements();
+
+$iniPath = $ppiRequirements->getPhpIniConfigPath();
+
+echo CLI::green("                                          _ \n");
+echo CLI::green("                           _____   _____ |_|\n");
+echo CLI::green("                          / __  | /  __ | /|\n");
+echo CLI::green("                         | |__| || |__| || |\n");
+echo CLI::green("                         |  ___/ |  ___/ | |\n");
+echo CLI::green("                         | |     | |     |_|\n");
+echo CLI::green("                         |/      |/         \n\n");
+echo CLI::green("                         Framework Version 2\n\n");
+echo CLI::lightBlue("                      -- Requirements Check --\n\n\n");
+echo $iniPath ? sprintf("* Configuration file used by PHP: %s\n\n", $iniPath) : CLI::yellow("* WARNING: No configuration file (php.ini) used by PHP!\n\n");
+
+echo CLI::yellow("** ATTENTION **\n");
+echo CLI::yellow("*  The PHP CLI can use a different php.ini file\n");
+echo CLI::yellow("*  than the one used with your web server.\n");
+if ('\\' == DIRECTORY_SEPARATOR) {
+    echo CLI::yellow("*  (especially on the Windows platform)\n");
+}
+echo "*  To be on the safe side, please also launch the requirements check\n";
+echo "*  from your web server using the web/config.php script.\n";
+
+echo_title('Mandatory requirements');
+
+foreach ($ppiRequirements->getRequirements() as $req) {
+    echo_requirement($req);
+}
+
+echo_title('Optional recommendations');
+
+foreach ($ppiRequirements->getRecommendations() as $req) {
+    echo_requirement($req);
+}
+
+/**
+ * Prints a Requirement instance
+ */
+function echo_requirement(Requirement $requirement)
+{
+    $result = $requirement->isFulfilled() ? array('OK', 'lightGreen') : ($requirement->isOptional() ? array('WARNING', 'yellow') : array('ERROR', 'lightRed'));
+    $tag = ' ' . str_pad($result[0], 9);
+    $method = $result[1];
+    echo CLI::$method($tag);
+    echo ('ERROR' == $result[0]) ? CLI::red($requirement->getTestMessage()) : $requirement->getTestMessage();
+    echo "\n";
+
+    if (!$requirement->isFulfilled()) {
+        echo sprintf("          %s\n\n", $requirement->getHelpText());
+    }
+}
+
+function echo_title($title)
+{
+    echo CLI::lightBlue("\n** $title **\n\n");
+}
