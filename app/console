@@ -4,13 +4,16 @@
 include 'init.php';
 
 $config = include 'app.config.php';
+$moduleConfig = include 'modules.config.php';
 
 use PPI\Console\Command\ModuleCommand;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
+$moduleCommand = new ModuleCommand();
+$moduleCommand->setSkeletonModuleDir($config['skeleton.module.path']);
+$moduleCommand->setTargetModuleDir($moduleConfig['listenerOptions']['module_paths'][0]);
+
 $application = new Application();
-$application->add(new ModuleCommand(array(
-    'skeleton.module.path' => $config['skeleton.module.path']
-)));
+$application->add($moduleCommand);
 $application->run();
