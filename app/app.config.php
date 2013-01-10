@@ -2,9 +2,11 @@
 $config = array(
     'environment'            => 'development',
     'templating.engines'     => array('php', 'smarty', 'twig'),
-    'templating.globals'     => array('ga_tracking' => 'UA-XXXXX-X'),
-    'datasource.connections' => include (__DIR__ . '/datasource.config.php'),
-    'skeleton.module.path'   => './utils/skeleton_module'
+    'skeleton.module.path'   => './utils/skeleton_module',
+    'templating.globals'     => array(
+        'ga_tracking' => 'UA-XXXXX-X'
+    ),
+    'datasource.connections' => include (__DIR__ . '/datasource.config.php')
 );
 
 // Are we in debug mode ?
