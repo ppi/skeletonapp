@@ -19,7 +19,6 @@
                 "php": ">=5.3.2"
             },
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Doctrine\\Common": "lib/"
@@ -85,7 +84,6 @@
             },
             "time": "2012-01-22 16:53:18",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Doctrine\\DBAL": "lib/"
@@ -130,6 +128,68 @@
             ]
         },
         {
+            "name": "monolog/monolog",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog",
+                "reference": "1.3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/Seldaek/monolog/archive/1.3.1.zip",
+                "reference": "1.3.1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": ">=1.0,<2.0"
+            },
+            "require-dev": {
+                "mlehner/gelf-php": "1.0.*",
+                "raven/raven": "0.3.*",
+                "doctrine/couchdb": "dev-master"
+            },
+            "suggest": {
+                "mlehner/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "raven/raven": "Allow sending log messages to a Sentry server",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server"
+            },
+            "time": "2013-01-11 10:23:20",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Monolog": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ]
+        },
+        {
             "name": "mustache/mustache",
             "version": "v2.0.2",
             "source": {
@@ -148,7 +208,6 @@
             },
             "time": "2012-09-12 09:13:06",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Mustache": "src/"
@@ -178,21 +237,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/noiselabs/NoiselabsDistributionModule",
-                "reference": "b108f15928f68a4e97fd549d69a6f1bccce8a3db"
+                "reference": "8b4d8ded379d8ff4a0a925efa24bfd7a82e19dc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/noiselabs/NoiselabsDistributionModule/archive/b108f15928f68a4e97fd549d69a6f1bccce8a3db.zip",
-                "reference": "b108f15928f68a4e97fd549d69a6f1bccce8a3db",
+                "url": "https://github.com/noiselabs/NoiselabsDistributionModule/archive/8b4d8ded379d8ff4a0a925efa24bfd7a82e19dc3.zip",
+                "reference": "8b4d8ded379d8ff4a0a925efa24bfd7a82e19dc3",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "ppi/framework": "2.1.x-dev"
             },
-            "time": "2013-01-05 22:39:35",
+            "time": "2013-01-06 00:19:29",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "NoiseLabs\\Module\\DistributionModule": ""
@@ -257,7 +315,6 @@
                     "dev-master": "1.0-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "NoiseLabs\\Bundle\\SmartyBundle": ""
@@ -288,12 +345,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/ppi/framework.git",
-                "reference": "794b39d2b24ce4a07fc5e24d6d54d398d043adbe"
+                "reference": "15cae6d6d45e4e2a882d71eb695e3444ed0c852e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/ppi/framework/archive/794b39d2b24ce4a07fc5e24d6d54d398d043adbe.zip",
-                "reference": "794b39d2b24ce4a07fc5e24d6d54d398d043adbe",
+                "url": "https://github.com/ppi/framework/archive/15cae6d6d45e4e2a882d71eb695e3444ed0c852e.zip",
+                "reference": "15cae6d6d45e4e2a882d71eb695e3444ed0c852e",
                 "shasum": ""
             },
             "require": {
@@ -309,16 +366,16 @@
                 "symfony/templating": "2.1.*@beta",
                 "symfony/routing": "2.1.*@beta",
                 "symfony/console": "2.1.*@beta",
-                "ppi/zendframework": "2.0.*@beta"
+                "ppi/zendframework": "2.0.*@beta",
+                "monolog/monolog": "1.3.1"
             },
-            "time": "2012-12-18 00:58:19",
+            "time": "2013-01-20 18:48:42",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "2.0-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "PPI": ""
@@ -358,12 +415,49 @@
                 "shasum": null
             },
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Zend": "library"
                 }
             }
+        },
+        {
+            "name": "psr/log",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/php-fig/log/archive/1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": ""
+            },
+            "time": "2012-12-21 11:40:51",
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Psr\\Log\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ]
         },
         {
             "name": "smarty/smarty",
@@ -378,7 +472,6 @@
             },
             "time": "2012-09-25 22:13:16",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "distribution/libs/Smarty.class.php"
@@ -431,7 +524,6 @@
                     "dev-master": "4.2-dev"
                 }
             },
-            "installation-source": "dist",
             "autoload": {
                 "files": [
                     "lib/swift_required.php"
@@ -463,12 +555,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/ClassLoader",
-                "reference": "28fcb908944496a11497578011fafba3b43d0d45"
+                "reference": "v2.1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/ClassLoader/archive/28fcb908944496a11497578011fafba3b43d0d45.zip",
-                "reference": "28fcb908944496a11497578011fafba3b43d0d45",
+                "url": "https://github.com/symfony/ClassLoader/archive/v2.1.7.zip",
+                "reference": "v2.1.7",
                 "shasum": ""
             },
             "require": {
@@ -477,9 +569,8 @@
             "require-dev": {
                 "symfony/finder": "2.1.*"
             },
-            "time": "2013-01-04 17:00:54",
+            "time": "2013-01-09 08:51:07",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\ClassLoader": ""
@@ -509,20 +600,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config",
-                "reference": "1a80f4816ab1d8afd7f3f1e9e5b4750dc15085e0"
+                "reference": "v2.1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Config/archive/1a80f4816ab1d8afd7f3f1e9e5b4750dc15085e0.zip",
-                "reference": "1a80f4816ab1d8afd7f3f1e9e5b4750dc15085e0",
+                "url": "https://github.com/symfony/Config/archive/v2.1.7.zip",
+                "reference": "v2.1.7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "2013-01-04 17:00:54",
+            "time": "2013-01-09 08:51:07",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Config": ""
@@ -552,20 +642,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console",
-                "reference": "331ee1ef8b7cd2c9bf2daba5511d6ce145b62f00"
+                "reference": "v2.1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Console/archive/331ee1ef8b7cd2c9bf2daba5511d6ce145b62f00.zip",
-                "reference": "331ee1ef8b7cd2c9bf2daba5511d6ce145b62f00",
+                "url": "https://github.com/symfony/Console/archive/v2.1.7.zip",
+                "reference": "v2.1.7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "2013-01-05 20:33:45",
+            "time": "2013-01-17 15:20:05",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Console": ""
@@ -595,12 +684,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DependencyInjection",
-                "reference": "7892466ba1be0cd5bde47e6f6e8fa36a53b7329f"
+                "reference": "v2.1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/DependencyInjection/archive/7892466ba1be0cd5bde47e6f6e8fa36a53b7329f.zip",
-                "reference": "7892466ba1be0cd5bde47e6f6e8fa36a53b7329f",
+                "url": "https://github.com/symfony/DependencyInjection/archive/v2.1.7.zip",
+                "reference": "v2.1.7",
                 "shasum": ""
             },
             "require": {
@@ -614,9 +703,8 @@
                 "symfony/yaml": "2.1.*",
                 "symfony/config": "2.1.*"
             },
-            "time": "2013-01-05 15:31:25",
+            "time": "2013-01-17 21:21:51",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\DependencyInjection": ""
@@ -646,12 +734,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher",
-                "reference": "1018313ea65428d645cd778bc354932d64a0f4e9"
+                "reference": "v2.1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/EventDispatcher/archive/1018313ea65428d645cd778bc354932d64a0f4e9.zip",
-                "reference": "1018313ea65428d645cd778bc354932d64a0f4e9",
+                "url": "https://github.com/symfony/EventDispatcher/archive/v2.1.7.zip",
+                "reference": "v2.1.7",
                 "shasum": ""
             },
             "require": {
@@ -664,9 +752,8 @@
                 "symfony/dependency-injection": "2.1.*",
                 "symfony/http-kernel": "2.1.*"
             },
-            "time": "2013-01-04 17:00:54",
+            "time": "2013-01-11 00:31:43",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\EventDispatcher": ""
@@ -696,20 +783,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem",
-                "reference": "6f8f803c03a7a0f906b774109ff76b1206c61d09"
+                "reference": "v2.1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Filesystem/archive/6f8f803c03a7a0f906b774109ff76b1206c61d09.zip",
-                "reference": "6f8f803c03a7a0f906b774109ff76b1206c61d09",
+                "url": "https://github.com/symfony/Filesystem/archive/v2.1.7.zip",
+                "reference": "v2.1.7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "2013-01-04 17:00:54",
+            "time": "2013-01-09 08:51:07",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Filesystem": ""
@@ -739,12 +825,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/FrameworkBundle",
-                "reference": "fc22bba13bbb3f6ecf7c5d7feefd5edc1c38cacb"
+                "reference": "v2.1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/FrameworkBundle/archive/fc22bba13bbb3f6ecf7c5d7feefd5edc1c38cacb.zip",
-                "reference": "fc22bba13bbb3f6ecf7c5d7feefd5edc1c38cacb",
+                "url": "https://github.com/symfony/FrameworkBundle/archive/v2.1.7.zip",
+                "reference": "v2.1.7",
                 "shasum": ""
             },
             "require": {
@@ -768,9 +854,8 @@
                 "symfony/form": "2.1.*",
                 "symfony/validator": "2.1.*"
             },
-            "time": "2013-01-04 17:00:54",
+            "time": "2013-01-09 08:51:07",
             "type": "symfony-bundle",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Bundle\\FrameworkBundle": ""
@@ -800,20 +885,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation",
-                "reference": "bfb4d6d6e58ebd5ae0207224e0e6d90f1a125816"
+                "reference": "v2.1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/HttpFoundation/archive/bfb4d6d6e58ebd5ae0207224e0e6d90f1a125816.zip",
-                "reference": "bfb4d6d6e58ebd5ae0207224e0e6d90f1a125816",
+                "url": "https://github.com/symfony/HttpFoundation/archive/v2.1.7.zip",
+                "reference": "v2.1.7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "2013-01-04 17:00:54",
+            "time": "2013-01-11 00:31:43",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\HttpFoundation": "",
@@ -844,12 +928,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel",
-                "reference": "46e574a3269f4b9ccc442900777a4c61e17aad7a"
+                "reference": "e57b260d74b04671d26cc37c2049b90924bb636d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/HttpKernel/archive/46e574a3269f4b9ccc442900777a4c61e17aad7a.zip",
-                "reference": "46e574a3269f4b9ccc442900777a4c61e17aad7a",
+                "url": "https://github.com/symfony/HttpKernel/archive/e57b260d74b04671d26cc37c2049b90924bb636d.zip",
+                "reference": "e57b260d74b04671d26cc37c2049b90924bb636d",
                 "shasum": ""
             },
             "require": {
@@ -875,9 +959,8 @@
                 "symfony/dependency-injection": "2.1.*",
                 "symfony/finder": "2.1.*"
             },
-            "time": "2013-01-04 17:00:54",
+            "time": "2013-01-17 23:11:33",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\HttpKernel": ""
@@ -907,12 +990,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing",
-                "reference": "8b04997f779eaf1ff1630135ea6e2fea25422b5e"
+                "reference": "v2.1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Routing/archive/8b04997f779eaf1ff1630135ea6e2fea25422b5e.zip",
-                "reference": "8b04997f779eaf1ff1630135ea6e2fea25422b5e",
+                "url": "https://github.com/symfony/Routing/archive/v2.1.7.zip",
+                "reference": "v2.1.7",
                 "shasum": ""
             },
             "require": {
@@ -929,9 +1012,8 @@
                 "symfony/config": "2.1.*",
                 "symfony/yaml": "2.1.*"
             },
-            "time": "2013-01-04 17:00:54",
+            "time": "2013-01-09 08:51:07",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Routing": ""
@@ -961,20 +1043,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Templating",
-                "reference": "e6bee286b12560aedb17a113cbb18d8876348900"
+                "reference": "v2.1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Templating/archive/e6bee286b12560aedb17a113cbb18d8876348900.zip",
-                "reference": "e6bee286b12560aedb17a113cbb18d8876348900",
+                "url": "https://github.com/symfony/Templating/archive/v2.1.7.zip",
+                "reference": "v2.1.7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "2013-01-04 17:00:54",
+            "time": "2013-01-09 08:51:07",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Templating": ""
@@ -1004,12 +1085,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Translation",
-                "reference": "8d95063995a7c0da61dad27a318dc98bf1e50564"
+                "reference": "v2.1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Translation/archive/8d95063995a7c0da61dad27a318dc98bf1e50564.zip",
-                "reference": "8d95063995a7c0da61dad27a318dc98bf1e50564",
+                "url": "https://github.com/symfony/Translation/archive/v2.1.7.zip",
+                "reference": "v2.1.7",
                 "shasum": ""
             },
             "require": {
@@ -1023,9 +1104,8 @@
                 "symfony/config": "2.1.*",
                 "symfony/yaml": "2.1.*"
             },
-            "time": "2013-01-04 17:00:54",
+            "time": "2013-01-09 08:51:07",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Translation": ""
@@ -1055,20 +1135,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml",
-                "reference": "04b4da83cf5eeef90c74b7965cf12389ae08d3e1"
+                "reference": "v2.1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Yaml/archive/04b4da83cf5eeef90c74b7965cf12389ae08d3e1.zip",
-                "reference": "04b4da83cf5eeef90c74b7965cf12389ae08d3e1",
+                "url": "https://github.com/symfony/Yaml/archive/v2.1.7.zip",
+                "reference": "v2.1.7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "2013-01-04 17:00:54",
+            "time": "2013-01-17 21:21:51",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Yaml": ""
@@ -1097,25 +1176,24 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/fabpot/Twig.git",
-                "reference": "ddd4b732f9aa182edb54b89891c7fd25668354a4"
+                "reference": "93c6a8dedc46c73ccdd61342de3d5e761e4412f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Twig/archive/ddd4b732f9aa182edb54b89891c7fd25668354a4.zip",
-                "reference": "ddd4b732f9aa182edb54b89891c7fd25668354a4",
+                "url": "https://github.com/fabpot/Twig/archive/93c6a8dedc46c73ccdd61342de3d5e761e4412f6.zip",
+                "reference": "93c6a8dedc46c73ccdd61342de3d5e761e4412f6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "2013-01-05 10:14:46",
+            "time": "2013-01-18 09:58:04",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.12-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Twig_": "lib/"

@@ -19,19 +19,19 @@ class Index extends SharedController
     {
         return $this->render('Application:index:index.html.smarty');
     }
-    
+
     public function mustacheAction()
     {
         $name = 'Paul';
         $names = array(
-           array('fname' => 'PPI', 'lname' => 'User1'), 
-           array('fname' => 'PPI', 'lname' => 'User2'), 
-           array('fname' => 'PPI', 'lname' => 'User3') 
+           array('fname' => 'PPI', 'lname' => 'User1'),
+           array('fname' => 'PPI', 'lname' => 'User2'),
+           array('fname' => 'PPI', 'lname' => 'User3')
         );
-        
-        return $this->render('Application:index:index.html.mustache', compact('name', 'names')); 
+
+        return $this->render('Application:index:index.html.mustache', compact('name', 'names'));
     }
-    
+
     public function indexWithFlashesAction() {
         $this->setFlash('warning', 'This is your warning, don\'t let the dogs out again !!');
 //        $this->setFlash('error', 'This is your error, someone let the dogs out !!');
