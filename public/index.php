@@ -11,6 +11,7 @@ $app = new PPI\App();
 
 // Configure the application
 $app->loadConfig('app.php');
+$app->loadConfig('app.yml');
 $app->loadConfig('modules.php');
 
 // If you are using the DataSource component, enable this
