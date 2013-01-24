@@ -18,10 +18,10 @@ class Module extends BaseModule
      *
      * @return array
      */
-//    public function getConfig()
-//    {
-//        return include(__DIR__ . '/resources/config/config.php');
-//    }
+    public function getConfig()
+    {
+        return include(__DIR__ . '/resources/config/config.php');
+    }
 
     /**
      * Get the routes for this module
