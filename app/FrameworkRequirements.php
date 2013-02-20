@@ -39,7 +39,7 @@
  *
  * @category    NoiseLabs
  * @package     DistributionModule
- * @copyright   (C) 2013 Vítor Brandão <noisebleed@noiselabs.org>
+ * @copyright   (C) 2013 Vítor Brandão <vitor@noiselabs.org>
  * @license     http://www.gnu.org/licenses/lgpl-3.0-standalone.html LGPL-3
  * @link        http://www.noiselabs.org
  */
@@ -394,7 +394,7 @@ class RequirementCollection implements IteratorAggregate
  *
  * @author Tobias Schultze <http://tobion.de>
  * @author Fabien Potencier <fabien@symfony.com>
- * @author Vítor Brandão <noisebleed@noiselabs.org>
+ * @author Vítor Brandão <vitor@noiselabs.org>
  */
 class FrameworkRequirements extends RequirementCollection
 {
