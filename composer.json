@@ -14,7 +14,7 @@
     "require": {
         "swiftmailer/swiftmailer": ">=4.2.0,<4.3-dev",
         "ppi/framework": "2.1.x-dev",
-        "noiselabs/ppi-distribution-module": "dev-master"
+        "ppi/distribution-module": "dev-master"
     },
     "extra": {
         "branch-alias": {
@@ -37,10 +37,10 @@
     }],
     "scripts": {
         "post-install-cmd": [
-            "NoiseLabs\\Module\\DistributionModule\\Composer\\ScriptHandler::installRequirementsFile"
+            "PPI\\Module\\DistributionModule\\Composer\\ScriptHandler::installRequirementsFile"
         ],
         "post-update-cmd": [
-            "NoiseLabs\\Module\\DistributionModule\\Composer\\ScriptHandler::installRequirementsFile"
+            "PPI\\Module\\DistributionModule\\Composer\\ScriptHandler::installRequirementsFile"
         ]
     },
     "minimum-stability": "dev",
