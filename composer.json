@@ -12,29 +12,15 @@
         }
     ],
     "require": {
-        "swiftmailer/swiftmailer": ">=4.2.0,<4.3-dev",
         "ppi/framework": "2.1.x-dev",
-        "ppi/distribution-module": "dev-master"
+        "ppi/distribution-module": "dev-master",
+        "swiftmailer/swiftmailer": ">=4.2.0,<4.3-dev"
     },
     "extra": {
         "branch-alias": {
             "dev-master": "2.1-dev"
         }
     },
-    "repositories": [{
-        "type": "package",
-        "package": {
-            "name": "ppi/zendframework",
-            "version": "2.0.5",
-            "dist": {
-                "url": "http://packages.zendframework.com/releases/ZendFramework-2.0.5/ZendFramework-minimal-2.0.5.zip",
-                "type": "zip"
-            },
-            "autoload": {
-                "psr-0": { "Zend": "library" }
-            }
-        }
-    }],
     "scripts": {
         "post-install-cmd": [
             "PPI\\Module\\DistributionModule\\Composer\\ScriptHandler::installRequirementsFile"
@@ -48,6 +34,4 @@
         "ppi-app-dir": "app",
         "ppi-web-dir": "public"
     }
-
-
 }
