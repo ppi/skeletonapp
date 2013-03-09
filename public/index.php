@@ -4,17 +4,13 @@
 chdir(dirname(__DIR__));
 
 // Lets include PPI
-include('app/init.php');
+require_once 'app/init.php';
 
 // Create our PPI App instance
 $app = new PPI\App();
 
 // Configure the application
-$app->loadConfig('app.php');
 $app->loadConfig('app.yml');
-$app->loadConfig('modules.php');
+//$app->loadConfig('app.php');
 
-// If you are using the DataSource component, enable this
-$app->loadConfig(array('useDataSource' => true));
-
-$app->boot()->dispatch();
+$app->boot()->dispatch()->send();

@@ -1,17 +1,16 @@
 <?php
 $config = array(
-    'environment'            => 'development',
-    'templating.engines'     => array('php', 'smarty', 'twig'),
-    'templating.globals'     => array(
-        'ga_tracking' => 'UA-XXXXX-X'),
-    'datasource.connections' => include (__DIR__ . '/datasource.php'),
-    'app.auto_dispatch' => true,
+    'templating'    => array(
+        'engines'     => array('php', 'smarty', 'twig'),
+        'globals'     => array(
+            'ga_tracking' => 'UA-XXXXX-X',
+        ),
+    ),
+    'datasource' => array(
+            'connections' => include (__DIR__ . '/datasource.php')
+    )
 );
 
-// Are we in debug mode ?
-if ($config['environment'] !== 'development') {
-    $config['debug']     = $config['environment'] === 'development';
-    $config['cache_dir'] = __DIR__ . '/cache';
-}
+$config = array_merge($config, require_once 'modules.php');
 
-return $config; // Very important
+return $config;

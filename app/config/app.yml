@@ -1,3 +1,12 @@
+imports:
+    - { resource: datasource.yml }
+    - { resource: modules.yml }
+
+templating:
+    engines: ["php", "smarty", "twig"]
+    globals:
+        - ga_tracking: "UA-XXXXX-X"
+
 monolog:
     handlers:
         main:
