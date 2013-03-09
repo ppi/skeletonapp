@@ -6,7 +6,7 @@ return array(
         'UserModule',
     ),
     'module_listener_options' => array(
-        'module_paths'      => array('./modules'),
+        'module_paths'      => array('./modules', './vendor'),
         'routingEnabled'    => true
     ), 
 );

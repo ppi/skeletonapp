@@ -4,5 +4,5 @@ modules:
     - UserModule
 
 module_listener_options:
-    module_paths: ["./modules"]
+    module_paths: ['./modules', './vendor']
     routingEnabled: true
