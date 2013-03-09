@@ -1,5 +1,14 @@
 #!/usr/bin/env php
 <?php
+/**
+ * This file is part of the PPI Framework.
+ *
+ * @category    PPI
+ * @package     DistributionModule
+ * @copyright   Copyright (c) 2011-2013 Paul Dragoonis <paul@ppi.io>
+ * @license     http://opensource.org/licenses/mit-license.php MIT
+ * @link        http://www.ppi.io
+ */
 
 require_once dirname(__FILE__).'/FrameworkRequirements.php';
 
@@ -7,7 +16,7 @@ require_once dirname(__FILE__).'/FrameworkRequirements.php';
  * Command Line Colors (Bash only).
  * Adapted from https://gist.github.com/1315354
  *
- * @author Vítor Brandão <noisebleed@noiselabs.org>
+ * @author Vítor Brandão <vitor@ppi.io> <vitor@noiselabs.org>
  */
 class CLI
 {
