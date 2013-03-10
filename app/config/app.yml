@@ -7,6 +7,8 @@ templating:
     globals:
         - ga_tracking: "UA-XXXXX-X"
 
+skeleton.module.path: './utils/skeleton_module'
+
 monolog:
     handlers:
         main:
