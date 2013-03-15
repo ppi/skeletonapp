@@ -347,12 +347,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/framework.git",
-                "reference": "9e4fc763767bed1cfa75e08b976ed980349fcb78"
+                "reference": "db779d54189e07a6ffe1b249f8f896d8016f0405"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/framework/zipball/9e4fc763767bed1cfa75e08b976ed980349fcb78",
-                "reference": "9e4fc763767bed1cfa75e08b976ed980349fcb78",
+                "url": "https://api.github.com/repos/ppi/framework/zipball/db779d54189e07a6ffe1b249f8f896d8016f0405",
+                "reference": "db779d54189e07a6ffe1b249f8f896d8016f0405",
                 "shasum": ""
             },
             "require": {
@@ -409,7 +409,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-03-09 20:11:27"
+            "time": "2013-03-10 00:03:34"
         },
         {
             "name": "psr/log",
@@ -817,12 +817,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/FrameworkBundle.git",
-                "reference": "662241c79817f11cf05c15658f68de7f407f2b61"
+                "reference": "3a697fcde3e1a9d2f6cfd881d5302b4af2f8b999"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/FrameworkBundle/zipball/662241c79817f11cf05c15658f68de7f407f2b61",
-                "reference": "662241c79817f11cf05c15658f68de7f407f2b61",
+                "url": "https://api.github.com/repos/symfony/FrameworkBundle/zipball/3a697fcde3e1a9d2f6cfd881d5302b4af2f8b999",
+                "reference": "3a697fcde3e1a9d2f6cfd881d5302b4af2f8b999",
                 "shasum": ""
             },
             "require": {
@@ -868,7 +868,7 @@
             ],
             "description": "Symfony FrameworkBundle",
             "homepage": "http://symfony.com",
-            "time": "2013-03-06 19:12:21"
+            "time": "2013-03-15 10:44:42"
         },
         {
             "name": "symfony/http-foundation",
@@ -920,12 +920,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "5e54625f1852936f59141474f31f91a1af21805d"
+                "reference": "7993ef00defebe5d7af5d053c9bf7c2d3f450b66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/5e54625f1852936f59141474f31f91a1af21805d",
-                "reference": "5e54625f1852936f59141474f31f91a1af21805d",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/7993ef00defebe5d7af5d053c9bf7c2d3f450b66",
+                "reference": "7993ef00defebe5d7af5d053c9bf7c2d3f450b66",
                 "shasum": ""
             },
             "require": {
@@ -973,7 +973,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "http://symfony.com",
-            "time": "2013-03-06 19:10:14"
+            "time": "2013-03-15 10:44:42"
         },
         {
             "name": "symfony/routing",
@@ -1077,12 +1077,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Translation.git",
-                "reference": "v2.1.8"
+                "reference": "121e5416841d7c81381538f9862242b1578ed89c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Translation/zipball/v2.1.8",
-                "reference": "v2.1.8",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/121e5416841d7c81381538f9862242b1578ed89c",
+                "reference": "121e5416841d7c81381538f9862242b1578ed89c",
                 "shasum": ""
             },
             "require": {
@@ -1118,7 +1118,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "http://symfony.com",
-            "time": "2013-01-09 08:51:07"
+            "time": "2013-03-12 14:23:04"
         },
         {
             "name": "symfony/yaml",
@@ -1168,12 +1168,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "b6c2171579b4ab8c193322796ef757a185729cb8"
+                "reference": "ba67e2cf8e2ca6cada1de5a316a724df648c52ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/b6c2171579b4ab8c193322796ef757a185729cb8",
-                "reference": "b6c2171579b4ab8c193322796ef757a185729cb8",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/ba67e2cf8e2ca6cada1de5a316a724df648c52ac",
+                "reference": "ba67e2cf8e2ca6cada1de5a316a724df648c52ac",
                 "shasum": ""
             },
             "require": {
@@ -1209,7 +1209,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-03-07 06:57:14"
+            "time": "2013-03-10 07:23:01"
         },
         {
             "name": "twitter/bootstrap",
