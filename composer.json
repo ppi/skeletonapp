@@ -24,10 +24,10 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "PPI\\Module\\DistributionModule\\Composer\\ScriptHandler::installRequirementsFile"
+            "PPI\\DistributionModule\\Composer\\ScriptHandler::installRequirementsFile"
         ],
         "post-update-cmd": [
-            "PPI\\Module\\DistributionModule\\Composer\\ScriptHandler::installRequirementsFile"
+            "PPI\\DistributionModule\\Composer\\ScriptHandler::installRequirementsFile"
         ]
     },
     "minimum-stability": "dev",

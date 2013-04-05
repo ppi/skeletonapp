@@ -1,31 +1,37 @@
 {
-    "hash": "632d81ea179af3df8183a1bcf5ec65db",
+    "hash": "e30b9891e6a214e0e25eec0168b37103",
     "packages": [
         {
             "name": "doctrine/common",
-            "version": "2.2.x-dev",
+            "version": "2.3.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/common",
-                "reference": "d14fd323c9d8346334b8bc077287613a7113d6ef"
+                "url": "https://github.com/doctrine/common.git",
+                "reference": "bb0aebbf234db52df476a2b473d434745b34221c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/common/archive/d14fd323c9d8346334b8bc077287613a7113d6ef.zip",
-                "reference": "d14fd323c9d8346334b8bc077287613a7113d6ef",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/bb0aebbf234db52df476a2b473d434745b34221c",
+                "reference": "bb0aebbf234db52df476a2b473d434745b34221c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Doctrine\\Common": "lib/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL"
+                "MIT"
             ],
             "authors": [
                 {
@@ -47,9 +53,9 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -62,59 +68,59 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2012-08-29 08:04:14"
+            "time": "2012-09-20 05:55:18"
         },
         {
             "name": "doctrine/dbal",
-            "version": "2.2.0-RC3",
+            "version": "2.3.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/dbal",
-                "reference": "2.2.0-RC3"
+                "url": "https://github.com/doctrine/dbal.git",
+                "reference": "dd69835e0dcc44f7f0726b105e83ae5013622f5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/dbal/zipball/2.2.0-RC3",
-                "reference": "2.2.0-RC3",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/dd69835e0dcc44f7f0726b105e83ae5013622f5c",
+                "reference": "dd69835e0dcc44f7f0726b105e83ae5013622f5c",
                 "shasum": ""
             },
             "require": {
-                "doctrine/common": "2.*",
+                "doctrine/common": ">=2.3.0,<2.5-dev",
                 "php": ">=5.3.2"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Doctrine\\DBAL": "lib/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL"
+                "MIT"
             ],
             "authors": [
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": null
+                    "homepage": "http://www.jwage.com/"
                 },
                 {
                     "name": "Guilherme Blanco",
                     "email": "guilhermeblanco@gmail.com",
-                    "homepage": null,
-                    "role": null
+                    "homepage": "http://www.instaclick.com"
                 },
                 {
                     "name": "Roman Borschel",
-                    "email": "roman@code-factory.org",
-                    "homepage": null,
-                    "role": null
+                    "email": "roman@code-factory.org"
                 },
                 {
                     "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de",
-                    "homepage": null,
-                    "role": null
+                    "email": "kontakt@beberlei.de"
                 }
             ],
             "description": "Database Abstraction Layer",
@@ -125,20 +131,20 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2012-01-22 16:53:18"
+            "time": "2013-03-24 19:16:29"
         },
         {
             "name": "monolog/monolog",
-            "version": "1.3.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Seldaek/monolog",
-                "reference": "1.3.1"
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "88d705c19f8cc08c2cc5a0a615907df5e9dd376e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Seldaek/monolog/archive/1.3.1.zip",
-                "reference": "1.3.1",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/88d705c19f8cc08c2cc5a0a615907df5e9dd376e",
+                "reference": "88d705c19f8cc08c2cc5a0a615907df5e9dd376e",
                 "shasum": ""
             },
             "require": {
@@ -160,7 +166,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3.x-dev"
+                    "dev-master": "1.4.x-dev"
                 }
             },
             "autoload": {
@@ -187,7 +193,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-01-11 10:23:20"
+            "time": "2013-04-05 13:36:57"
         },
         {
             "name": "mustache/mustache",
@@ -212,6 +218,7 @@
                     "Mustache": "src/"
                 }
             },
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -232,35 +239,40 @@
         },
         {
             "name": "noiselabs/smarty-bundle",
-            "version": "1.0.x-dev",
+            "version": "dev-master",
             "target-dir": "NoiseLabs/Bundle/SmartyBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/noiselabs/SmartyBundle",
-                "reference": "cbb0efb10ae617a736b998add9ca381ed530759f"
+                "url": "https://github.com/noiselabs/SmartyBundle.git",
+                "reference": "fef3470cf401fdb639db702fdd0413dabe7680a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/noiselabs/SmartyBundle/archive/cbb0efb10ae617a736b998add9ca381ed530759f.zip",
-                "reference": "cbb0efb10ae617a736b998add9ca381ed530759f",
+                "url": "https://api.github.com/repos/noiselabs/SmartyBundle/zipball/fef3470cf401fdb639db702fdd0413dabe7680a6",
+                "reference": "fef3470cf401fdb639db702fdd0413dabe7680a6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "smarty/smarty": "3.1.*@stable",
-                "symfony/framework-bundle": ">=2.0"
+                "symfony/framework-bundle": ">=2.1.0"
             },
             "require-dev": {
-                "mopa/bootstrap-bundle": "dev-master",
-                "symfony/assetic-bundle": ">=2.0"
+                "symfony/assetic-bundle": ">=2.0",
+                "symfony/security": ">=2.1.0",
+                "symfony/yaml": ">=2.1.0"
             },
             "suggest": {
-                "symfony/assetic-bundle": "Integrates Assetic into Symfony2"
+                "knplabs/knp-menu-bundle": "Smarty3 integration with KnpMenu (object oriented menus)",
+                "liip/theme-bundle": "Integration of Twitter Bootstrap into Symfony2 (themes)",
+                "mopa/bootstrap-bundle": "Integration of Twitter Bootstrap into Symfony2",
+                "mopa/bootstrap-sandbox-bundle": "Integration of Twitter Bootstrap into Symfony2 (extra)",
+                "symfony/assetic-bundle": "Assetic support in Smarty templates"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -268,6 +280,7 @@
                     "NoiseLabs\\Bundle\\SmartyBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0"
             ],
@@ -276,6 +289,10 @@
                     "name": "Vítor Brandão",
                     "email": "noisebleed@noiselabs.org",
                     "homepage": "http://blog.noiselabs.org"
+                },
+                {
+                    "name": "Community contributions",
+                    "homepage": "https://github.com/noiselabs/SmartyBundle/contributors"
                 }
             ],
             "description": "This Symfony2 bundle provides integration for the Smarty3 template engine.",
@@ -286,21 +303,21 @@
                 "symfony",
                 "templating"
             ],
-            "time": "2012-09-13 23:17:09"
+            "time": "2013-03-24 02:15:24"
         },
         {
             "name": "ppi/distribution-module",
             "version": "dev-master",
-            "target-dir": "PPI/Module/DistributionModule",
+            "target-dir": "PPI/DistributionModule",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/ppi-distribution-module.git",
-                "reference": "77f4925f1c30109b47239b7de5cfef799adca70f"
+                "reference": "11b7707c6372f2e7bebe4a4f6194c1a4116d5a77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/ppi-distribution-module/zipball/77f4925f1c30109b47239b7de5cfef799adca70f",
-                "reference": "77f4925f1c30109b47239b7de5cfef799adca70f",
+                "url": "https://api.github.com/repos/ppi/ppi-distribution-module/zipball/11b7707c6372f2e7bebe4a4f6194c1a4116d5a77",
+                "reference": "11b7707c6372f2e7bebe4a4f6194c1a4116d5a77",
                 "shasum": ""
             },
             "require": {
@@ -309,10 +326,10 @@
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "PPI\\Module\\DistributionModule": ""
+                    "PPI\\DistributionModule": ""
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -339,7 +356,7 @@
                 "ppi",
                 "skeletonapp"
             ],
-            "time": "2013-03-09 20:06:45"
+            "time": "2013-03-16 03:08:26"
         },
         {
             "name": "ppi/framework",
@@ -347,33 +364,33 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/framework.git",
-                "reference": "db779d54189e07a6ffe1b249f8f896d8016f0405"
+                "reference": "40ed6a459408e02c89c615832bf6c39301fbf80b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/framework/zipball/db779d54189e07a6ffe1b249f8f896d8016f0405",
-                "reference": "db779d54189e07a6ffe1b249f8f896d8016f0405",
+                "url": "https://api.github.com/repos/ppi/framework/zipball/40ed6a459408e02c89c615832bf6c39301fbf80b",
+                "reference": "40ed6a459408e02c89c615832bf6c39301fbf80b",
                 "shasum": ""
             },
             "require": {
-                "doctrine/common": "2.2.*@stable",
-                "doctrine/dbal": "2.2.*@stable",
-                "monolog/monolog": "1.3.1",
+                "doctrine/common": "2.3.*@stable",
+                "doctrine/dbal": "2.3.*@stable",
+                "monolog/monolog": "1.4.*@stable",
                 "mustache/mustache": ">=2.0.2,<2.1",
-                "noiselabs/smarty-bundle": "1.0.*@stable",
-                "symfony/class-loader": "2.1.*@beta",
-                "symfony/config": "2.1.*@beta",
-                "symfony/console": "2.1.*@beta",
-                "symfony/http-foundation": "2.1.*@beta",
-                "symfony/routing": "2.1.*@beta",
-                "symfony/templating": "2.1.*@beta",
-                "symfony/yaml": "2.1.*@beta",
+                "noiselabs/smarty-bundle": "1.2.*@stable",
+                "symfony/class-loader": "2.2.*@stable",
+                "symfony/config": "2.2.*@stable",
+                "symfony/console": "2.2.*@stable",
+                "symfony/http-foundation": "2.2.*@stable",
+                "symfony/routing": "2.2.*@stable",
+                "symfony/templating": "2.2.*@stable",
+                "symfony/yaml": "2.2.*@stable",
                 "twig/twig": ">=1.8,<2.0-dev",
-                "zendframework/zend-eventmanager": "2.1.3",
-                "zendframework/zend-loader": "2.1.3",
-                "zendframework/zend-modulemanager": "2.1.3",
-                "zendframework/zend-servicemanager": "2.1.3",
-                "zendframework/zend-stdlib": "2.1.3"
+                "zendframework/zend-eventmanager": "2.1.*@stable",
+                "zendframework/zend-loader": "2.1.*@stable",
+                "zendframework/zend-modulemanager": "2.1.*@stable",
+                "zendframework/zend-servicemanager": "2.1.*@stable",
+                "zendframework/zend-stdlib": "2.1.*@stable"
             },
             "type": "library",
             "extra": {
@@ -386,7 +403,7 @@
                     "PPI": ""
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -409,7 +426,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-03-10 00:03:34"
+            "time": "2013-04-05 22:12:03"
         },
         {
             "name": "psr/log",
@@ -431,7 +448,7 @@
                     "Psr\\Log\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -520,6 +537,7 @@
                     "lib/swift_required.php"
                 ]
             },
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "LGPL"
             ],
@@ -542,32 +560,37 @@
         },
         {
             "name": "symfony/class-loader",
-            "version": "2.1.x-dev",
+            "version": "2.2.x-dev",
             "target-dir": "Symfony/Component/ClassLoader",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/ClassLoader.git",
-                "reference": "05639e1018839cfa5543c50dc6827e92af36319c"
+                "reference": "1c37a180abd8f07bbe14c3cca4c366a051567b72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/ClassLoader/zipball/05639e1018839cfa5543c50dc6827e92af36319c",
-                "reference": "05639e1018839cfa5543c50dc6827e92af36319c",
+                "url": "https://api.github.com/repos/symfony/ClassLoader/zipball/1c37a180abd8f07bbe14c3cca4c366a051567b72",
+                "reference": "1c37a180abd8f07bbe14c3cca4c366a051567b72",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "symfony/finder": "2.1.*"
+                "symfony/finder": ">=2.0,<3.0"
             },
             "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\ClassLoader": ""
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\ClassLoader\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -583,33 +606,38 @@
             ],
             "description": "Symfony ClassLoader Component",
             "homepage": "http://symfony.com",
-            "time": "2013-03-08 04:45:32"
+            "time": "2013-03-19 08:32:26"
         },
         {
             "name": "symfony/config",
-            "version": "2.1.x-dev",
+            "version": "2.2.x-dev",
             "target-dir": "Symfony/Component/Config",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config.git",
-                "reference": "v2.1.8"
+                "reference": "3af40615f2d486847d3a9f939612f8e8d08653f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/v2.1.8",
-                "reference": "v2.1.8",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/3af40615f2d486847d3a9f939612f8e8d08653f0",
+                "reference": "3af40615f2d486847d3a9f939612f8e8d08653f0",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Config": ""
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Config\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -625,33 +653,38 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "http://symfony.com",
-            "time": "2013-01-09 08:51:07"
+            "time": "2013-03-01 10:42:10"
         },
         {
             "name": "symfony/console",
-            "version": "2.1.x-dev",
+            "version": "2.2.x-dev",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "256b00333ab08ce1f6264152b22e08e4138275eb"
+                "reference": "d146fc32a9cf13bc479820e515048298a34cd432"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/256b00333ab08ce1f6264152b22e08e4138275eb",
-                "reference": "256b00333ab08ce1f6264152b22e08e4138275eb",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/d146fc32a9cf13bc479820e515048298a34cd432",
+                "reference": "d146fc32a9cf13bc479820e515048298a34cd432",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Console": ""
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Console\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -667,41 +700,46 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2013-03-01 16:50:10"
+            "time": "2013-03-19 20:48:08"
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "2.1.x-dev",
+            "version": "dev-master",
             "target-dir": "Symfony/Component/DependencyInjection",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DependencyInjection.git",
-                "reference": "8b7cfa0f659e828effc8d35bd58e34f26dc731b1"
+                "reference": "bdbd94e1fbca934ed4c6d912e57c99a17bbe753b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DependencyInjection/zipball/8b7cfa0f659e828effc8d35bd58e34f26dc731b1",
-                "reference": "8b7cfa0f659e828effc8d35bd58e34f26dc731b1",
+                "url": "https://api.github.com/repos/symfony/DependencyInjection/zipball/bdbd94e1fbca934ed4c6d912e57c99a17bbe753b",
+                "reference": "bdbd94e1fbca934ed4c6d912e57c99a17bbe753b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "symfony/config": "2.1.*",
-                "symfony/yaml": "2.1.*"
+                "symfony/config": ">=2.2,<2.4-dev",
+                "symfony/yaml": ">=2.0,<3.0"
             },
             "suggest": {
-                "symfony/config": "2.1.*",
-                "symfony/yaml": "2.1.*"
+                "symfony/config": "2.2.*",
+                "symfony/yaml": "2.2.*"
             },
             "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\DependencyInjection": ""
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\DependencyInjection\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -717,40 +755,45 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "http://symfony.com",
-            "time": "2013-03-06 16:55:57"
+            "time": "2013-03-23 13:07:03"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "2.1.x-dev",
+            "version": "dev-master",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "v2.1.8"
+                "reference": "2e1fce7bb3ea06d9e42756f1dd3edf966420c755"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/v2.1.8",
-                "reference": "v2.1.8",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/2e1fce7bb3ea06d9e42756f1dd3edf966420c755",
+                "reference": "2e1fce7bb3ea06d9e42756f1dd3edf966420c755",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "symfony/dependency-injection": "2.1.*"
+                "symfony/dependency-injection": ">=2.0,<3.0"
             },
             "suggest": {
-                "symfony/dependency-injection": "2.1.*",
-                "symfony/http-kernel": "2.1.*"
+                "symfony/dependency-injection": "2.2.*",
+                "symfony/http-kernel": "2.2.*"
             },
             "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\EventDispatcher": ""
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\EventDispatcher\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -766,33 +809,38 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2013-02-11 11:26:14"
+            "time": "2013-02-11 11:27:01"
         },
         {
             "name": "symfony/filesystem",
-            "version": "2.1.x-dev",
+            "version": "dev-master",
             "target-dir": "Symfony/Component/Filesystem",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "v2.1.8"
+                "reference": "1b01f1efbb2fd3e2f00a412deb49921fafee49b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/v2.1.8",
-                "reference": "v2.1.8",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/1b01f1efbb2fd3e2f00a412deb49921fafee49b3",
+                "reference": "1b01f1efbb2fd3e2f00a412deb49921fafee49b3",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Filesystem": ""
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -808,51 +856,58 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "http://symfony.com",
-            "time": "2013-01-09 08:51:07"
+            "time": "2013-04-02 09:39:57"
         },
         {
             "name": "symfony/framework-bundle",
-            "version": "2.1.x-dev",
+            "version": "dev-master",
             "target-dir": "Symfony/Bundle/FrameworkBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/FrameworkBundle.git",
-                "reference": "3a697fcde3e1a9d2f6cfd881d5302b4af2f8b999"
+                "reference": "00f9e3c488da577ba9d2b50b8a5da2fffa9ff81a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/FrameworkBundle/zipball/3a697fcde3e1a9d2f6cfd881d5302b4af2f8b999",
-                "reference": "3a697fcde3e1a9d2f6cfd881d5302b4af2f8b999",
+                "url": "https://api.github.com/repos/symfony/FrameworkBundle/zipball/00f9e3c488da577ba9d2b50b8a5da2fffa9ff81a",
+                "reference": "00f9e3c488da577ba9d2b50b8a5da2fffa9ff81a",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": ">=2.2,<3.0",
                 "php": ">=5.3.3",
-                "symfony/config": "2.1.*",
-                "symfony/dependency-injection": "2.1.*",
-                "symfony/event-dispatcher": "2.1.*",
-                "symfony/filesystem": "2.1.*",
-                "symfony/http-kernel": "2.1.*",
-                "symfony/routing": "2.1.*",
-                "symfony/templating": "2.1.*",
-                "symfony/translation": "2.1.*"
+                "symfony/config": ">=2.2,<2.4-dev",
+                "symfony/dependency-injection": ">=2.0,<3.0",
+                "symfony/event-dispatcher": ">=2.1,<3.0",
+                "symfony/filesystem": ">=2.1,<2.4-dev",
+                "symfony/http-kernel": ">=2.2,<2.4-dev",
+                "symfony/routing": ">=2.2,<2.4-dev",
+                "symfony/stopwatch": ">=2.2,<2.4-dev",
+                "symfony/templating": ">=2.1,<3.0",
+                "symfony/translation": ">=2.2,<2.4-dev"
             },
             "require-dev": {
-                "symfony/finder": "2.1.*"
+                "symfony/finder": ">=2.0,<3.0",
+                "symfony/security": ">=2.2,<2.4-dev"
             },
             "suggest": {
-                "symfony/console": "2.1.*",
-                "symfony/finder": "2.1.*",
-                "symfony/form": "2.1.*",
-                "symfony/validator": "2.1.*"
+                "symfony/console": "2.2.*",
+                "symfony/finder": "2.2.*",
+                "symfony/form": "2.2.*",
+                "symfony/validator": "2.2.*"
             },
             "type": "symfony-bundle",
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Bundle\\FrameworkBundle": ""
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Bundle\\FrameworkBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -868,34 +923,41 @@
             ],
             "description": "Symfony FrameworkBundle",
             "homepage": "http://symfony.com",
-            "time": "2013-03-15 10:44:42"
+            "time": "2013-04-01 08:10:25"
         },
         {
             "name": "symfony/http-foundation",
-            "version": "2.1.x-dev",
+            "version": "2.2.x-dev",
             "target-dir": "Symfony/Component/HttpFoundation",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "21569f5f8c380bb03fbb14b2c4192667e3383a71"
+                "reference": "9a87bc5856de55ebbc8b3e66c3c686e6aef35ba7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/21569f5f8c380bb03fbb14b2c4192667e3383a71",
-                "reference": "21569f5f8c380bb03fbb14b2c4192667e3383a71",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/9a87bc5856de55ebbc8b3e66c3c686e6aef35ba7",
+                "reference": "9a87bc5856de55ebbc8b3e66c3c686e6aef35ba7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\HttpFoundation": "",
-                    "SessionHandlerInterface": "Symfony/Component/HttpFoundation/Resources/stubs"
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\HttpFoundation\\": ""
+                },
+                "classmap": [
+                    "Symfony/Component/HttpFoundation/Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -911,53 +973,60 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
-            "time": "2013-03-01 10:39:52"
+            "time": "2013-04-01 08:05:23"
         },
         {
             "name": "symfony/http-kernel",
-            "version": "2.1.x-dev",
+            "version": "dev-master",
             "target-dir": "Symfony/Component/HttpKernel",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "7993ef00defebe5d7af5d053c9bf7c2d3f450b66"
+                "reference": "d4354d63cd70d153ea5c650eef7acbb728250f2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/7993ef00defebe5d7af5d053c9bf7c2d3f450b66",
-                "reference": "7993ef00defebe5d7af5d053c9bf7c2d3f450b66",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/d4354d63cd70d153ea5c650eef7acbb728250f2e",
+                "reference": "d4354d63cd70d153ea5c650eef7acbb728250f2e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
-                "symfony/event-dispatcher": "2.1.*",
-                "symfony/http-foundation": "2.1.*"
+                "psr/log": ">=1.0,<2.0",
+                "symfony/event-dispatcher": ">=2.1,<3.0",
+                "symfony/http-foundation": ">=2.2,<2.4-dev"
             },
             "require-dev": {
-                "symfony/browser-kit": "2.1.*",
-                "symfony/class-loader": "2.1.*",
-                "symfony/config": "2.1.*",
-                "symfony/console": "2.1.*",
-                "symfony/dependency-injection": "2.1.*",
-                "symfony/finder": "2.1.*",
-                "symfony/process": "2.1.*",
-                "symfony/routing": "2.1.*"
+                "symfony/browser-kit": "2.2.*",
+                "symfony/class-loader": ">=2.1,<3.0",
+                "symfony/config": ">=2.0,<3.0",
+                "symfony/console": "2.2.*",
+                "symfony/dependency-injection": ">=2.0,<3.0",
+                "symfony/finder": ">=2.0,<3.0",
+                "symfony/process": ">=2.0,<3.0",
+                "symfony/routing": ">=2.2,<2.4-dev",
+                "symfony/stopwatch": ">=2.2,<2.4-dev"
             },
             "suggest": {
-                "symfony/browser-kit": "2.1.*",
-                "symfony/class-loader": "2.1.*",
-                "symfony/config": "2.1.*",
-                "symfony/console": "2.1.*",
-                "symfony/dependency-injection": "2.1.*",
-                "symfony/finder": "2.1.*"
+                "symfony/browser-kit": "2.2.*",
+                "symfony/class-loader": "2.2.*",
+                "symfony/config": "2.2.*",
+                "symfony/console": "2.2.*",
+                "symfony/dependency-injection": "2.2.*",
+                "symfony/finder": "2.2.*"
             },
             "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\HttpKernel": ""
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\HttpKernel\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -973,21 +1042,21 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "http://symfony.com",
-            "time": "2013-03-15 10:44:42"
+            "time": "2013-04-02 09:39:57"
         },
         {
             "name": "symfony/routing",
-            "version": "2.1.x-dev",
+            "version": "2.2.x-dev",
             "target-dir": "Symfony/Component/Routing",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing.git",
-                "reference": "f49c32b0c3b761511dcd60034eeca9020e3c9a3c"
+                "reference": "6fea997908607f18a970a3848ec89c8e775255f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Routing/zipball/f49c32b0c3b761511dcd60034eeca9020e3c9a3c",
-                "reference": "f49c32b0c3b761511dcd60034eeca9020e3c9a3c",
+                "url": "https://api.github.com/repos/symfony/Routing/zipball/6fea997908607f18a970a3848ec89c8e775255f3",
+                "reference": "6fea997908607f18a970a3848ec89c8e775255f3",
                 "shasum": ""
             },
             "require": {
@@ -995,22 +1064,27 @@
             },
             "require-dev": {
                 "doctrine/common": ">=2.2,<3.0",
-                "symfony/config": "2.1.*",
-                "symfony/http-kernel": "2.1.*",
-                "symfony/yaml": "2.1.*"
+                "psr/log": ">=1.0,<2.0",
+                "symfony/config": ">=2.2,<2.3-dev",
+                "symfony/yaml": ">=2.0,<3.0"
             },
             "suggest": {
                 "doctrine/common": "~2.2",
-                "symfony/config": "2.1.*",
-                "symfony/yaml": "2.1.*"
+                "symfony/config": "2.2.*",
+                "symfony/yaml": "2.2.*"
             },
             "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Routing": ""
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Routing\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1026,33 +1100,85 @@
             ],
             "description": "Symfony Routing Component",
             "homepage": "http://symfony.com",
-            "time": "2013-03-06 19:26:16"
+            "time": "2013-03-23 12:03:22"
         },
         {
-            "name": "symfony/templating",
-            "version": "2.1.x-dev",
-            "target-dir": "Symfony/Component/Templating",
+            "name": "symfony/stopwatch",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/Stopwatch",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Templating.git",
-                "reference": "v2.1.8"
+                "url": "https://github.com/symfony/Stopwatch.git",
+                "reference": "23d6e7b188069d80950cdf96f3d48029f56f11e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Templating/zipball/v2.1.8",
-                "reference": "v2.1.8",
+                "url": "https://api.github.com/repos/symfony/Stopwatch/zipball/23d6e7b188069d80950cdf96f3d48029f56f11e5",
+                "reference": "23d6e7b188069d80950cdf96f3d48029f56f11e5",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Templating": ""
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Stopwatch\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Stopwatch Component",
+            "homepage": "http://symfony.com",
+            "time": "2013-01-31 21:39:01"
+        },
+        {
+            "name": "symfony/templating",
+            "version": "2.2.x-dev",
+            "target-dir": "Symfony/Component/Templating",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Templating.git",
+                "reference": "v2.2.0-RC3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Templating/zipball/v2.2.0-RC3",
+                "reference": "v2.2.0-RC3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Templating\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1068,41 +1194,46 @@
             ],
             "description": "Symfony Templating Component",
             "homepage": "http://symfony.com",
-            "time": "2013-01-09 08:51:07"
+            "time": "2013-01-17 15:25:59"
         },
         {
             "name": "symfony/translation",
-            "version": "2.1.x-dev",
+            "version": "dev-master",
             "target-dir": "Symfony/Component/Translation",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Translation.git",
-                "reference": "121e5416841d7c81381538f9862242b1578ed89c"
+                "reference": "b518a3100b09b5de4b4750e9415c00ad1bd77b1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Translation/zipball/121e5416841d7c81381538f9862242b1578ed89c",
-                "reference": "121e5416841d7c81381538f9862242b1578ed89c",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/b518a3100b09b5de4b4750e9415c00ad1bd77b1e",
+                "reference": "b518a3100b09b5de4b4750e9415c00ad1bd77b1e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "symfony/config": "2.1.*",
-                "symfony/yaml": "2.1.*"
+                "symfony/config": ">=2.0,<2.4-dev",
+                "symfony/yaml": ">=2.2,<3.0"
             },
             "suggest": {
-                "symfony/config": "2.1.*",
-                "symfony/yaml": "2.1.*"
+                "symfony/config": "2.2.*",
+                "symfony/yaml": "2.2.*"
             },
             "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Translation": ""
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Translation\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1118,33 +1249,38 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "http://symfony.com",
-            "time": "2013-03-12 14:23:04"
+            "time": "2013-04-02 09:39:57"
         },
         {
             "name": "symfony/yaml",
-            "version": "2.1.x-dev",
+            "version": "2.2.x-dev",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "783c78dcee45111f529582470b31fd682baa63c1"
+                "reference": "3f6d4ab3fd8226ab4ba0be9fc8a238f4338b79ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/783c78dcee45111f529582470b31fd682baa63c1",
-                "reference": "783c78dcee45111f529582470b31fd682baa63c1",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/3f6d4ab3fd8226ab4ba0be9fc8a238f4338b79ab",
+                "reference": "3f6d4ab3fd8226ab4ba0be9fc8a238f4338b79ab",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Yaml": ""
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Yaml\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1160,7 +1296,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2013-03-06 17:01:03"
+            "time": "2013-03-23 07:49:54"
         },
         {
             "name": "twig/twig",
@@ -1168,12 +1304,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "ba67e2cf8e2ca6cada1de5a316a724df648c52ac"
+                "reference": "399916916533589c95dc04e1afd4aeefa34928ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/ba67e2cf8e2ca6cada1de5a316a724df648c52ac",
-                "reference": "ba67e2cf8e2ca6cada1de5a316a724df648c52ac",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/399916916533589c95dc04e1afd4aeefa34928ad",
+                "reference": "399916916533589c95dc04e1afd4aeefa34928ad",
                 "shasum": ""
             },
             "require": {
@@ -1190,7 +1326,7 @@
                     "Twig_": "lib/"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3"
             ],
@@ -1209,7 +1345,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-03-10 07:23:01"
+            "time": "2013-04-01 08:27:18"
         },
         {
             "name": "twitter/bootstrap",
@@ -1226,7 +1362,7 @@
                 "shasum": ""
             },
             "type": "library",
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
@@ -1239,88 +1375,24 @@
             "time": "2013-03-01 05:24:27"
         },
         {
-            "name": "zendframework/zendframework",
-            "version": "2.1.3",
+            "name": "zendframework/zend-eventmanager",
+            "version": "dev-master",
+            "target-dir": "Zend/EventManager",
             "source": {
                 "type": "git",
-                "url": "https://github.com/zendframework/zf2.git",
-                "reference": "release-2.1.3"
+                "url": "https://github.com/zendframework/Component_ZendEventManager.git",
+                "reference": "4d66229e3d7f80052cb393ebc58ca9115f515c3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zf2/zipball/release-2.1.3",
-                "reference": "release-2.1.3",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendEventManager/zipball/4d66229e3d7f80052cb393ebc58ca9115f515c3e",
+                "reference": "4d66229e3d7f80052cb393ebc58ca9115f515c3e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=5.3.3",
+                "zendframework/zend-stdlib": "self.version"
             },
-            "replace": {
-                "zendframework/zend-authentication": "self.version",
-                "zendframework/zend-barcode": "self.version",
-                "zendframework/zend-cache": "self.version",
-                "zendframework/zend-captcha": "self.version",
-                "zendframework/zend-code": "self.version",
-                "zendframework/zend-config": "self.version",
-                "zendframework/zend-console": "self.version",
-                "zendframework/zend-crypt": "self.version",
-                "zendframework/zend-db": "self.version",
-                "zendframework/zend-debug": "self.version",
-                "zendframework/zend-di": "self.version",
-                "zendframework/zend-dom": "self.version",
-                "zendframework/zend-escaper": "self.version",
-                "zendframework/zend-eventmanager": "self.version",
-                "zendframework/zend-feed": "self.version",
-                "zendframework/zend-file": "self.version",
-                "zendframework/zend-filter": "self.version",
-                "zendframework/zend-form": "self.version",
-                "zendframework/zend-http": "self.version",
-                "zendframework/zend-i18n": "self.version",
-                "zendframework/zend-inputfilter": "self.version",
-                "zendframework/zend-json": "self.version",
-                "zendframework/zend-ldap": "self.version",
-                "zendframework/zend-loader": "self.version",
-                "zendframework/zend-log": "self.version",
-                "zendframework/zend-mail": "self.version",
-                "zendframework/zend-math": "self.version",
-                "zendframework/zend-memory": "self.version",
-                "zendframework/zend-mime": "self.version",
-                "zendframework/zend-modulemanager": "self.version",
-                "zendframework/zend-mvc": "self.version",
-                "zendframework/zend-navigation": "self.version",
-                "zendframework/zend-paginator": "self.version",
-                "zendframework/zend-permissions-acl": "self.version",
-                "zendframework/zend-permissions-rbac": "self.version",
-                "zendframework/zend-progressbar": "self.version",
-                "zendframework/zend-serializer": "self.version",
-                "zendframework/zend-server": "self.version",
-                "zendframework/zend-servicemanager": "self.version",
-                "zendframework/zend-session": "self.version",
-                "zendframework/zend-soap": "self.version",
-                "zendframework/zend-stdlib": "self.version",
-                "zendframework/zend-tag": "self.version",
-                "zendframework/zend-test": "self.version",
-                "zendframework/zend-text": "self.version",
-                "zendframework/zend-uri": "self.version",
-                "zendframework/zend-validator": "self.version",
-                "zendframework/zend-version": "self.version",
-                "zendframework/zend-view": "self.version",
-                "zendframework/zend-xmlrpc": "self.version"
-            },
-            "require-dev": {
-                "doctrine/common": ">=2.1",
-                "phpunit/phpunit": "3.7.*"
-            },
-            "suggest": {
-                "doctrine/common": "Doctrine\\Common >=2.1 for annotation features",
-                "ext-intl": "ext/intl for i18n features",
-                "pecl-weakref": "Implementation of weak references for Zend\\Stdlib\\CallbackHandler",
-                "zendframework/zendpdf": "ZendPdf for creating PDF representations of barcodes",
-                "zendframework/zendservice-recaptcha": "ZendService\\ReCaptcha for rendering ReCaptchas in Zend\\Captcha and/or Zend\\Form"
-            },
-            "bin": [
-                "bin/classmap_generator.php"
-            ],
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1330,28 +1402,199 @@
             },
             "autoload": {
                 "psr-0": {
-                    "Zend\\": "library/",
-                    "ZendTest\\": "tests/"
-                },
-                "files": [
-                    "library/Zend/Stdlib/compatibility/autoload.php",
-                    "library/Zend/Session/compatibility/autoload.php"
-                ]
+                    "Zend\\EventManager\\": ""
+                }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
-            "description": "Zend Framework 2",
-            "homepage": "http://framework.zend.com/",
             "keywords": [
-                "framework",
+                "eventmanager",
                 "zf2"
             ],
-            "time": "2013-02-21 21:00:16"
+            "time": "2013-04-04 13:54:36"
+        },
+        {
+            "name": "zendframework/zend-loader",
+            "version": "dev-master",
+            "target-dir": "Zend/Loader",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/Component_ZendLoader.git",
+                "reference": "release-2.1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendLoader/zipball/release-2.1.4",
+                "reference": "release-2.1.4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "zendframework/zend-stdlib": "Zend\\Stdlib component"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev",
+                    "dev-develop": "2.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Zend\\Loader\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "keywords": [
+                "loader",
+                "zf2"
+            ],
+            "time": "2013-02-19 16:57:42"
+        },
+        {
+            "name": "zendframework/zend-modulemanager",
+            "version": "dev-master",
+            "target-dir": "Zend/ModuleManager",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/Component_ZendModuleManager.git",
+                "reference": "release-2.1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendModuleManager/zipball/release-2.1.4",
+                "reference": "release-2.1.4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "zendframework/zend-eventmanager": "self.version",
+                "zendframework/zend-stdlib": "self.version"
+            },
+            "suggest": {
+                "zendframework/zend-config": "Zend\\Config component",
+                "zendframework/zend-loader": "Zend\\Loader component",
+                "zendframework/zend-servicemanager": "Zend\\ServiceManager component"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev",
+                    "dev-develop": "2.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Zend\\ModuleManager\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "keywords": [
+                "modulemanager",
+                "zf2"
+            ],
+            "time": "2013-02-22 18:41:42"
+        },
+        {
+            "name": "zendframework/zend-servicemanager",
+            "version": "dev-master",
+            "target-dir": "Zend/ServiceManager",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/Component_ZendServiceManager.git",
+                "reference": "b4f2b356337e9fe9122dd531fe94dbff385ba0bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendServiceManager/zipball/b4f2b356337e9fe9122dd531fe94dbff385ba0bf",
+                "reference": "b4f2b356337e9fe9122dd531fe94dbff385ba0bf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "zendframework/zend-di": "Zend\\Di component"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev",
+                    "dev-develop": "2.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Zend\\ServiceManager\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "keywords": [
+                "servicemanager",
+                "zf2"
+            ],
+            "time": "2013-03-27 17:01:08"
+        },
+        {
+            "name": "zendframework/zend-stdlib",
+            "version": "dev-master",
+            "target-dir": "Zend/Stdlib",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/Component_ZendStdlib.git",
+                "reference": "acc746acf5e277e89f1ad527901f2fff8754aaab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendStdlib/zipball/acc746acf5e277e89f1ad527901f2fff8754aaab",
+                "reference": "acc746acf5e277e89f1ad527901f2fff8754aaab",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "pecl-weakref": "Implementation of weak references for Stdlib\\CallbackHandler"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev",
+                    "dev-develop": "2.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Zend\\Stdlib\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "keywords": [
+                "stdlib",
+                "zf2"
+            ],
+            "time": "2013-03-14 17:51:08"
         }
     ],
-    "packages-dev": null,
+    "packages-dev": [
+
+    ],
     "aliases": [
 
     ],
@@ -1359,5 +1602,11 @@
     "stability-flags": {
         "ppi/framework": 20,
         "ppi/distribution-module": 20
-    }
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
 }
