@@ -15,19 +15,15 @@ set_time_limit(0);
 chdir(dirname(__DIR__));
 require_once 'init.php';
 
-$app = new PPI\App();
+use PPI\Console\Application;
+use Symfony\Component\Console\Input\ArgvInput;
+
+$input = new ArgvInput();
+$env = $input->getParameterOption(array('--env', '-e'), getenv('PPI_ENV') ?: 'dev');
+$debug = getenv('PPI_DEBUG') !== '0' && !$input->hasParameterOption(array('--no-debug', '')) && $env !== 'prod';
+
+$app = new PPI\App($env, $debug);
 $app->loadConfig('app.yml');
-$app->boot();
-$config = $app->getConfig();
 
-use PPI\Console\Command\ModuleCommand;
-use Symfony\Component\Console\Application;
-use Symfony\Component\Console\Output\ConsoleOutput;
-
-$moduleCommand = new ModuleCommand();
-$moduleCommand->setSkeletonModuleDir($config['skeleton.module.path']);
-$moduleCommand->setTargetModuleDir($config['module_listener_options']['module_paths'][0]);
-
-$application = new Application();
-$application->add($moduleCommand);
+$application = new Application($app);
 $application->run();
