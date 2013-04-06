@@ -516,7 +516,7 @@ class FrameworkRequirements extends RequirementCollection
         /* optional recommendations follow */
 
         $this->addRecommendation(
-            file_get_contents(__FILE__) === file_get_contents(__DIR__.'/../vendor/ppi/distribution-module/PPI/Module/DistributionModule/resources/skeleton/app/FrameworkRequirements.php'),
+            file_get_contents(__FILE__) === file_get_contents(__DIR__.'/../vendor/ppi/distribution-module/PPI/DistributionModule/resources/skeleton/app/FrameworkRequirements.php'),
             'Requirements file should be up-to-date',
             'Your requirements file is outdated. Run composer install and re-check your configuration.'
         );

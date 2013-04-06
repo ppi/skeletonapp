@@ -7,10 +7,10 @@ chdir(dirname(__DIR__));
 require_once 'app/init.php';
 
 // Create our PPI App instance
-$app = new PPI\App();
+$app = new PPI\App('production', false);
 
 // Configure the application
 $app->loadConfig('app.yml');
-//$app->loadConfig('app.php');
 
+// Load the application, match the URL and send an HTTP response
 $app->boot()->dispatch()->send();
