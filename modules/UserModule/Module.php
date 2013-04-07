@@ -38,7 +38,7 @@ class Module extends BaseModule
         return array('factories' => array(
             
             'userEntity' => function($sm) {
-                return new UserModule\Entity\User();
+                return new Entity\User();
             }
             
         ));

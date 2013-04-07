@@ -40,7 +40,7 @@ class Module extends BaseModule
         return array('factories' => array(
             
             'testService' => function($sm) {
-                return new Application\Classes\TestServiceClass();
+                return new Classes\TestServiceClass();
             }
             
         ));
