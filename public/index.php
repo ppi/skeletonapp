@@ -7,7 +7,10 @@ chdir(dirname(__DIR__));
 require_once 'app/init.php';
 
 // Create our PPI App instance
-$app = new PPI\App('production', false);
+$app = new PPI\App(array(
+    'environment'   => 'development',
+    'debug'         => true
+));
 
 // Configure the application
 $app->loadConfig('app.yml');
