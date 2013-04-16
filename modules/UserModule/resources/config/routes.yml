@@ -1,95 +1,95 @@
 User_Signup:
     pattern: /signup
-    defaults: { _controller: "User:Auth:signup"}
-        
+    defaults: { _controller: "UserModule:Auth:signup"}
+
 User_Signup_Save:
     pattern: /signupsave
-    defaults: { _controller: "User:Auth:signupsave"}
+    defaults: { _controller: "UserModule:Auth:signupsave"}
     requirements:
         _method: POST
 
 User_Logout:
     pattern: /logout
-    defaults: { _controller: "User:Auth:logout"}
+    defaults: { _controller: "UserModule:Auth:logout"}
 
 User_Login:
     pattern: /login
-    defaults: { _controller: "User:Auth:login"}
-    
+    defaults: { _controller: "UserModule:Auth:login"}
+
 User_Login_Check:
     pattern: /logincheck
-    defaults: { _controller: "User:Auth:logincheck"}
+    defaults: { _controller: "UserModule:Auth:logincheck"}
     requirements:
         _method: POST
-        
+
 User_Activate:
     pattern: /activate/{token}
-    defaults: { _controller: "User:Auth:activate"}
-    
+    defaults: { _controller: "UserModule:Auth:activate"}
+
 User_Forgot_Password:
     pattern: /forgotpw
-    defaults: { _controller: "User:Auth:forgotpw"}
-    
+    defaults: { _controller: "UserModule:Auth:forgotpw"}
+
 User_Forgot_Password_Send:
     pattern: /forgotpwsend
-    defaults: { _controller: "User:Auth:forgotpwsend"}
+    defaults: { _controller: "UserModule:Auth:forgotpwsend"}
     requirements:
         _method: POST
-    
+
 User_Forgot_Password_Check:
     pattern: /forgotpwcheck/{token}
-    defaults: { _controller: "User:Auth:forgotpwcheck"}
-    
+    defaults: { _controller: "UserModule:Auth:forgotpwcheck"}
+
 User_Forgot_Password_Save:
     pattern: /forgotpwsave
-    defaults: { _controller: "User:Auth:forgotpwsave"}
+    defaults: { _controller: "UserModule:Auth:forgotpwsave"}
     requirements:
         _method: POST
-        
+
 User_Account:
     pattern: /account
-    defaults: { _controller: "User:Account:view"}
-    
+    defaults: { _controller: "UserModule:Account:view"}
+
 User_Edit_Account:
     pattern: /editaccount
-    defaults: { _controller: "User:Account:edit"}
-    
+    defaults: { _controller: "UserModule:Account:edit"}
+
 User_Edit_Account_Save:
     pattern: /editaccountsave
-    defaults: { _controller: "User:Account:editsave"}
-    
+    defaults: { _controller: "UserModule:Account:editsave"}
+
 User_Edit_Password:
     pattern: /editpassword
-    defaults: { _controller: "User:Account:editpassword"}
-    
+    defaults: { _controller: "UserModule:Account:editpassword"}
+
 User_Edit_Password_Save:
     pattern: /editpasswordsave
-    defaults: { _controller: "User:Account:editpasswordsave"}
-    
+    defaults: { _controller: "UserModule:Account:editpasswordsave"}
+
 User_Manage_List:
     pattern: /users/manage
-    defaults: { _controller: "User:Manage:list"}
-    
+    defaults: { _controller: "UserModule:Manage:list"}
+
 User_Manage_Edit:
     pattern: /users/manage/edit/{id}
-    defaults: { _controller: "User:Manage:edit"}
-    
+    defaults: { _controller: "UserModule:Manage:edit"}
+
 User_Manage_Delete:
     pattern: /users/manage/delete/{id}
-    defaults: { _controller: "User:Manage:delete"}
-    
+    defaults: { _controller: "UserModule:Manage:delete"}
+
 User_Manage_Create:
     pattern: /users/manage/create
-    defaults: { _controller: "User:Manage:create"}
-    
+    defaults: { _controller: "UserModule:Manage:create"}
+
 User_Manage_Create_Save:
     pattern: /users/manage/createsave
-    defaults: { _controller: "User:Manage:createsave"}
+    defaults: { _controller: "UserModule:Manage:createsave"}
     requirements:
         _method: POST
-    
+
 User_Manage_Edit_Save:
     pattern: /users/manage/editsave/{id}
-    defaults: { _controller: "User:Manage:editsave"}
+    defaults: { _controller: "UserModule:Manage:editsave"}
     requirements:
         _method: POST
