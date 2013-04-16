@@ -6,13 +6,13 @@ use PPI\Autoload;
 
 class Module extends BaseModule
 {
-    protected $_moduleName = 'UserModule';
+    protected $name = 'UserModule';
 
     public function init($e)
     {
         Autoload::add(__NAMESPACE__, dirname(__DIR__));
     }
-    
+
     /**
      * Get the configuration for this module
      *
@@ -32,18 +32,14 @@ class Module extends BaseModule
     {
         return $this->loadYamlRoutes(__DIR__ . '/resources/config/routes.yml');
     }
-    
+
     public function getServiceConfig()
     {
         return array('factories' => array(
-            
+
             'userEntity' => function($sm) {
                 return new Entity\User();
             }
-            
         ));
     }
-
-
-
 }
