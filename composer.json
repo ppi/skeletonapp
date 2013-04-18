@@ -24,16 +24,19 @@
     },
     "scripts": {
         "post-install-cmd": [
+            "PPI\\DistributionModule\\Composer\\ScriptHandler::installAssets",
             "PPI\\DistributionModule\\Composer\\ScriptHandler::installRequirementsFile"
         ],
         "post-update-cmd": [
+            "PPI\\DistributionModule\\Composer\\ScriptHandler::installAssets",
             "PPI\\DistributionModule\\Composer\\ScriptHandler::installRequirementsFile"
         ]
     },
     "minimum-stability": "dev",
     "extra": {
         "ppi-app-dir": "app",
-        "ppi-web-dir": "public"
+        "ppi-web-dir": "public",
+        "ppi-assets-install": "symlink"
     },
     "config": {
         "component-dir": "public/libs"
