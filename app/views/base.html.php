@@ -72,8 +72,6 @@
         </div>
     </header>
 
-    
-
     <div class="container" id="page-content">
         
         <!-- Begin Flash Message Injection -->
