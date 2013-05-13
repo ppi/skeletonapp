@@ -2,6 +2,5 @@ modules:
     active_modules:
     - Framework
     - Application
-    - UserModule
     module_listener_options:
         module_paths: ['./modules', './vendor']

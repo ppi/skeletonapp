@@ -13,6 +13,7 @@
     ],
     "require": {
         "ppi/framework": "2.1.x-dev",
+        "ppi/composer-installer": "dev-master",
         "ppi/distribution-module": "dev-master",
         "twitter/bootstrap": "v2.3.1",
         "swiftmailer/swiftmailer": ">=4.2.0,<4.3-dev"
@@ -34,6 +35,9 @@
     },
     "minimum-stability": "dev",
     "extra": {
+        "branch-alias": {
+            "dev-master": "2.1-dev"
+        },
         "ppi-app-dir": "app",
         "ppi-web-dir": "public",
         "ppi-assets-install": "symlink"

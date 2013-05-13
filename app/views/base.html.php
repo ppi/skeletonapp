@@ -49,30 +49,10 @@
                     <form class="navbar-search pull-left">
                       <input type="text" class="search-query" placeholder="Search">
                     </form>
-                    
-                    <ul class="nav pull-right">
-<!--                        <li class="dropdown" id="userDropdownMenu">-->
-<!--                            <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">My Account <b class="caret"></b></a>-->
-<!--                            <ul class="dropdown-menu">-->
-<!--                                <li><a href="--><?//=$view['router']->generate('User_Account');?><!--">View Profile</a></li>-->
-<!--                                <li><a href="--><?//=$view['router']->generate('User_Edit_Account');?><!--">Edit Profile</a></li>-->
-<!--                                <li><a href="--><?//=$view['router']->generate('User_Edit_Password');?><!--">Change Password</a></li>-->
-<!--                                <li class="divider"></li>-->
-<!--                                <li><a href="--><?//=$view['router']->generate('User_Manage_List');?><!--">Manage Users</a></li>-->
-<!--                                <li class="divider"></li>-->
-<!--                                <li><a href="--><?//=$view['router']->generate('User_Logout');?><!--">Logout</a></li>-->
-<!--                            </ul>-->
-<!--                        </li>-->
-                        <li><a class="" title="" href="<?=$view['router']->generate('User_Login');?>">Login</a></li>
-                        <li><a class="" title="" href="<?=$view['router']->generate('User_Signup');?>">Register</a></li>
-                    </ul>
-                    
                 </div>
             </div>
         </div>
     </header>
-
-    
 
     <div class="container" id="page-content">
         
