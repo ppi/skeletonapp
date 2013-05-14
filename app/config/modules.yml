@@ -1,6 +1,7 @@
 modules:
     active_modules:
-    - Framework
     - Application
+    - Framework
+    - PPICacheModule
     module_listener_options:
         module_paths: ['./modules', './vendor']

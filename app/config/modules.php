@@ -1,10 +1,15 @@
 <?php
+
 return array(
     'active_modules' => array(
         'Framework',
-        'Application'
+        'Application',
+        'PPICacheModule'
     ),
     'module_listener_options' => array(
-        'module_paths'      => array('./modules', './vendor')
+        'module_paths'      => array(
+            './modules',
+            './vendor'
+        )
     ),
 );
