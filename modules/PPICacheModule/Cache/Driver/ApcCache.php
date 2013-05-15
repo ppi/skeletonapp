@@ -16,7 +16,6 @@ use PPICacheModule\Cache\CacheItem;
  * Apc cache driver.
  *
  * @author     Paul Dragoonis <paul@ppi.io>
- * @author     Vítor Brandão <vitor@ppi.io>
  * @package    PPI
  * @subpackage Cache
  */
