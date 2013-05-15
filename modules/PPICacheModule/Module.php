@@ -28,8 +28,8 @@ class Module extends AbstractModule
      */
     public function init($e)
     {
-		Autoload::add(__NAMESPACE__, dirname(__DIR__));
-	}
+        Autoload::add(__NAMESPACE__, dirname(__DIR__));
+    }
 
     /**
      * {@inheritDoc}

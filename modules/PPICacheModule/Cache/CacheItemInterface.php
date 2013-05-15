@@ -19,7 +19,6 @@ namespace PPICacheModule\Cache;
  */
 interface CacheItemInterface
 {
-
     /**
      * Get the key associated with this CacheItem
      *
