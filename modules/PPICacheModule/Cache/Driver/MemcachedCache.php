@@ -15,7 +15,6 @@ use PPICacheModule\Cache\CacheInterface;
  * Memcached cache driver.
  *
  * @author     Paul Dragoonis <paul@ppi.io>
- * @author     Vítor Brandão <vitor@ppi.io>
  * @package    PPI
  * @subpackage Cache
  */
