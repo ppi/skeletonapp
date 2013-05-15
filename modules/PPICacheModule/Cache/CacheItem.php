@@ -14,8 +14,6 @@ use PPICacheModule\Cache\CacheItemInterface;
 /**
  * CacheItem.
  *
- * @author     Paul Dragoonis <paul@ppi.io>
- * @author     Vítor Brandão <vitor@ppi.io>
  * @package    PPI
  * @subpackage Cache
  */
