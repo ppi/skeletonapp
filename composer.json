@@ -3,7 +3,7 @@
     "description": "The PPI Skeleton Application - A pre-built application around the PPI Framework. Lots of extra goodies",
     "homepage": "http://www.ppi.io",
     "license": "MIT",
-    "keywords": ["framework", "ppi", "skeletonapp", "bootstrap", "html5", "jquery", "mustache"],
+    "keywords": ["framework", "ppi", "symfony", "zend", "doctrine", "laravel", "fuelphp", "mongo", "pdo", "ppi", "skeletonapp", "bootstrap", "html5", "jquery", "mustache"],
     "type": "library",
     "authors": [
         {
@@ -14,9 +14,7 @@
     "require": {
         "ppi/framework": "2.1.x-dev",
         "ppi/composer-installer": "dev-master",
-        "ppi/distribution-module": "dev-master",
-        "twitter/bootstrap": "v2.3.1",
-        "swiftmailer/swiftmailer": ">=4.2.0,<4.3-dev"
+        "ppi/distribution-module": "dev-master"
     },
     "extra": {
         "branch-alias": {
