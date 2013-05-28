@@ -8,7 +8,7 @@ $connections['main'] = array(
     'fetch_mode' => \PDO::FETCH_ASSOC,
 
     'driver'     => 'pdo_mysql',
-    'host'       => 'localhost',
+    'hostname'   => 'localhost',
     'database'   => 'ppi2_skeleton',
     'username'   => 'root',
     'password'   => '',
@@ -16,6 +16,17 @@ $connections['main'] = array(
     'charset'    => 'utf8',
     'collation'  => 'utf8_unicode_ci',
     'prefix'     => ''
+);
+
+$connections['products'] = array(
+    
+    'library'    => 'fuelphp',
+
+    'driver'     => 'mysql',
+    'hostname'   => 'localhost',
+    'database'   => 'ppi2_skeleton',
+    'username'   => 'root',
+    'password'   => ''
 );
 
 $connections['users'] = array(
@@ -26,7 +37,7 @@ $connections['users'] = array(
     'fetch_mode' => \PDO::FETCH_ASSOC,
 
     'driver'     => 'mysql',
-    'host'       => 'localhost',
+    'hostname'   => 'localhost',
     'database'   => 'ppi2_skeleton',
     'username'   => 'root',
     'password'   => '',
@@ -36,20 +47,11 @@ $connections['users'] = array(
     'prefix'     => ''
 );
 
-$connections['users'] = array(
-	
-    'library'    => 'laravel',
-    'fetch_mode' => \PDO::FETCH_ASSOC,
-
-    'driver'     => 'mysql',
-    'host'       => 'localhost',
-    'database'   => 'ppi2_skeleton',
-    'username'   => 'root',
-    'password'   => '',
-
-    'charset'    => 'utf8',
-    'collation'  => 'utf8_unicode_ci',
-    'prefix'     => ''
+$connections['sessions'] = array(
+    
+    'library'    => 'doctrine_mongodb',
+    'hostname'   => 'localhost',
+    'database'   => 'test'
 );
 
 return $connections; // Very important you must return the connections variable from this script
