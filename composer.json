@@ -15,8 +15,6 @@
         "ppi/framework": "2.1.x-dev",
         "ppi/composer-installer": "dev-master",
         "ppi/distribution-module": "dev-master",
-        "twitter/bootstrap": "v2.3.1",
-        "swiftmailer/swiftmailer": ">=4.2.0,<4.3-dev"
     },
     "extra": {
         "branch-alias": {
