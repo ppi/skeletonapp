@@ -38,7 +38,7 @@ class MemcachedCache implements CacheInterface
 
     public function set($key, $value = null, $ttl = null)
     {
-        return $this->memcached->set($key, $val, $ttl);
+        return $this->memcached->set($key, $value, $ttl);
     }
 
     public function getMultiple($keys)
@@ -57,7 +57,7 @@ class MemcachedCache implements CacheInterface
         return $ret;
     }
 
-    public function setMultiple($keys, $ttl = null)
+    public function setMultiple($items, $ttl = null)
     {
         return $this->memcached->setMulti($items, $ttl);
     }

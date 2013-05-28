@@ -13,6 +13,7 @@
     ],
     "require": {
         "ppi/framework": "2.1.x-dev",
+        "ppi/cache-module": "dev-master",
         "ppi/composer-installer": "dev-master",
         "ppi/distribution-module": "dev-master",
         "twitter/bootstrap": "v2.3.1",

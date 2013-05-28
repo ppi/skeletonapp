@@ -21,5 +21,11 @@ use PPICacheModule\Cache\CacheInterface;
  */
 class XcacheCache implements CacheInterface
 {
-
+    /**
+     * @return bool true
+     */
+    static public function isAvailable()
+    {
+        return extension_loaded('xcache') && 'cli' !== php_sapi_name();
+    }
 }

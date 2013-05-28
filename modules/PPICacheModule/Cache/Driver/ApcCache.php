@@ -100,4 +100,9 @@ class ApcCache implements CacheInterface
     {
         return apc_clear_cache('user');
     }
+
+    public static function isAvailable()
+    {
+        return extension_loaded('apc') && ini_get('apc.enabled');
+    }
 }

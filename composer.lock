@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "816593153f0aa956aa27072d34bc171a",
+    "hash": "897bf615fa9d8d6b075f9cf444b60ea3",
     "packages": [
         {
             "name": "doctrine/common",
@@ -144,12 +144,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
-                "reference": "3bef2d41d94a0eea725c93a00f65411f577e4b4a"
+                "reference": "fd37b630fb7f3a62ff37c34d861363b0a1337f36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/container/zipball/3bef2d41d94a0eea725c93a00f65411f577e4b4a",
-                "reference": "3bef2d41d94a0eea725c93a00f65411f577e4b4a",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/fd37b630fb7f3a62ff37c34d861363b0a1337f36",
+                "reference": "fd37b630fb7f3a62ff37c34d861363b0a1337f36",
                 "shasum": ""
             },
             "require": {
@@ -176,7 +176,7 @@
                     "email": "taylorotwell@gmail.com"
                 }
             ],
-            "time": "2013-05-14 04:26:13"
+            "time": "2013-05-15 20:38:42"
         },
         {
             "name": "illuminate/database",
@@ -185,12 +185,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "ccfff821795e5d3e943304c74ed53a4175362bb1"
+                "reference": "3aaf99183d4a57e3a7603f3b065df8e97be56e5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/ccfff821795e5d3e943304c74ed53a4175362bb1",
-                "reference": "ccfff821795e5d3e943304c74ed53a4175362bb1",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/3aaf99183d4a57e3a7603f3b065df8e97be56e5e",
+                "reference": "3aaf99183d4a57e3a7603f3b065df8e97be56e5e",
                 "shasum": ""
             },
             "require": {
@@ -233,7 +233,7 @@
                 "orm",
                 "sql"
             ],
-            "time": "2013-05-14 04:26:13"
+            "time": "2013-05-18 01:16:41"
         },
         {
             "name": "illuminate/events",
@@ -242,12 +242,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
-                "reference": "9f74cad5078534b5e968bca3a1158332caa0f7d9"
+                "reference": "f30823fe7baaed459712d13f4cb2b79658d9a0af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/events/zipball/9f74cad5078534b5e968bca3a1158332caa0f7d9",
-                "reference": "9f74cad5078534b5e968bca3a1158332caa0f7d9",
+                "url": "https://api.github.com/repos/illuminate/events/zipball/f30823fe7baaed459712d13f4cb2b79658d9a0af",
+                "reference": "f30823fe7baaed459712d13f4cb2b79658d9a0af",
                 "shasum": ""
             },
             "require": {
@@ -278,7 +278,7 @@
                 }
             ],
             "description": "A simple, powerful events system.",
-            "time": "2013-05-14 04:26:13"
+            "time": "2013-05-16 17:11:10"
         },
         {
             "name": "illuminate/support",
@@ -287,12 +287,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "ef3f48e6c9bc5408315e5fff344ca61e901aebb5"
+                "reference": "e09f68ae78aab398fd3c8e8f814df89b03c2a817"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/ef3f48e6c9bc5408315e5fff344ca61e901aebb5",
-                "reference": "ef3f48e6c9bc5408315e5fff344ca61e901aebb5",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/e09f68ae78aab398fd3c8e8f814df89b03c2a817",
+                "reference": "e09f68ae78aab398fd3c8e8f814df89b03c2a817",
                 "shasum": ""
             },
             "require": {
@@ -325,7 +325,7 @@
                 }
             ],
             "description": "Various utilities and support functions.",
-            "time": "2013-05-14 04:26:13"
+            "time": "2013-05-19 03:05:01"
         },
         {
             "name": "monolog/monolog",
@@ -481,12 +481,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/noiselabs/SmartyBundle.git",
-                "reference": "fef3470cf401fdb639db702fdd0413dabe7680a6"
+                "reference": "a605ae7cd1abd6005fc0a5bcebb87366f7a0c73d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/noiselabs/SmartyBundle/zipball/fef3470cf401fdb639db702fdd0413dabe7680a6",
-                "reference": "fef3470cf401fdb639db702fdd0413dabe7680a6",
+                "url": "https://api.github.com/repos/noiselabs/SmartyBundle/zipball/a605ae7cd1abd6005fc0a5bcebb87366f7a0c73d",
+                "reference": "a605ae7cd1abd6005fc0a5bcebb87366f7a0c73d",
                 "shasum": ""
             },
             "require": {
@@ -540,7 +540,54 @@
                 "symfony",
                 "templating"
             ],
-            "time": "2013-03-24 02:15:24"
+            "time": "2013-05-19 17:00:41"
+        },
+        {
+            "name": "ppi/cache-module",
+            "version": "dev-master",
+            "target-dir": "PPI/CacheModule",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ppi/ppi-cache-module.git",
+                "reference": "ce227da2334ac433f1b35c618dcfb60eedbbbf7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ppi/ppi-cache-module/zipball/ce227da2334ac433f1b35c618dcfb60eedbbbf7e",
+                "reference": "ce227da2334ac433f1b35c618dcfb60eedbbbf7e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PPI\\CacheModule": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Dragoonis",
+                    "email": "paul@ppi.io"
+                },
+                {
+                    "name": "Vítor Brandão",
+                    "email": "vitor@ppi.io"
+                },
+                {
+                    "name": "PPI Community",
+                    "homepage": "http://www.ppi.io/contributors"
+                }
+            ],
+            "description": "PPI2 Cache component",
+            "homepage": "http://www.ppi.io",
+            "keywords": [
+                "cache",
+                "ppi"
+            ],
+            "time": "2013-05-19 17:21:11"
         },
         {
             "name": "ppi/composer-installer",
@@ -991,12 +1038,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Debug.git",
-                "reference": "6360ed4ed54eb4c80e6640c23140507dea6e98f3"
+                "reference": "60d593cc32c291392339b0955a4e8cd4b0c44551"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Debug/zipball/6360ed4ed54eb4c80e6640c23140507dea6e98f3",
-                "reference": "6360ed4ed54eb4c80e6640c23140507dea6e98f3",
+                "url": "https://api.github.com/repos/symfony/Debug/zipball/60d593cc32c291392339b0955a4e8cd4b0c44551",
+                "reference": "60d593cc32c291392339b0955a4e8cd4b0c44551",
                 "shasum": ""
             },
             "require": {
@@ -1014,7 +1061,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -1038,7 +1085,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-13 14:36:40"
+            "time": "2013-05-16 07:54:39"
         },
         {
             "name": "symfony/dependency-injection",
@@ -1047,12 +1094,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DependencyInjection.git",
-                "reference": "402b1c843d77b6b6aa8e2aaa21641d6047ccac2f"
+                "reference": "db5cf551bfebe8fbb0a0734eaf5d732aa10b74e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DependencyInjection/zipball/402b1c843d77b6b6aa8e2aaa21641d6047ccac2f",
-                "reference": "402b1c843d77b6b6aa8e2aaa21641d6047ccac2f",
+                "url": "https://api.github.com/repos/symfony/DependencyInjection/zipball/db5cf551bfebe8fbb0a0734eaf5d732aa10b74e9",
+                "reference": "db5cf551bfebe8fbb0a0734eaf5d732aa10b74e9",
                 "shasum": ""
             },
             "require": {
@@ -1070,7 +1117,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -1094,7 +1141,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-13 14:36:40"
+            "time": "2013-05-16 07:54:39"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -1103,12 +1150,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "2d84c66c090ed676f9ac60a46b9366d4dd80a523"
+                "reference": "4b34aad44d0a2d91f301ee967151ce0980f39930"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/2d84c66c090ed676f9ac60a46b9366d4dd80a523",
-                "reference": "2d84c66c090ed676f9ac60a46b9366d4dd80a523",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/4b34aad44d0a2d91f301ee967151ce0980f39930",
+                "reference": "4b34aad44d0a2d91f301ee967151ce0980f39930",
                 "shasum": ""
             },
             "require": {
@@ -1124,7 +1171,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -1148,7 +1195,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-13 14:36:40"
+            "time": "2013-05-16 07:54:39"
         },
         {
             "name": "symfony/filesystem",
@@ -1157,12 +1204,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "v2.3.0-BETA2"
+                "reference": "3567f5f48305098044c6d6a383f5cefec9c45efa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/v2.3.0-BETA2",
-                "reference": "v2.3.0-BETA2",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/3567f5f48305098044c6d6a383f5cefec9c45efa",
+                "reference": "3567f5f48305098044c6d6a383f5cefec9c45efa",
                 "shasum": ""
             },
             "require": {
@@ -1171,7 +1218,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -1195,7 +1242,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-06 20:03:44"
+            "time": "2013-05-16 07:54:39"
         },
         {
             "name": "symfony/finder",
@@ -1251,12 +1298,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/FrameworkBundle.git",
-                "reference": "8efb6f824b763b4c8ba332e4bc1fd5c8d1f621e2"
+                "reference": "3f9383dcdf6b8e0d069f63d9df901e08917c67d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/FrameworkBundle/zipball/8efb6f824b763b4c8ba332e4bc1fd5c8d1f621e2",
-                "reference": "8efb6f824b763b4c8ba332e4bc1fd5c8d1f621e2",
+                "url": "https://api.github.com/repos/symfony/FrameworkBundle/zipball/3f9383dcdf6b8e0d069f63d9df901e08917c67d0",
+                "reference": "3f9383dcdf6b8e0d069f63d9df901e08917c67d0",
                 "shasum": ""
             },
             "require": {
@@ -1285,7 +1332,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -1309,7 +1356,7 @@
             ],
             "description": "Symfony FrameworkBundle",
             "homepage": "http://symfony.com",
-            "time": "2013-05-13 14:36:40"
+            "time": "2013-05-16 07:54:39"
         },
         {
             "name": "symfony/http-foundation",
@@ -1368,12 +1415,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "6c5490b05ca47ebe7c43af369b679eb1ce0a9639"
+                "reference": "8f81e20ffb238fc395c06ab6279caf60ee806dd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/6c5490b05ca47ebe7c43af369b679eb1ce0a9639",
-                "reference": "6c5490b05ca47ebe7c43af369b679eb1ce0a9639",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/8f81e20ffb238fc395c06ab6279caf60ee806dd9",
+                "reference": "8f81e20ffb238fc395c06ab6279caf60ee806dd9",
                 "shasum": ""
             },
             "require": {
@@ -1405,7 +1452,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -1429,7 +1476,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-13 14:36:40"
+            "time": "2013-05-16 07:54:39"
         },
         {
             "name": "symfony/routing",
@@ -1496,12 +1543,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Stopwatch.git",
-                "reference": "v2.3.0-BETA2"
+                "reference": "453f661bad0ec73417ccce9853b1dc6c2a885db1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Stopwatch/zipball/v2.3.0-BETA2",
-                "reference": "v2.3.0-BETA2",
+                "url": "https://api.github.com/repos/symfony/Stopwatch/zipball/453f661bad0ec73417ccce9853b1dc6c2a885db1",
+                "reference": "453f661bad0ec73417ccce9853b1dc6c2a885db1",
                 "shasum": ""
             },
             "require": {
@@ -1510,7 +1557,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -1534,7 +1581,7 @@
             ],
             "description": "Symfony Stopwatch Component",
             "homepage": "http://symfony.com",
-            "time": "2013-04-17 07:17:10"
+            "time": "2013-05-16 07:54:39"
         },
         {
             "name": "symfony/templating",
@@ -1691,12 +1738,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "7b298c2d1fa32b2d3ddb7e3b6b3deb56b16b3527"
+                "reference": "ba88c755579c06e7ccb5ee73c6e27e88a1fed114"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/7b298c2d1fa32b2d3ddb7e3b6b3deb56b16b3527",
-                "reference": "7b298c2d1fa32b2d3ddb7e3b6b3deb56b16b3527",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/ba88c755579c06e7ccb5ee73c6e27e88a1fed114",
+                "reference": "ba88c755579c06e7ccb5ee73c6e27e88a1fed114",
                 "shasum": ""
             },
             "require": {
@@ -1732,7 +1779,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-05-14 05:05:22"
+            "time": "2013-05-17 10:06:31"
         },
         {
             "name": "twitter/bootstrap",
@@ -1988,6 +2035,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "ppi/framework": 20,
+        "ppi/cache-module": 20,
         "ppi/composer-installer": 20,
         "ppi/distribution-module": 20
     },
