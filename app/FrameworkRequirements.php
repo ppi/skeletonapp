@@ -35,7 +35,7 @@
  * There is a special subclass, named PhpIniRequirement, to check a php.ini configuration.
  *
  * @author Tobias Schultze <http://tobion.de>
- * @author Vítor Brandão <vitor@ppi.io> <vitor@noiselabs.org>
+ * @author Vítor Brandão <vitor@ppi.io>
  */
 class Requirement
 {
@@ -380,7 +380,7 @@ class RequirementCollection implements IteratorAggregate
  *
  * @author Tobias Schultze <http://tobion.de>
  * @author Fabien Potencier <fabien@symfony.com>
- * @author Vítor Brandão <vitor@ppi.io> <vitor@noiselabs.org>
+ * @author Vítor Brandão <vitor@ppi.io>
  */
 class FrameworkRequirements extends RequirementCollection
 {

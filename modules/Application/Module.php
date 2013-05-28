@@ -1,10 +1,9 @@
 <?php
+
 namespace Application;
 
-use PPI\Module\RoutesProviderInterface,
-    PPI\Module\Module as BaseModule,
-    PPI\Autoload,
-    PPI\Module\Service;
+use PPI\Module\Module as BaseModule;
+use PPI\Autoload;
 
 class Module extends BaseModule
 {
@@ -37,13 +36,7 @@ class Module extends BaseModule
     
     public function getServiceConfig()
     {
-        return array('factories' => array(
-            
-            'testService' => function($sm) {
-                return new Classes\TestServiceClass();
-            }
-            
-        ));
+        return array('factories' => array());
     }
 
 }
