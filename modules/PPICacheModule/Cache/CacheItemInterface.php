@@ -12,8 +12,6 @@ namespace PPICacheModule\Cache;
 /**
  * CacheItemInterface.
  *
- * @author     Paul Dragoonis <paul@ppi.io>
- * @author     Vítor Brandão <vitor@ppi.io>
  * @package    PPI
  * @subpackage Cache
  */
