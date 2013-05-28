@@ -14,7 +14,7 @@
     "require": {
         "ppi/framework": "2.1.x-dev",
         "ppi/composer-installer": "dev-master",
-        "ppi/distribution-module": "dev-master",
+        "ppi/distribution-module": "dev-master"
     },
     "extra": {
         "branch-alias": {
