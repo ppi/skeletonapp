@@ -33,10 +33,4 @@ class Module extends BaseModule
     {
         return $this->loadYamlConfig(__DIR__ . '/resources/config/config.yml');
     }
-    
-    public function getServiceConfig()
-    {
-        return array('factories' => array());
-    }
-
 }
