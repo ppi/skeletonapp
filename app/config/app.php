@@ -4,7 +4,7 @@ $config = array();
 
 $config['framework'] = array(
     'templating' => array(
-        'engines'     => array('php', 'smarty', 'twig'),
+        'engines'     => array('php'),
         'globals'     => array(
             'ga_tracking' => 'UA-XXXXX-X',
         ),
