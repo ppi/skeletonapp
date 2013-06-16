@@ -12,7 +12,8 @@
         }
     ],
     "require": {
-        "ppi/framework": "dev-feature/composer-deps"
+        "ppi/framework": "dev-2.1-noiselabs",
+        "ppi/distribution-module": "dev-noiselabs"
     },
     "scripts": {
         "post-install-cmd": [
