@@ -16,7 +16,7 @@ require_once dirname(__FILE__).'/FrameworkRequirements.php';
  * Command Line Colors (Bash only).
  * Adapted from https://gist.github.com/1315354
  *
- * @author Vítor Brandão <vitor@ppi.io> <vitor@noiselabs.org>
+ * @author Vítor Brandão <vitor@ppi.io>
  */
 class CLI
 {
