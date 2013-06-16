@@ -18,6 +18,22 @@ $connections['main'] = array(
     'prefix'     => ''
 );
 
+$connections['content'] = array(
+
+    'library'    => 'zend_db',
+
+    'driver'     => 'pdo_mysql',
+    'hostname'   => 'localhost',
+    'database'   => 'ppi2_skeleton',
+    'username'   => 'root',
+    'password'   => '',
+
+    'charset'    => 'utf8',
+    'collation'  => 'utf8_unicode_ci',
+    'prefix'     => ''
+);
+
+
 $connections['products'] = array(
     
     'library'    => 'fuelphp',
