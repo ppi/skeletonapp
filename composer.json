@@ -12,8 +12,7 @@
         }
     ],
     "require": {
-        "ppi/framework": "2.1-dev",
-        "ppi/distribution-module": "dev-master"
+        "ppi/framework": "2.1-dev"
     },
     "scripts": {
         "post-install-cmd": [
