@@ -31,6 +31,6 @@ class Module extends BaseModule
      */
     public function getConfig()
     {
-        return $this->loadYamlConfig(__DIR__ . '/resources/config/config.yml');
+        return $this->loadConfig('config.yml');
     }
 }
