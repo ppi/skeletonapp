@@ -6,10 +6,13 @@ chdir(dirname(__DIR__));
 // Lets include PPI
 require_once 'app/init.php';
 
+$env = getenv('PPI_ENV') ?: 'dev';
+$debug = getenv('PPI_DEBUG') !== '0'  && $env !== 'prod';
+
 // Create our PPI App instance
 $app = new PPI\App(array(
-    'environment'   => 'dev',
-    'debug'         => true
+    'environment'   => $env,
+    'debug'         => $debug
 ));
 
 // Configure the application
