@@ -8,14 +8,12 @@ require_once 'app/init.php';
 
 // Create our PPI App instance
 $app = new PPI\App(array(
-    'environment'   => 'development',
+    'environment'   => 'dev',
     'debug'         => true
 ));
 
-ini_set('display_errors', 'on');
-
 // Configure the application
-$app->loadConfig('app.php');
+$app->loadConfig($app->getEnvironment().'/app.php');
 
 // Load the application, match the URL and send an HTTP response
 $app->boot()->dispatch()->send();
