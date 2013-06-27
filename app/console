@@ -24,9 +24,9 @@ $debug = getenv('PPI_DEBUG') !== '0' && !$input->hasParameterOption(array('--no-
 
 $app = new PPI\App(array(
     'environment'   => $env,
-     'debug'        => $debug
+    'debug'         => $debug
 ));
-$app->loadConfig('app.yml');
+$app->loadConfig($app->getEnvironment().'/app.php');
 
 $application = new Application($app);
 $application->run();
