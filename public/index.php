@@ -17,7 +17,7 @@ $app = new PPI\App(array(
 ));
 
 // Configure the application
-$app->loadConfig($app->getEnvironment().'/app.yml');
+$app->loadConfig($app->getEnvironment().'/app.php');
 
 // Load the application, match the URL and send an HTTP response
 $app->boot()->dispatch()->send();

@@ -1,6 +1,16 @@
 imports:
     - { resource: datasource.yml }
-    - { resource: modules.yml }
+
+modules:
+    active_modules:
+    - Framework
+    - Application
+    - PPI\BowerModule
+    - PPI\SmartyModule
+    - PPI\TwigModule
+    - PPI\TwitterBootstrapModule
+    module_listener_options:
+        module_paths: ['./modules', './vendor']
 
 framework:
     templating:
