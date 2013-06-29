@@ -9,6 +9,9 @@ return array(
         'PPI\TwitterBootstrapModule'
     ),
     'module_listener_options' => array(
-        'module_paths'      => array('./modules', './vendor')
+        'module_paths'      => array(
+            './modules',
+            './vendor'
+        )
     ),
 );

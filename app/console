@@ -13,7 +13,7 @@
 set_time_limit(0);
 
 chdir(dirname(__DIR__));
-require_once 'init.php';
+require_once __DIR__ . '/init.php';
 
 use PPI\Console\Application;
 use Symfony\Component\Console\Input\ArgvInput;
@@ -26,7 +26,7 @@ $app = new PPI\App(array(
     'environment'   => $env,
     'debug'         => $debug
 ));
-$app->loadConfig($app->getEnvironment().'/app.php');
+$app->loadConfig($app->getEnvironment().'/app.yml');
 
 $application = new Application($app);
 $application->run();

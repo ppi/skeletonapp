@@ -1,15 +1,5 @@
 imports:
-    - { resource: datasource.yml }
-    - { resource: modules.yml }
-
-framework:
-    templating:
-        engines: ["php", "smarty", "twig"]
-        globals:
-            - ga_tracking: "UA-XXXXX-X"
-
-    skeleton_module:
-        path: './utils/skeleton_module'
+    - { resource: ../base/app.yml }
 
 monolog:
     handlers:
