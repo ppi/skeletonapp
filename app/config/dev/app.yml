@@ -1,2 +1,9 @@
 imports:
-    - { resource: prod/app.yml }
+    - { resource: ../base/app.yml }
+
+monolog:
+    handlers:
+        main:
+            type:  stream
+            path:  %app.logs_dir%/%app.environment%.log
+            level: debug

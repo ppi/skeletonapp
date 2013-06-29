@@ -1,0 +1,10 @@
+imports:
+    - { resource: datasource.yml }
+    - { resource: modules.yml }
+
+framework:
+    templating:
+        engines: ["php"]
+
+    skeleton_module:
+        path: './utils/skeleton_module'

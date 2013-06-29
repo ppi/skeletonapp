@@ -1,3 +1,3 @@
 <?php
 
-return require __DIR__.'/../prod/app.php';
+return require __DIR__.'/../base/app.php';
