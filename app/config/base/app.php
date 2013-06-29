@@ -1,23 +1,32 @@
 <?php
+return array(
 
-$config = array();
+'modules' => array(
+    'active_modules' => array(
+        'Framework',
+        'Application',
+        'PPI\BowerModule',
+        'PPI\SmartyModule',
+        'PPI\TwigModule',
+        'PPI\TwitterBootstrapModule'
+    ),
+    'module_listener_options' => array(
+        'module_paths'      => array(
+            './modules',
+            './vendor'
+        )
+    ),
+),
 
-$config['framework'] = array(
+'framework' => array(
     'templating' => array(
         'engines'     => array('php'),
-        'globals'     => array(
-            'ga_tracking' => 'UA-XXXXX-X',
-        ),
     ),
     'skeleton_module' => array(
         'path' => './utils/skeleton_module'
     )
-);
+),
 
-$config['datasource'] = array(
+'datasource' => array(
     'connections' => require __DIR__ . '/datasource.php'
-);
-
-$config['modules'] = require __DIR__ . '/modules.php';
-
-return $config;
+));
