@@ -1,6 +1,11 @@
 imports:
     - { resource: ../base/app.yml }
 
+modules:
+    module_listener_options:
+        config_cache_enabled: true
+        module_map_cache_enabled: true
+
 monolog:
     handlers:
         main:
