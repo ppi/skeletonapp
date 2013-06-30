@@ -10,7 +10,7 @@ if (!file_exists($composerPath)) {
 }
 
 // Composer generated file include
-$composer = require dirname(__DIR__) . '/vendor/autoload.php';
+$composer = require $composerPath;
 
 // Adding PPI autoloader so modules may add themself to the autoload process on-the-fly
 PPI\Autoload::config(array(
