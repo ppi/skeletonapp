@@ -1,19 +1,26 @@
 <?php
+/**
+ * This file is part of the PPI Framework.
+ *
+ * @category    PPI
+ * @copyright   Copyright (c) 2011-2013 Paul Dragoonis <paul@ppi.io>
+ * @license     http://opensource.org/licenses/mit-license.php MIT
+ * @link        http://www.ppi.io
+ */
 
-defined('PPI_VERSION')     || define('PPI_VERSION', '2.0');
-defined('DS')              || define('DS', DIRECTORY_SEPARATOR);
-defined('PPI_PATH')        || define('PPI_PATH', realpath(__DIR__) . '/vendor/ppi/ppi/');
+//defined('PPI_ROOT_DIR') || define('PPI_ROOT_DIR', __DIR__);
+defined('DS')           || define('DS', DIRECTORY_SEPARATOR);
 
-$composerPath = dirname(__DIR__) . '/vendor/autoload.php';
-if (!file_exists($composerPath)) {
-    die('Unable to find composer generated file at: ' . $composerPath);
+if (!file_exists($path = dirname(__DIR__) . '/vendor/autoload.php')) {
+    die('Unable to find composer generated file at: ' . $path);
 }
 
-// Composer generated file include
-$composer = require dirname(__DIR__) . '/vendor/autoload.php';
+$loader = require $path;
 
 // Adding PPI autoloader so modules may add themself to the autoload process on-the-fly
 PPI\Autoload::config(array(
-    'loader'    => $composer
+    'loader'    => $loader
 ));
 PPI\Autoload::register();
+
+return $loader;
