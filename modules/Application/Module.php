@@ -2,16 +2,25 @@
 
 namespace Application;
 
-use PPI\Module\Module as BaseModule;
 use PPI\Autoload;
+use PPI\Module\AbstractModule;
 
-class Module extends BaseModule
+class Module extends AbstractModule
 {
-    protected $_moduleName = 'Application';
-
+    /**
+     * {@inheritdoc}
+     */
     public function init($e)
     {
         Autoload::add(__NAMESPACE__, dirname(__DIR__));
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return 'Application';
     }
 
     /**
@@ -31,6 +40,6 @@ class Module extends BaseModule
      */
     public function getConfig()
     {
-        return $this->loadYamlConfig(__DIR__ . '/resources/config/config.yml');
+        return $this->loadConfig('config.yml');
     }
 }

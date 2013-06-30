@@ -12,7 +12,14 @@
         }
     ],
     "require": {
-        "ppi/framework": "2.1.x-dev"
+        "ppi/framework": "dev-develop",
+        "ppi/bower-module": "dev-master",
+        "ppi/cache-module": "dev-master",
+        "ppi/distribution-module": "dev-master",
+        "ppi/mustache-module": "dev-master",
+        "ppi/smarty-module": "dev-master",
+        "ppi/twig-module": "dev-master",
+        "ppi/twitter-bootstrap-module": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
