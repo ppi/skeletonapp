@@ -11,10 +11,11 @@ return array(
         'PPI\TwitterBootstrapModule'
     ),
     'module_listener_options' => array(
-        'config_cache_enabled'     => false,
-        'module_map_cache_enabled' => false,
         'cache_dir'                => '%app.cache_dir%',
+        'config_cache_enabled'     => false,
         'config_cache_key'         => '%app.name%',
+        'module_map_cache_enabled' => false,
+        'module_map_cache_key'     => '%app.name%',
         'module_paths'      => array(
             './modules',
             './vendor'
