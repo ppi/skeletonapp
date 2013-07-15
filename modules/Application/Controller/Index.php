@@ -3,7 +3,6 @@ namespace Application\Controller;
 
 use Application\Controller\Shared as SharedController;
 
-
 class Index extends SharedController
 {
     public function indexAction()
