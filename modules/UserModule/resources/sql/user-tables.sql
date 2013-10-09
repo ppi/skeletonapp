@@ -15,7 +15,7 @@ CREATE TABLE `user_activation_token` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `used` tinyint(1) DEFAULT '0',
   `user_id` int(10) unsigned NOT NULL,
-  `date_used` datetime NOT NULL,
+  `date_used` datetime NULL,
   `token` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`,`token`)
