@@ -17,7 +17,7 @@
         "ppi/cache-module": "dev-master",
         "ppi/distribution-module": "dev-master",
         "ppi/mustache-module": "dev-master",
-        "ppi/smarty-module": "dev-master",
+        "ppi/smarty-module": "dev-develop",
         "ppi/twig-module": "dev-master",
         "ppi/twitter-bootstrap-module": "dev-master"
     },
