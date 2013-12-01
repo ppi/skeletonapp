@@ -13,13 +13,13 @@
     ],
     "require": {
         "ppi/framework": "dev-develop",
-        "ppi/bower-module": "dev-master",
+        "ppi/bower-module": "dev-develop",
         "ppi/cache-module": "dev-master",
-        "ppi/distribution-module": "dev-master",
-        "ppi/mustache-module": "dev-master",
+        "ppi/distribution-module": "dev-develop",
+        "ppi/mustache-module": "dev-develop",
         "ppi/smarty-module": "dev-develop",
-        "ppi/twig-module": "dev-master",
-        "ppi/twitter-bootstrap-module": "dev-master"
+        "ppi/twig-module": "dev-develop",
+        "ppi/twitter-bootstrap-module": "dev-develop"
     },
     "scripts": {
         "post-install-cmd": [
