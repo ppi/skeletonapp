@@ -19,7 +19,9 @@
         "ppi/mustache-module": "dev-develop",
         "ppi/smarty-module": "dev-develop",
         "ppi/twig-module": "dev-develop",
-        "ppi/twitter-bootstrap-module": "dev-develop"
+        "ppi/twitter-bootstrap-module": "dev-develop",
+        "ppi/monolog-module": "dev-master",
+        "ppi/composer-module": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
