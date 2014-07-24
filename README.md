@@ -3,10 +3,9 @@ README
 
 What is PPI ?
 --------------
-PPI is a skeleton framework with the necessary wiring to let you drop in parts of existing frameworks and use their best bits, all under the one application. It allows developers to rapidly develop web applications and utilize features from the top frameworks without the tedious integration of them into your project.
+PPI is the the PHP Interoperability Framework. It provides an equal and open platform to empower PHP developers to pick the best tools from the best PHP frameworks
 
-PPI doesn't just stop at the core framework side of things, the skeleton application comes pre-bundled with the latest and greatest trending libraries for frontend development such as: HTML5Boilerplate and TwitterBootstrap already setup for you.
-
+PPI bootstraps framework components for you from the top frameworks such as ZendFrameworks2, Symfony2, Laravel4, FuelPHP, Doctrine2
 
 Installation
 ------------
@@ -30,4 +29,4 @@ Fork the repo, push your changes to your fork, and submit a pull request.
 
 Requirements
 ------------
-* PHP 5.3.3+ (this is the base requirement of symfony2, so we must comply with that)
+* PHP 5.3.10+ - We recommend PHP 5.4 or even better PHP 5.5
