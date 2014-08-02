@@ -7,6 +7,9 @@ use PPI\Module\AbstractModule;
 
 class Module extends AbstractModule
 {
+
+    protected $_moduleName = 'Application';
+
     /**
      * {@inheritdoc}
      */
