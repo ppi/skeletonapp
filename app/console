@@ -5,7 +5,7 @@
  *
  * @category    PPI
  * @package     DistributionModule
- * @copyright   Copyright (c) 2011-2013 Paul Dragoonis <paul@ppi.io>
+ * @copyright   Copyright (c) 2011-2014 Paul Dragoonis <paul@ppi.io>
  * @license     http://opensource.org/licenses/mit-license.php MIT
  * @link        http://www.ppi.io
  */
@@ -24,7 +24,8 @@ $debug = getenv('PPI_DEBUG') !== '0' && !$input->hasParameterOption(array('--no-
 
 $app = new PPI\App(array(
     'environment'   => $env,
-    'debug'         => $debug
+    'debug'         => $debug,
+    'rootDir'       => __DIR__
 ));
 $app->loadConfig($app->getEnvironment().'/app.yml');
 
