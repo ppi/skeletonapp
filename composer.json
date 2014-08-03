@@ -26,10 +26,12 @@
     "scripts": {
         "post-install-cmd": [
             "PPI\\DistributionModule\\Composer\\ScriptHandler::installAssets",
+            "PPI\\DistributionModule\\Composer\\ScriptHandler::permissionDirs",
             "PPI\\DistributionModule\\Composer\\ScriptHandler::installRequirementsFile"
         ],
         "post-update-cmd": [
             "PPI\\DistributionModule\\Composer\\ScriptHandler::installAssets",
+            "PPI\\DistributionModule\\Composer\\ScriptHandler::permissionDirs",
             "PPI\\DistributionModule\\Composer\\ScriptHandler::installRequirementsFile"
         ]
     },
