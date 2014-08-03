@@ -23,7 +23,7 @@ $app = new PPI\App(array(
 ));
 
 // ...configure...
-$app->loadConfig($app->getEnvironment().'/app.yml');
+$app->loadConfig($app->getEnvironment().'/app.php');
 
 // ...and run the application!
 $app->run();
