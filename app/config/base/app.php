@@ -1,7 +1,7 @@
 <?php
-return array(
+$config =  array();
 
-'modules' => array(
+$config['modules'] = array(
     'active_modules' => array(
         'Framework',
         'Application',
@@ -23,17 +23,17 @@ return array(
             './vendor'
         )
     ),
-),
+);
 
-'framework' => array(
+$config['framework'] = array(
     'templating' => array(
         'engines'     => array('php'),
     ),
     'skeleton_module' => array(
         'path' => './utils/skeleton_module'
     )
-),
+);
 
-'datasource' => array(
+$config['datasource'] = array(
     'connections' => require __DIR__ . '/datasource.php'
-));
+);
