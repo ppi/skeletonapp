@@ -27,7 +27,7 @@ $app = new PPI\App(array(
     'debug'         => $debug,
     'rootDir'       => __DIR__
 ));
-$app->loadConfig($app->getEnvironment().'/app.yml');
+$app->loadConfig($app->getEnvironment().'/app.php');
 
 $application = new Application($app);
 $application->run();
