@@ -37,3 +37,5 @@ $config['framework'] = array(
 $config['datasource'] = array(
     'connections' => require __DIR__ . '/datasource.php'
 );
+
+return $config;
