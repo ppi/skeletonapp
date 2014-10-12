@@ -384,7 +384,7 @@ class RequirementCollection implements IteratorAggregate
  */
 class FrameworkRequirements extends RequirementCollection
 {
-    const REQUIRED_PHP_VERSION = '5.3.23';
+    const REQUIRED_PHP_VERSION = '5.3.3';
 
     /**
      * Constructor that initializes the requirements.
