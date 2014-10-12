@@ -7,7 +7,6 @@ return array(
         'Application',
         'PPI\BowerModule',
         'PPI\ComposerModule',
-        'PPI\MonologModule',
         'PPI\SmartyModule',
         'PPI\TwigModule',
         'PPI\TwitterBootstrapModule'
