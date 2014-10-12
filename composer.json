@@ -15,6 +15,7 @@
         "ppi/framework": "dev-develop",
         "ppi/bower-module": "dev-develop",
         "ppi/cache-module": "dev-master",
+        "ppi/ppi-datasource-module": "dev-master",
         "ppi/distribution-module": "dev-develop",
         "ppi/mustache-module": "dev-develop",
         "ppi/smarty-module": "dev-develop",
@@ -26,10 +27,12 @@
     "scripts": {
         "post-install-cmd": [
             "PPI\\DistributionModule\\Composer\\ScriptHandler::installAssets",
+            "PPI\\DistributionModule\\Composer\\ScriptHandler::permissionDirs",
             "PPI\\DistributionModule\\Composer\\ScriptHandler::installRequirementsFile"
         ],
         "post-update-cmd": [
             "PPI\\DistributionModule\\Composer\\ScriptHandler::installAssets",
+            "PPI\\DistributionModule\\Composer\\ScriptHandler::permissionDirs",
             "PPI\\DistributionModule\\Composer\\ScriptHandler::installRequirementsFile"
         ]
     },
