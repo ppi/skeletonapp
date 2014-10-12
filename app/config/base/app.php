@@ -5,11 +5,7 @@ $config['modules'] = array(
     'active_modules' => array(
         'Framework',
         'Application',
-        'PPI\BowerModule',
-        'PPI\ComposerModule',
-        'PPI\SmartyModule',
-        'PPI\TwigModule',
-        'PPI\TwitterBootstrapModule'
+        'PPI\ComposerModule'
     ),
     'module_listener_options' => array(
         'cache_dir'                => '%app.cache_dir%',
