@@ -7,13 +7,13 @@ use User\Entity\AuthUser as AuthUserEntity;
 
 class Shared extends BaseController
 {
-   
+
     /**
      * Render a template
      *
      * @param  string $template The template to render
-     * @param  array  $params   The params to pass to the renderer
-     * @param  array  $options  Extra options
+     * @param  array $params The params to pass to the renderer
+     * @param  array $options Extra options
      * @return string
      */
     protected function render($template, array $params = array(), array $options = array())
@@ -23,7 +23,7 @@ class Shared extends BaseController
 
     /**
      * Add a template global variable
-     * 
+     *
      * @param string $param
      * @param mixed $value
      */
@@ -31,5 +31,5 @@ class Shared extends BaseController
     {
         $this->getService('templating')->addGlobal($param, $value);
     }
-    
+
 }

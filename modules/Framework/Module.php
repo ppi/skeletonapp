@@ -1,4 +1,5 @@
 <?php
+
 namespace Framework;
 
 use PPI\Module\Module as BaseModule;
@@ -9,7 +10,8 @@ class Module extends BaseModule {
 	
 	protected $_moduleName = 'Framework';
 	
-	function init($e) {
+	function init($e)
+    {
 		Autoload::add(__NAMESPACE__, dirname(__DIR__));
 	}
 	
@@ -18,8 +20,8 @@ class Module extends BaseModule {
 	 * 
 	 * @return \Symfony\Component\Routing\RouteCollection
 	 */
-	public function getRoutes() {
+	public function getRoutes()
+    {
 		return $this->loadYamlRoutes(__DIR__ . '/resources/config/routes.yml');
 	}
-	
 }

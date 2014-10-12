@@ -7,20 +7,13 @@ use PPI\Module\AbstractModule;
 
 class Module extends AbstractModule
 {
+
     /**
      * {@inheritdoc}
      */
     public function init($e)
     {
         Autoload::add(__NAMESPACE__, dirname(__DIR__));
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getName()
-    {
-        return 'Application';
     }
 
     /**
