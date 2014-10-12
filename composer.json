@@ -12,15 +12,10 @@
         }
     ],
     "require": {
-        "ppi/framework": "dev-develop",
-        "ppi/bower-module": "dev-develop",
+        "ppi/framework": "2.1.*",
         "ppi/cache-module": "dev-master",
         "ppi/ppi-datasource-module": "dev-master",
-        "ppi/distribution-module": "dev-develop",
-        "ppi/mustache-module": "dev-develop",
-        "ppi/smarty-module": "dev-develop",
-        "ppi/twig-module": "dev-develop",
-        "ppi/twitter-bootstrap-module": "dev-develop",
+        "ppi/distribution-module": "dev-master",
         "ppi/user-module": "dev-master",
         "ppi/composer-module": "dev-master"
     },
