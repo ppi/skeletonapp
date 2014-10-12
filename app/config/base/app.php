@@ -5,6 +5,7 @@ $config['modules'] = array(
     'active_modules' => array(
         'Framework',
         'Application',
+        'UserModule',
         'PPI\ComposerModule'
     ),
     'module_listener_options' => array(
