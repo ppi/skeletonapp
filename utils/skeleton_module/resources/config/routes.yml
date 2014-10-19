@@ -1,3 +1,3 @@
-[MODULE_NAME]_home:
-    pattern: /[MODULE_NAME]/home
+[MODULE_NAME]_Index:
+    pattern: /[MODULE_NAME]/index
     defaults: { _controller: "[MODULE_NAME]:Index:index"}
