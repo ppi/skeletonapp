@@ -2,19 +2,10 @@
 
 namespace Application;
 
-use PPI\Autoload;
 use PPI\Module\AbstractModule;
 
 class Module extends AbstractModule
 {
-
-    /**
-     * {@inheritdoc}
-     */
-    public function init($e)
-    {
-        Autoload::add(__NAMESPACE__, dirname(__DIR__));
-    }
 
     /**
      * Get the routes for this module
@@ -33,6 +24,18 @@ class Module extends AbstractModule
      */
     public function getConfig()
     {
-        return $this->loadConfig('config.yml');
+        return $this->loadConfig(__DIR__ . '/resources/config/config.yml');
     }
+
+    public function getAutoloaderConfig()
+    {
+        return array(
+            'Zend\Loader\StandardAutoloader' => array(
+                'namespaces' => array(
+                    __NAMESPACE__ => __DIR__ . '/src/',
+                ),
+            ),
+        );
+    }
+
 }

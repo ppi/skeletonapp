@@ -2,18 +2,11 @@
 
 namespace Framework;
 
-use PPI\Module\Module as BaseModule;
-use PPI\Autoload;
+use PPI\Module\AbstractModule;
 
-
-class Module extends BaseModule {
+class Module extends AbstractModule {
 	
-	protected $_moduleName = 'Framework';
-	
-	function init($e)
-    {
-		Autoload::add(__NAMESPACE__, dirname(__DIR__));
-	}
+	protected $name = 'Framework';
 	
 	/**
 	 * Get the routes for this module
@@ -22,6 +15,18 @@ class Module extends BaseModule {
 	 */
 	public function getRoutes()
     {
-		return $this->loadYamlRoutes(__DIR__ . '/resources/config/routes.yml');
+		return $this->loadYamlRoutes(__DIR__ . '/src/resources/config/routes.yml');
 	}
+
+    public function getAutoloaderConfig()
+    {
+        return array(
+            'Zend\Loader\StandardAutoloader' => array(
+                'namespaces' => array(
+                    __NAMESPACE__ => __DIR__ . '/src/',
+                ),
+            ),
+        );
+    }
+
 }
