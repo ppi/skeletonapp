@@ -15,7 +15,7 @@ class Module extends AbstractModule {
 	 */
 	public function getRoutes()
     {
-		return $this->loadYamlRoutes(__DIR__ . '/src/resources/config/routes.yml');
+		return $this->loadYamlRoutes(__DIR__ . '/resources/config/routes.yml');
 	}
 
     public function getAutoloaderConfig()
