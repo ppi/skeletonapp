@@ -17,6 +17,7 @@
         "ppi/ppi-datasource-module": "dev-master",
         "ppi/distribution-module": "dev-master",
         "ppi/user-module": "dev-master",
+        "ppi/blog-module": "dev-master",
         "ppi/composer-module": "dev-master"
     },
     "scripts": {
