@@ -1,27 +1,11 @@
 <?php
+
 namespace [MODULE_NAME];
 
-use PPI\Module\Module as BaseModule;
-use PPI\Autoload;
+use PPI\Module\AbstractModule;
 
-class Module extends BaseModule
+class Module extends AbstractModule
 {
-    protected $_moduleName = '[MODULE_NAME]';
-
-    public function init($e)
-    {
-        Autoload::add(__NAMESPACE__, dirname(__DIR__));
-    }
-    
-    /**
-     * Get the configuration for this module
-     *
-     * @return array
-     */
-    public function getConfig()
-    {
-        return include(__DIR__ . '/resources/config/config.php');
-    }
 
     /**
      * Get the routes for this module
@@ -32,12 +16,26 @@ class Module extends BaseModule
     {
         return $this->loadYamlRoutes(__DIR__ . '/resources/config/routes.yml');
     }
-    
-//    public function getServiceConfig()
-//    {
-//        return array('factories' => array(
-//            
-//        ));
-//    }
+
+    /**
+     * Get the configuration for this module
+     *
+     * @return array
+     */
+    public function getConfig()
+    {
+        return $this->loadConfig(__DIR__ . '/resources/config/config.php');
+    }
+
+    public function getAutoloaderConfig()
+    {
+        return array(
+            'Zend\Loader\StandardAutoloader' => array(
+                'namespaces' => array(
+                    __NAMESPACE__ => __DIR__ . '/src/',
+                ),
+            ),
+        );
+    }
 
 }

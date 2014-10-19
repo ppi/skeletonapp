@@ -6,6 +6,7 @@ $config['modules'] = array(
         'Framework',
         'Application',
         'UserModule',
+        'BlogModule',
         'PPI\ComposerModule'
     ),
     'module_listener_options' => array(
