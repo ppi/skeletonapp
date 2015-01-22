@@ -3,7 +3,7 @@ framework:
         connections:
             main:
                 type:   "pdo_mysql"
-                host:   "localhost"
+                host:   "mysql"
                 dbname: "ppi2_skeleton"
                 user:   "root"
-                pass:   ""
+                pass:   "ppi"
