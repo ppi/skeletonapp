@@ -27,7 +27,7 @@ docker build -t ppi .
 docker run -p 80:80 -v `pwd`:/var/www --link mysql ppi
 ```
 
-Allow a minute for the composer install to finish (docker logs ppi) and then you can now browse to your ppi application at http://192.168.66.66
+Allow a minute for the composer install to finish (docker logs -f ppi) and then you can now browse to your ppi application at http://192.168.66.66
 
 OSX
 ------------
@@ -37,7 +37,7 @@ Just ensure you have Vagrant installed and run:
 vagrant up
 ```
 
-Allow a minute for the composer install to finish (vagrant ssh -c "docker logs ppi") and then you can now browse to your ppi application at http://192.168.66.66
+Allow a minute for the composer install to finish (vagrant ssh -c "docker logs -f ppi") and then you can now browse to your ppi application at http://192.168.66.66
 
 Rolling your own
 ------------
