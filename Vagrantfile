@@ -47,10 +47,10 @@ Vagrant.configure("2") do |config|
     end
 
     # For performance increase, store cache and logs in ramdisk
-    #if directory['type'] == "nfs"
-    #  config.vm.provision :shell, :inline => "mount | grep app/cache; if [[ $? -eq 1 ]]; then mount -t tmpfs -o size=350m,mode=0777 tmpfs /var/www/application/app/cache; fi"
-    #  config.vm.provision :shell, :inline => "mount | grep app/logs;  if [[ $? -eq 1 ]]; then mount -t tmpfs -o size=150m,mode=0777 tmpfs /var/www/application/app/logs; fi"
-    #end
+    if directory['type'] == "nfs"
+      config.vm.provision :shell, :inline => "mount | grep app/cache; if [[ $? -eq 1 ]]; then mount -t tmpfs -o size=350m,mode=0777 tmpfs /var/www/app/cache; fi"
+      config.vm.provision :shell, :inline => "mount | grep app/logs;  if [[ $? -eq 1 ]]; then mount -t tmpfs -o size=150m,mode=0777 tmpfs /var/www/app/logs; fi"
+    end
 
     # Docker containers
     if yaml['virtual_machine']['provision'].has_key?("docker")
