@@ -2,7 +2,7 @@ virtual_machine:
     provider:
         virtualbox:
             name: "PPI Skeleton Application"
-            memory: "512"
+            memory: "2048"
     box:
         name: "ubuntu-trusty-amd64"
         uri: "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
