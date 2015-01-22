@@ -8,10 +8,10 @@ $connections['main'] = array(
     'fetch_mode' => \PDO::FETCH_ASSOC,
 
     'driver'     => 'pdo_mysql',
-    'hostname'   => 'localhost',
+    'hostname'   => 'mysql',
     'database'   => 'ppi2_skeleton',
     'username'   => 'root',
-    'password'   => '',
+    'password'   => 'ppi',
 
     'charset'    => 'utf8',
     'collation'  => 'utf8_unicode_ci',
@@ -23,10 +23,10 @@ $connections['content'] = array(
     'library'    => 'zend_db',
 
     'driver'     => 'pdo_mysql',
-    'hostname'   => 'localhost',
+    'hostname'   => 'mysql',
     'database'   => 'ppi2_skeleton',
     'username'   => 'root',
-    'password'   => '',
+    'password'   => 'ppi',
 
     'charset'    => 'utf8',
     'collation'  => 'utf8_unicode_ci',
@@ -39,10 +39,10 @@ $connections['products'] = array(
     'library'    => 'fuelphp',
 
     'driver'     => 'mysql',
-    'hostname'   => 'localhost',
+    'hostname'   => 'mysql',
     'database'   => 'ppi2_skeleton',
     'username'   => 'root',
-    'password'   => ''
+    'password'   => 'ppi'
 );
 
 $connections['users'] = array(
@@ -53,10 +53,10 @@ $connections['users'] = array(
     'fetch_mode' => \PDO::FETCH_ASSOC,
 
     'driver'     => 'mysql',
-    'hostname'   => 'localhost',
+    'hostname'   => 'mysql',
     'database'   => 'ppi2_skeleton',
     'username'   => 'root',
-    'password'   => '',
+    'password'   => 'ppi',
 
     'charset'    => 'utf8',
     'collation'  => 'utf8_unicode_ci',
