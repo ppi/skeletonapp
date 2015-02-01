@@ -12,7 +12,7 @@
         }
     ],
     "require": {
-        "ppi/framework": "2.1.0-alpha2"
+        "ppi/framework": "2.1.0-alpha2",
         "ppi/cache-module": "dev-master",
         "ppi/ppi-datasource-module": "dev-master",
         "ppi/distribution-module": "dev-master",
