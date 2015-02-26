@@ -16,10 +16,13 @@
         "ppi/cache-module": "dev-develop",
         "ppi/ppi-datasource-module": "dev-develop",
         "ppi/distribution-module": "dev-develop",
-        "ppi/user-module": "dev-develop",
-        "ppi/mustache-module": "dev-develop",
+        "ppi/user-module": "dev-develoop",
         "ppi/blog-module": "dev-develop",
-        "ppi/composer-module": "dev-develop"
+        "ppi/composer-module": "dev-develop",
+        "ppi/smarty-module": "dev-develop",
+        "ppi/twig-module": "dev-develop",
+        "ppi/mustache-module": "dev-develop",
+        "ppi/plates-module": "dev-develop"
     },
     "scripts": {
         "post-install-cmd": [
