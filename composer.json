@@ -16,7 +16,7 @@
         "ppi/cache-module": "dev-develop",
         "ppi/ppi-datasource-module": "dev-develop",
         "ppi/distribution-module": "dev-develop",
-        "ppi/user-module": "dev-develoop",
+        "ppi/user-module": "dev-develop",
         "ppi/blog-module": "dev-develop",
         "ppi/composer-module": "dev-develop",
         "ppi/smarty-module": "dev-develop",
