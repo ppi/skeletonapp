@@ -13,12 +13,13 @@
     ],
     "require": {
         "ppi/framework": "dev-develop",
-        "ppi/cache-module": "dev-master",
-        "ppi/ppi-datasource-module": "dev-master",
-        "ppi/distribution-module": "dev-master",
-        "ppi/user-module": "dev-master",
-        "ppi/blog-module": "dev-master",
-        "ppi/composer-module": "dev-master"
+        "ppi/cache-module": "dev-develop",
+        "ppi/ppi-datasource-module": "dev-develop",
+        "ppi/distribution-module": "dev-develop",
+        "ppi/user-module": "dev-develop",
+        "ppi/mustache-module": "dev-develop",
+        "ppi/blog-module": "dev-develop",
+        "ppi/composer-module": "dev-develop"
     },
     "scripts": {
         "post-install-cmd": [
@@ -34,9 +35,6 @@
     },
     "minimum-stability": "dev",
     "extra": {
-        "branch-alias": {
-            "dev-master": "2.1-dev"
-        },
         "ppi-app-dir": "app",
         "ppi-web-dir": "public",
         "ppi-assets-install": "symlink"
