@@ -1,7 +1,7 @@
 <?php
 namespace Application\Controller;
 
-use PPI\Module\Controller as BaseController;
+use PPI\Framework\Module\Controller as BaseController;
 use UserModule\Entity\User as UserEntity;
 use UserModule\Entity\AuthUser as AuthUserEntity;
 

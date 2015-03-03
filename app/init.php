@@ -18,9 +18,9 @@ if (!file_exists($path = dirname(__DIR__) . '/vendor/autoload.php')) {
 $loader = require $path;
 
 // Adding PPI autoloader so modules may add themself to the autoload process on-the-fly
-PPI\Autoload::config(array(
+PPI\Framework\Autoload::config(array(
     'loader'    => $loader
 ));
-PPI\Autoload::register();
+PPI\Framework\Autoload::register();
 
 return $loader;
