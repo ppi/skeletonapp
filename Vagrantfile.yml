@@ -1,0 +1,32 @@
+virtual_machine:
+    provider:
+        virtualbox:
+            name: "PPI Skeleton Application"
+            memory: "2048"
+    box:
+        name: "ubuntu-trusty-amd64"
+        uri: "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
+
+    network:
+        private_network: "192.168.66.66"
+        #hostname: "development.yourdomain.com"
+
+    shared_directories:
+        - { source: "./", target: "/var/www" }
+
+    provision:
+        docker:
+            mysql:
+                image: "mysql"
+                ports:
+                    - { listen: "0.0.0.0", host: 3306, guest: 3306 }
+                environment:
+                    - { key: "MYSQL_ROOT_PASSWORD", value: "ppi" }
+            ppi:
+                build: "/var/www"
+                ports:
+                    - { listen: "0.0.0.0", host: 80, guest: 80 }
+                volumes:
+                    - { host: "/var/www", guest: "/var/www" }
+                links:
+                    - mysql

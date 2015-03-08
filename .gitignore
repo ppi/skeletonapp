@@ -4,10 +4,12 @@ app/logs/*
 public/modules/*
 vendor
 composer.phar
-composer.lock
 
 # Backup files created by IDEs
 *~
+
+# Vagrant
+.vagrant
 
 # Mac OS X hidden files
 .DS_Store

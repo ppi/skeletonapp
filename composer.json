@@ -12,24 +12,37 @@
         }
     ],
     "require": {
+<<<<<<< HEAD
         "ppi/framework": "dev-feature/composer-deps",
         "ppi/cache-module": "dev-master"
+=======
+        "ppi/framework": "dev-develop",
+        "ppi/cache-module": "dev-develop",
+        "ppi/ppi-datasource-module": "dev-develop",
+        "ppi/distribution-module": "dev-develop",
+        "ppi/user-module": "dev-develop",
+        "ppi/blog-module": "dev-develop",
+        "ppi/composer-module": "dev-develop",
+        "ppi/smarty-module": "dev-develop",
+        "ppi/twig-module": "dev-develop",
+        "ppi/mustache-module": "dev-develop",
+        "ppi/plates-module": "dev-develop"
+>>>>>>> develop
     },
     "scripts": {
         "post-install-cmd": [
             "PPI\\DistributionModule\\Composer\\ScriptHandler::installAssets",
+            "PPI\\DistributionModule\\Composer\\ScriptHandler::permissionDirs",
             "PPI\\DistributionModule\\Composer\\ScriptHandler::installRequirementsFile"
         ],
         "post-update-cmd": [
             "PPI\\DistributionModule\\Composer\\ScriptHandler::installAssets",
+            "PPI\\DistributionModule\\Composer\\ScriptHandler::permissionDirs",
             "PPI\\DistributionModule\\Composer\\ScriptHandler::installRequirementsFile"
         ]
     },
     "minimum-stability": "dev",
     "extra": {
-        "branch-alias": {
-            "dev-master": "2.1-dev"
-        },
         "ppi-app-dir": "app",
         "ppi-web-dir": "public",
         "ppi-assets-install": "symlink"
