@@ -12,10 +12,6 @@
         }
     ],
     "require": {
-<<<<<<< HEAD
-        "ppi/framework": "dev-feature/composer-deps",
-        "ppi/cache-module": "dev-master"
-=======
         "ppi/framework": "dev-develop",
         "ppi/cache-module": "dev-develop",
         "ppi/ppi-datasource-module": "dev-develop",
@@ -27,7 +23,6 @@
         "ppi/twig-module": "dev-develop",
         "ppi/mustache-module": "dev-develop",
         "ppi/plates-module": "dev-develop"
->>>>>>> develop
     },
     "scripts": {
         "post-install-cmd": [
