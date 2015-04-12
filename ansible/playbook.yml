@@ -1,0 +1,21 @@
+---
+- hosts: all
+  sudo: true
+  vars:
+    web_server: apachephp
+    servername: ppi.app 192.168.33.99
+    timezone: UTC
+  vars_files:
+    - vars/mariadb.yml
+    - vars/common.yml
+    - [ "vars/apachephp.yml", "vars/ws_defaults.yml" ]
+  roles:
+    - init
+    - php5-cli
+    - apache
+    - php5
+    - mariadb
+    - composer
+    - phpcommon
+    - php-pecl
+    - app

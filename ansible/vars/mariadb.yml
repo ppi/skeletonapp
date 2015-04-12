@@ -1,0 +1,5 @@
+mariadb:
+    root_password: passw0rd
+    user: ppi_user
+    password: ppi_passw0rd
+    database: ppi

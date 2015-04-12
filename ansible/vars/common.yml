@@ -1,0 +1,7 @@
+---
+    php_ppa: php5
+    doc_root: /workspace/public
+    sys_packages: ["vim","git","htop"]
+    dist: precise
+    php_packages: ["php5-cli","php5-curl","php5-imagick","php5-cgi","php5-common","php5-gd","php5-imap","php5-intl","php5-mcrypt","php5-memcached","php5-mysql","php5-sqlite","php5-xsl","php5-xdebug","php5-gmp"]
+    pecl_packages: ["APCu","memcached","ZendOpcache","mysql","redis","sqlite3","date_time","archive"]
