@@ -21,8 +21,10 @@ class Module extends AbstractModule
     {
 //        return $this->loadYamlRoutes(__DIR__ . '/resources/config/routes.yml');
         $this->router = $this->newRouter();
-        $routes = $this->loadAuraRoutes();
-        var_dump($routes['during.bar']->path); exit;
+        $this->loadAuraRoutes();
+
+        $actual = $this->router->match('/foo');
+        var_dump('actual', $actual); exit;
         var_dump($routes); exit;
     }
 
@@ -33,7 +35,7 @@ class Module extends AbstractModule
 
     protected function newRouter()
     {
-        return $this->newRouterFactory()->newInstance('/foo/bar/baz');
+        return $this->newRouterFactory()->newInstance();
     }
 
     public function loadAuraRoutes()
@@ -47,10 +49,6 @@ class Module extends AbstractModule
             $router->setSecure(true);
             $router->setWildcard('other');
             $router->setRoutable(false);
-            $router->setIsMatchCallable(function () {
-            });
-            $router->setGenerateCallable(function () {
-            });
             $router->add('bar', '/bar');
         });
 
