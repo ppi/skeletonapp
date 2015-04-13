@@ -15,14 +15,14 @@ set_time_limit(0);
 chdir(dirname(__DIR__));
 require_once __DIR__ . '/init.php';
 
-use PPI\Console\Application;
+use PPI\Framework\Console\Application;
 use Symfony\Component\Console\Input\ArgvInput;
 
 $input = new ArgvInput();
 $env = $input->getParameterOption(array('--env', '-e'), getenv('PPI_ENV') ?: 'dev');
 $debug = getenv('PPI_DEBUG') !== '0' && !$input->hasParameterOption(array('--no-debug', '')) && $env !== 'prod';
 
-$app = new PPI\App(array(
+$app = new PPI\Framework\App(array(
     'environment'   => $env,
     'debug'         => $debug,
     'rootDir'       => __DIR__

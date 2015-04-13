@@ -2,7 +2,7 @@
 
 namespace Application;
 
-use PPI\Module\AbstractModule;
+use PPI\Framework\Module\AbstractModule;
 
 class Module extends AbstractModule
 {
