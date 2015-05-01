@@ -48,7 +48,7 @@
     "extra": {
         "ppi-app-dir": "app",
         "ppi-web-dir": "public",
-        "ppi-assets-install": "symlink"
+        "ppi-assets-install": "symlink-relative"
     },
     "config": {
         "component-dir": "public/libs"
