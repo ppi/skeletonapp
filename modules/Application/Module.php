@@ -6,6 +6,8 @@ use PPI\Framework\Module\AbstractModule;
 
 use Aura\Router\RouterFactory as AuraRouterFactory;
 
+use Aura\Router\RouterFactory as AuraRouterFactory;
+
 class Module extends AbstractModule
 {
 
