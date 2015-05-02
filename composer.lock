@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f38a3b7768e7034b33f38c3342549a5d",
+    "hash": "612a0b072dd6084e7d6b29fbcc88d082",
     "packages": [
         {
             "name": "composer/composer",
@@ -1086,12 +1086,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/ppi-distribution-module.git",
-                "reference": "3e051ca618195ecab95bec718cb2233bbd268f6c"
+                "reference": "49b410c325c1a32e8abee355d9612a6496fad070"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/ppi-distribution-module/zipball/3e051ca618195ecab95bec718cb2233bbd268f6c",
-                "reference": "3e051ca618195ecab95bec718cb2233bbd268f6c",
+                "url": "https://api.github.com/repos/ppi/ppi-distribution-module/zipball/49b410c325c1a32e8abee355d9612a6496fad070",
+                "reference": "49b410c325c1a32e8abee355d9612a6496fad070",
                 "shasum": ""
             },
             "require": {
@@ -1131,7 +1131,7 @@
                 "ppi",
                 "skeletonapp"
             ],
-            "time": "2014-08-03 00:11:03"
+            "time": "2015-05-01 23:28:50"
         },
         {
             "name": "ppi/framework",
