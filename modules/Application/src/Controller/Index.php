@@ -10,4 +10,9 @@ class Index extends SharedController
         return $this->render('Application:index:index.html.php');
 
     }
+
+    public function __invoke()
+    {
+        return $this->indexAction();
+    }
 }
