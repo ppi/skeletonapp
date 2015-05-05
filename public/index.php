@@ -16,7 +16,7 @@ $env     = getenv('PPI_ENV') ?: 'dev';
 $debug   = getenv('PPI_DEBUG') !== '0'  && $env !== 'prod';
 
 // Create...
-$app = new PPI\App(array(
+$app = new PPI\Framework\App(array(
     'environment'   => $env,
     'debug'         => $debug,
     'rootDir'       => realpath(__DIR__.'/../app'),

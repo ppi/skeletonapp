@@ -1,7 +1,7 @@
 <?php
 namespace Framework\Controller;
 
-use PPI\Module\Controller as BaseController;
+use PPI\Framework\Module\Controller as BaseController;
 
 class Error extends BaseController {
 

@@ -3,7 +3,7 @@
  * This file is part of the PPI Framework.
  *
  * @category    PPI
- * @copyright   Copyright (c) 2011-2014 Paul Dragoonis <paul@ppi.io>
+ * @copyright   Copyright (c) 2011-2015 Paul Dragoonis <paul@ppi.io>
  * @license     http://opensource.org/licenses/mit-license.php MIT
  * @link        http://www.ppi.io
  */
@@ -18,9 +18,9 @@ if (!file_exists($path = dirname(__DIR__) . '/vendor/autoload.php')) {
 $loader = require $path;
 
 // Adding PPI autoloader so modules may add themself to the autoload process on-the-fly
-PPI\Autoload::config(array(
+PPI\Framework\Autoload::config(array(
     'loader'    => $loader
 ));
-PPI\Autoload::register();
+PPI\Framework\Autoload::register();
 
 return $loader;

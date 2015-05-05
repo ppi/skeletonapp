@@ -1,0 +1,8 @@
+{
+    "name": "ppi/skeletonapp",
+    "dependencies": {
+        "bootstrap": "3.3.2",
+        "modernizr": "2.8.3"
+    },
+    "private": true
+}

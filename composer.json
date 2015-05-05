@@ -6,19 +6,31 @@
     "keywords": ["framework", "ppi", "symfony", "zend", "doctrine", "laravel", "fuelphp", "mongo", "pdo", "ppi", "skeletonapp", "bootstrap", "html5", "jquery", "mustache"],
     "type": "library",
     "authors": [
-        {
-            "name": "Paul Dragoonis",
-            "email": "paul@ppi.io"
-        }
+      {
+          "name": "Paul Dragoonis",
+          "email": "paul@ppi.io"
+      },
+      {
+          "name": "Vítor Brandão",
+          "email": "vitor@ppi.io"
+      },
+      {
+          "name": "PPI Community",
+          "homepage": "http://www.ppi.io/contributors"
+      }
     ],
     "require": {
-        "ppi/framework": "2.1.0-alpha2",
+        "ppi/framework": "dev-master",
         "ppi/cache-module": "dev-master",
-        "ppi/ppi-datasource-module": "dev-master",
+        "ppi/datasource-module": "dev-master",
         "ppi/distribution-module": "dev-master",
         "ppi/user-module": "dev-master",
         "ppi/blog-module": "dev-master",
-        "ppi/composer-module": "dev-master"
+        "ppi/composer-module": "dev-master",
+        "ppi/smarty-module": "dev-master",
+        "ppi/twig-module": "dev-master",
+        "ppi/mustache-module": "dev-master",
+        "ppi/plates-module": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
@@ -34,12 +46,9 @@
     },
     "minimum-stability": "dev",
     "extra": {
-        "branch-alias": {
-            "dev-master": "2.1-dev"
-        },
         "ppi-app-dir": "app",
         "ppi-web-dir": "public",
-        "ppi-assets-install": "symlink"
+        "ppi-assets-install": "symlink-relative"
     },
     "config": {
         "component-dir": "public/libs"
