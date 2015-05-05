@@ -7,6 +7,63 @@
     "hash": "612a0b072dd6084e7d6b29fbcc88d082",
     "packages": [
         {
+            "name": "aura/router",
+            "version": "2.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/auraphp/Aura.Router.git",
+                "reference": "936006dd8893182d5549178e7d0f984ff2d97839"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/auraphp/Aura.Router/zipball/936006dd8893182d5549178e7d0f984ff2d97839",
+                "reference": "936006dd8893182d5549178e7d0f984ff2d97839",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "aura/di": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "aura": {
+                    "type": "library",
+                    "config": {
+                        "common": "Aura\\Router\\_Config\\Common"
+                    }
+                },
+                "branch-alias": {
+                    "dev-develop-2": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aura\\Router\\": "src/",
+                    "Aura\\Router\\_Config\\": "config/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Aura.Router Contributors",
+                    "homepage": "https://github.com/auraphp/Aura.Router/contributors"
+                }
+            ],
+            "description": "A web router implementation; given a URI path and a copy of $_SERVER, it will extract path-info parameter values for a specific route.",
+            "homepage": "https://github.com/auraphp/Aura.Router",
+            "keywords": [
+                "route",
+                "router",
+                "routing"
+            ],
+            "time": "2015-03-27 16:04:00"
+        },
+        {
             "name": "composer/composer",
             "version": "dev-master",
             "source": {
@@ -16,7 +73,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/d426246b8000c503ad047186eb7fb5315bcf9771",
+                "url": "https://api.github.com/repos/composer/composer/zipball/0e0cb62fb8ad763b7750809e52bf1d90e8687e3a",
                 "reference": "d426246b8000c503ad047186eb7fb5315bcf9771",
                 "shasum": ""
             },
@@ -1139,15 +1196,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/framework.git",
-                "reference": "5430c0469f3de0b91dedc9d82d7ba38e7368fa92"
+                "reference": "e89cd1cc3a3d968fc3dfa4c6da8660a112eea303"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/framework/zipball/5430c0469f3de0b91dedc9d82d7ba38e7368fa92",
-                "reference": "5430c0469f3de0b91dedc9d82d7ba38e7368fa92",
+                "url": "https://api.github.com/repos/ppi/framework/zipball/e89cd1cc3a3d968fc3dfa4c6da8660a112eea303",
+                "reference": "e89cd1cc3a3d968fc3dfa4c6da8660a112eea303",
                 "shasum": ""
             },
             "require": {
+                "aura/router": "2.2.*@stable",
                 "psr/http-message": "^0.9",
                 "psr/log": "~1.0",
                 "symfony-cmf/routing": "1.3.0",
@@ -1203,7 +1261,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-05-01 21:15:03"
+            "time": "2015-05-05 14:43:14"
         },
         {
             "name": "ppi/mustache-module",
@@ -1792,7 +1850,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/ClassLoader/zipball/861765b3e5f32979de5bd19ad2577cbb830a29d5",
+                "url": "https://api.github.com/repos/symfony/ClassLoader/zipball/695134c9b39559297fa5d1dcff6a9054bb56facb",
                 "reference": "861765b3e5f32979de5bd19ad2577cbb830a29d5",
                 "shasum": ""
             },
@@ -1843,7 +1901,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/c09b78a9984f2c7fc9e3d331aa576bb25ea54052",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/b6fddb4aa2daaa2b06f0040071ac131b4a1ecf25",
                 "reference": "c09b78a9984f2c7fc9e3d331aa576bb25ea54052",
                 "shasum": ""
             },
@@ -1894,7 +1952,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/d46ae15633480fe35c6be26f1ee97ec02ab9eba4",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/ebc5679854aa24ed7d65062e9e3ab0b18a917272",
                 "reference": "d46ae15633480fe35c6be26f1ee97ec02ab9eba4",
                 "shasum": ""
             },
@@ -1952,7 +2010,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Debug/zipball/289e4e76fd2dc8689ae10a3312fff36c1a4d34fa",
+                "url": "https://api.github.com/repos/symfony/Debug/zipball/572006675e8eeb86440e2025836e9a81674bf59c",
                 "reference": "289e4e76fd2dc8689ae10a3312fff36c1a4d34fa",
                 "shasum": ""
             },
@@ -2013,7 +2071,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DependencyInjection/zipball/07e39835d8c573e5aa92f60357e31361f00de6b3",
+                "url": "https://api.github.com/repos/symfony/DependencyInjection/zipball/b575c160af001d3525ee733085bcc4ec7c8e1b51",
                 "reference": "07e39835d8c573e5aa92f60357e31361f00de6b3",
                 "shasum": ""
             },
@@ -2181,7 +2239,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/a0c9d353abe5698ef2cba586b1e1601fc211cb75",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/704c64c8b12c8882640d5c0330a8414b1e06dc99",
                 "reference": "a0c9d353abe5698ef2cba586b1e1601fc211cb75",
                 "shasum": ""
             },
@@ -2231,7 +2289,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/FrameworkBundle/zipball/f786ccd102bc7198f46fe63babc51c18423d3756",
+                "url": "https://api.github.com/repos/symfony/FrameworkBundle/zipball/25217a4c326b4837c259629ef3f3087863b42b2c",
                 "reference": "f786ccd102bc7198f46fe63babc51c18423d3756",
                 "shasum": ""
             },
@@ -2315,7 +2373,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/775ba796ae4453381c1744826a123ce766dca1b9",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/8a0d00980ef9f6b47ddbf24bdfbf70fead760816",
                 "reference": "775ba796ae4453381c1744826a123ce766dca1b9",
                 "shasum": ""
             },
@@ -2369,7 +2427,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/62d42607fc308966bdfc5d76db9affe5623508c4",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/88a5a649398534b01b8839159d540cf0442201f5",
                 "reference": "62d42607fc308966bdfc5d76db9affe5623508c4",
                 "shasum": ""
             },
@@ -2496,7 +2554,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Routing/zipball/dbaf191c58b124c5e73e054e532739a29b07d4ed",
+                "url": "https://api.github.com/repos/symfony/Routing/zipball/1455ec537940f7428ea6aa9411f3c4bca69413a0",
                 "reference": "dbaf191c58b124c5e73e054e532739a29b07d4ed",
                 "shasum": ""
             },
@@ -2731,7 +2789,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Templating/zipball/bc4879a794c1fa51fd7bd4bbc5bea33b7071b776",
+                "url": "https://api.github.com/repos/symfony/Templating/zipball/e5c1620f7480883e1de7ad104af100d25c49cd59",
                 "reference": "bc4879a794c1fa51fd7bd4bbc5bea33b7071b776",
                 "shasum": ""
             },
@@ -2785,7 +2843,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Translation/zipball/24c6df24b0d118c5996231d73bb331847b43e2f7",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/e019ff5cb9c951adb52732798544eb4165e9e846",
                 "reference": "24c6df24b0d118c5996231d73bb331847b43e2f7",
                 "shasum": ""
             },
@@ -2844,7 +2902,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/7e9e156003c943f0023378691ee5b8366b77deda",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/f157ab074e453ecd4c0fa775f721f6e67a99d9e2",
                 "reference": "7e9e156003c943f0023378691ee5b8366b77deda",
                 "shasum": ""
             },

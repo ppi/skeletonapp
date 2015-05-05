@@ -10,11 +10,21 @@ class Module extends AbstractModule
     /**
      * Get the routes for this module
      *
-     * @return \Symfony\Component\Routing\RouteCollection
      */
     public function getRoutes()
     {
-        return $this->loadYamlRoutes(__DIR__ . '/resources/config/routes.yml');
+//        return $this->getSymfonyRoutes();
+        return $this->getAuraRoutes();
+    }
+
+    public function getAuraRoutes()
+    {
+        return $this->loadAuraRoutes(__DIR__ . '/resources/routes/aura.php');
+    }
+
+    public function getSymfonyRoutes()
+    {
+        return $this->loadYamlRoutes(__DIR__ . '/resources/routes/symfony.yml');
     }
 
     /**
