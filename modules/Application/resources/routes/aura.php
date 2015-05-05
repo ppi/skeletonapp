@@ -1,12 +1,10 @@
 <?php
 
-use Application\Controller\Index as IndexAction;
-
 // add a simple named route without params
-$router->add('Homepage', '/');
-
-// add a simple unnamed route with params
-//$router->add(null, '/{controller}/{action}/{id}');
+$router->add('Homepage', '/')
+    ->addValues(array(
+        'controller' => 'Application\Controller\Index::indexAction'
+    ));
 
 // add a named route with an extended specification
 $router->add('blog.read', '/blog/read/{id}{format}')

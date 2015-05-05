@@ -1196,12 +1196,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/framework.git",
-                "reference": "dd640f27b0e0dc005c83ce5205ad7a782777017f"
+                "reference": "e89cd1cc3a3d968fc3dfa4c6da8660a112eea303"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/framework/zipball/dd640f27b0e0dc005c83ce5205ad7a782777017f",
-                "reference": "dd640f27b0e0dc005c83ce5205ad7a782777017f",
+                "url": "https://api.github.com/repos/ppi/framework/zipball/e89cd1cc3a3d968fc3dfa4c6da8660a112eea303",
+                "reference": "e89cd1cc3a3d968fc3dfa4c6da8660a112eea303",
                 "shasum": ""
             },
             "require": {
@@ -1261,7 +1261,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-05-03 01:07:36"
+            "time": "2015-05-05 14:43:14"
         },
         {
             "name": "ppi/mustache-module",

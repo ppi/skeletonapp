@@ -13,12 +13,18 @@ class Module extends AbstractModule
      */
     public function getRoutes()
     {
-        $path = __DIR__ . '/resources/routes/aura.php';
-//        $router = $this->loadAuraRoutes($path);
-//        return $router;
+//        return $this->getSymfonyRoutes();
+        return $this->getAuraRoutes();
+    }
 
-        $path = __DIR__ . '/resources/routes/symfony.yml';
-        return $this->loadYamlRoutes($path);
+    public function getAuraRoutes()
+    {
+        return $this->loadAuraRoutes(__DIR__ . '/resources/routes/aura.php');
+    }
+
+    public function getSymfonyRoutes()
+    {
+        return $this->loadYamlRoutes(__DIR__ . '/resources/routes/symfony.yml');
     }
 
     /**
