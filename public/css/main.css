@@ -23,7 +23,6 @@ html, body {
     font-family: 'Open Sans', sans-serif;
     color:#fff;
     padding: 0 10% 5% 10%;
-
     width: 80%;
     margin: 2% auto 5% auto;
     display: block;
@@ -47,7 +46,7 @@ html, body {
 
 #landing-index .landing-list {
     float: left;
-    width: 33%;
+    width: 45%;
     display: block;
 }
 
@@ -84,4 +83,7 @@ html, body {
 
 #landing-index .list-container {
     margin-top: 5%;
+    width: 100%;
+    /*border: 1px solid red;*/
+    margin-left: 5%;
 }
