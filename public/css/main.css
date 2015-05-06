@@ -1,9 +1,86 @@
 html, body {
-    font-family: 'Open Sans', sans-serif;
     background:#161616;
-    color:#fff;
-    text-align:center;
+    width: 100%;
+    height: 100%;
 }
-h2 {
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+#landing-index {
+    text-align:center;
+    font-family: 'Open Sans', sans-serif;
+    color:#fff;
+    padding: 0 10% 5% 10%;
+    width: 80%;
+    margin: 2% auto 5% auto;
+    display: block;
+    border: 1px solid #fff;
+    height: 100%;
+}
+
+#landing-index img {
+    margin-top: 5%;
+}
+
+#landing-index h2 {
+    margin-top: 5%;
     font-weight:300;
+    font-size: 2.0em;
+}
+#landing-index p {
+    /*border: 1px solid red;*/
+    font-size: 1.3em;
+}
+
+#landing-index .landing-list {
+    float: left;
+    width: 33%;
+    display: block;
+}
+
+#landing-index .landing-list .list-title {
+    text-align: left;
+    font-size: 1.8em;
+}
+
+#landing-index .landing-list ul {
+    list-style-type: none;
+    padding: 0;
+    /*padding: 0 0 0 12px;*/
+    margin: 0;
+
+
+    /*list-style-image: url(/modules/framework/images/bullet-grey.png);*/
+
+}
+
+#landing-index .landing-list li {
+    padding-left: 0;
+    text-align: left;
+    margin-bottom: 5px;
+    background-image: url(/modules/framework/images/bullet-grey.png);
+    background-repeat: no-repeat;
+}
+
+#landing-index .landing-list li a {
+    font-size: 1.5em;
+    color: #c1c1c1;
+    display: block;
+    padding-left: 1.8em;
+}
+
+#landing-index .list-container {
+    margin-top: 5%;
 }

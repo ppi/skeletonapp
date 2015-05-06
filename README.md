@@ -11,25 +11,21 @@ Installation
 ------------
 
 Linux
-------------
-Just ensure you have Docker installed and run the following commands:
+-----
+Install vagrant and ansible
 
 ```
-docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=ppi mysql
-docker build -t ppi .
-docker run -p 80:80 -v `pwd`:/var/www --link mysql ppi
-docker logs -f ppi
+vagrant up
 ```
 
 Now you can now browse to your ppi application at http://192.168.66.66
 
 OSX
-----
-
-Just ensure you have Vagrant and Ansible installed and run:
+---
+Install vagrant and ansible
 
 ```
-vagrant up && vagrant ssh -c "docker logs -f ppi"
+vagrant up
 ```
 
 Now you can now browse to your ppi application at http://192.168.66.66
