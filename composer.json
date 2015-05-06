@@ -20,17 +20,17 @@
       }
     ],
     "require": {
-        "ppi/framework": "dev-develop",
-        "ppi/cache-module": "dev-develop",
-        "ppi/datasource-module": "dev-develop",
-        "ppi/distribution-module": "dev-develop",
-        "ppi/user-module": "dev-develop",
-        "ppi/blog-module": "dev-develop",
-        "ppi/composer-module": "dev-develop",
-        "ppi/smarty-module": "dev-develop",
-        "ppi/twig-module": "dev-develop",
-        "ppi/mustache-module": "dev-develop",
-        "ppi/plates-module": "dev-develop"
+        "ppi/framework": "dev-master",
+        "ppi/cache-module": "dev-master",
+        "ppi/datasource-module": "dev-master",
+        "ppi/distribution-module": "dev-master",
+        "ppi/user-module": "dev-master",
+        "ppi/blog-module": "dev-master",
+        "ppi/composer-module": "dev-master",
+        "ppi/smarty-module": "dev-master",
+        "ppi/twig-module": "dev-master",
+        "ppi/mustache-module": "dev-master",
+        "ppi/plates-module": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
@@ -54,3 +54,4 @@
         "component-dir": "public/libs"
     }
 }
+

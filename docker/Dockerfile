@@ -6,7 +6,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -y
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y apache2 libapache2-mod-php5 php5-imagick php5-gd php5-intl php5-mcrypt php5-apcu php5-curl php5-mysql subversion git
 
 # Remove default html directory and modify default virtualhost to use public directory as web root
-RUN sed -i "s/html/public/g" /etc/apache2/sites-enabled/000-default.conf
+ADD virtual-host.conf /etc/apache2/sites-enabled/000-default.conf
 
 # Enable apache2 rewrite module
 RUN a2enmod rewrite
