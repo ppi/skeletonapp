@@ -46,7 +46,7 @@ html, body {
 
 #landing-index .landing-list {
     float: left;
-    width: 45%;
+    width: 33%;
     display: block;
 }
 
@@ -83,7 +83,4 @@ html, body {
 
 #landing-index .list-container {
     margin-top: 5%;
-    width: 100%;
-    /*border: 1px solid red;*/
-    margin-left: 5%;
 }

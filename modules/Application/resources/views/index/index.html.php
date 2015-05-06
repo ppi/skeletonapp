@@ -34,6 +34,17 @@
             </ul>
         </div>
 
+        <div class="landing-list">
+            <p class="list-title">Documentation</p>
+            <ul>
+                <li><a href="">Getting started</a></li>
+                <li><a href="">Modules</a></li>
+                <li><a href="">Routing</a></li>
+                <li><a href="">Controllers</a></li>
+                <li><a href="">Templating</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+        </div>
     </div>
 
 </div>
