@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "612a0b072dd6084e7d6b29fbcc88d082",
+    "hash": "728cee43df67d2225cd4d437c1dbaba8",
     "packages": [
         {
             "name": "aura/router",
@@ -69,12 +69,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "d426246b8000c503ad047186eb7fb5315bcf9771"
+                "reference": "48d8cc6465b7c2f60e7d0333cc53d4c8cd5c0df6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/0e0cb62fb8ad763b7750809e52bf1d90e8687e3a",
-                "reference": "d426246b8000c503ad047186eb7fb5315bcf9771",
+                "url": "https://api.github.com/repos/composer/composer/zipball/48d8cc6465b7c2f60e7d0333cc53d4c8cd5c0df6",
+                "reference": "48d8cc6465b7c2f60e7d0333cc53d4c8cd5c0df6",
                 "shasum": ""
             },
             "require": {
@@ -126,13 +126,13 @@
                 }
             ],
             "description": "Composer helps you declare, manage and install dependencies of PHP projects, ensuring you have the right stack everywhere.",
-            "homepage": "http://getcomposer.org/",
+            "homepage": "https://getcomposer.org/",
             "keywords": [
                 "autoload",
                 "dependency",
                 "package"
             ],
-            "time": "2015-05-01 15:26:59"
+            "time": "2015-05-06 10:48:45"
         },
         {
             "name": "doctrine/annotations",
@@ -764,85 +764,29 @@
             "time": "2012-09-12 16:13:06"
         },
         {
-            "name": "noiselabs/smarty",
-            "version": "dev-noiselabs/master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/noiselabs/smarty.git",
-                "reference": "7d21e4c2dfa62cf916ac64999068be7373d014fa"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/noiselabs/smarty/zipball/7d21e4c2dfa62cf916ac64999068be7373d014fa",
-                "reference": "7d21e4c2dfa62cf916ac64999068be7373d014fa",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "distribution/libs/Smarty.class.php",
-                    "distribution/libs/SmartyBC.class.php",
-                    "distribution/libs/sysplugins/smarty_security.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Monte Ohrt",
-                    "email": "monte@ohrt.com"
-                },
-                {
-                    "name": "Uwe Tews",
-                    "email": "uwe.tews@googlemail.com"
-                },
-                {
-                    "name": "Rodney Rehm",
-                    "email": "rodney.rehm@medialize.de"
-                },
-                {
-                    "name": "Vítor Brandão",
-                    "email": "vitor@noiselabs.org",
-                    "homepage": "http://noiselabs.org"
-                }
-            ],
-            "description": "Smarty PHP Template Engine (patched for SmartyBundle)",
-            "homepage": "http://www.smarty.net",
-            "keywords": [
-                "noiselabs",
-                "templating"
-            ],
-            "time": "2014-04-08 08:56:38"
-        },
-        {
             "name": "noiselabs/smarty-bundle",
-            "version": "dev-develop",
+            "version": "dev-master",
             "target-dir": "NoiseLabs/Bundle/SmartyBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/noiselabs/SmartyBundle.git",
-                "reference": "d5188f21d11d42227046151a8f36076dac39764d"
+                "reference": "3e5ae35ec6295572103fb6efbe133d9507a0ad8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/noiselabs/SmartyBundle/zipball/d5188f21d11d42227046151a8f36076dac39764d",
-                "reference": "d5188f21d11d42227046151a8f36076dac39764d",
+                "url": "https://api.github.com/repos/noiselabs/SmartyBundle/zipball/3e5ae35ec6295572103fb6efbe133d9507a0ad8a",
+                "reference": "3e5ae35ec6295572103fb6efbe133d9507a0ad8a",
                 "shasum": ""
             },
             "require": {
-                "noiselabs/smarty": "dev-noiselabs/master",
                 "php": ">=5.3.3",
-                "symfony/framework-bundle": ">=2.1.0"
+                "smarty/smarty": "3.1.*@stable",
+                "symfony/framework-bundle": "~2.1"
             },
             "require-dev": {
-                "symfony/assetic-bundle": ">=2.0",
-                "symfony/security": ">=2.1.0",
-                "symfony/yaml": ">=2.1.0"
+                "symfony/assetic-bundle": "~2.0",
+                "symfony/security": "~2.1",
+                "symfony/yaml": "~2.1"
             },
             "suggest": {
                 "knplabs/knp-menu-bundle": "Smarty3 integration with KnpMenu (object oriented menus)",
@@ -885,24 +829,24 @@
                 "symfony",
                 "templating"
             ],
-            "time": "2014-05-19 00:27:41"
+            "time": "2014-09-16 12:48:02"
         },
         {
             "name": "ppi/blog-module",
-            "version": "dev-develop",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/ppi-blog-module.git",
-                "reference": "28c89863e2731eb1f40012c29a71591910bffdc2"
+                "reference": "286cf56012322d2372e28a676fe0eb95b782cd67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/ppi-blog-module/zipball/28c89863e2731eb1f40012c29a71591910bffdc2",
-                "reference": "28c89863e2731eb1f40012c29a71591910bffdc2",
+                "url": "https://api.github.com/repos/ppi/ppi-blog-module/zipball/286cf56012322d2372e28a676fe0eb95b782cd67",
+                "reference": "286cf56012322d2372e28a676fe0eb95b782cd67",
                 "shasum": ""
             },
             "require": {
-                "ppi/framework": "dev-develop"
+                "ppi/framework": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -930,24 +874,24 @@
                 "blog",
                 "framework"
             ],
-            "time": "2015-04-12 01:01:08"
+            "time": "2015-05-06 08:44:44"
         },
         {
             "name": "ppi/cache-module",
-            "version": "dev-develop",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/ppi-cache-module.git",
-                "reference": "6c779f93bca2dc9713eeadcef2aa398bfbb9160f"
+                "reference": "57141f5f10aa5807b728cf34b8bd2c5006a1b5eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/ppi-cache-module/zipball/6c779f93bca2dc9713eeadcef2aa398bfbb9160f",
-                "reference": "6c779f93bca2dc9713eeadcef2aa398bfbb9160f",
+                "url": "https://api.github.com/repos/ppi/ppi-cache-module/zipball/57141f5f10aa5807b728cf34b8bd2c5006a1b5eb",
+                "reference": "57141f5f10aa5807b728cf34b8bd2c5006a1b5eb",
                 "shasum": ""
             },
             "require": {
-                "ppi/framework": "dev-develop"
+                "ppi/framework": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -979,25 +923,25 @@
                 "cache",
                 "ppi"
             ],
-            "time": "2015-02-26 00:36:11"
+            "time": "2015-05-06 08:32:07"
         },
         {
             "name": "ppi/composer-module",
-            "version": "dev-develop",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/ppi-composer-module.git",
-                "reference": "dbb5845dd8ade0202c58baa7e9948e2a72fe1142"
+                "reference": "8a7520563d10e177986f4e484a45be6346c60c34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/ppi-composer-module/zipball/dbb5845dd8ade0202c58baa7e9948e2a72fe1142",
-                "reference": "dbb5845dd8ade0202c58baa7e9948e2a72fe1142",
+                "url": "https://api.github.com/repos/ppi/ppi-composer-module/zipball/8a7520563d10e177986f4e484a45be6346c60c34",
+                "reference": "8a7520563d10e177986f4e484a45be6346c60c34",
                 "shasum": ""
             },
             "require": {
                 "composer/composer": "1.0.*@dev",
-                "ppi/framework": "dev-develop"
+                "ppi/framework": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -1027,25 +971,25 @@
                 "package",
                 "ppi"
             ],
-            "time": "2015-04-12 01:09:11"
+            "time": "2015-05-06 08:38:58"
         },
         {
             "name": "ppi/datasource",
-            "version": "dev-develop",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/datasource.git",
-                "reference": "755da8410fb05a8822990961a16e03a7283d8395"
+                "reference": "11c06fc0aa7b66cb1ff26e7df104990d677485c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/datasource/zipball/755da8410fb05a8822990961a16e03a7283d8395",
-                "reference": "755da8410fb05a8822990961a16e03a7283d8395",
+                "url": "https://api.github.com/repos/ppi/datasource/zipball/11c06fc0aa7b66cb1ff26e7df104990d677485c4",
+                "reference": "11c06fc0aa7b66cb1ff26e7df104990d677485c4",
                 "shasum": ""
             },
             "require": {
                 "doctrine/dbal": "2.5.*@dev",
-                "ppi/framework": "dev-develop"
+                "ppi/framework": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -1082,25 +1026,25 @@
                 "skeletonapp",
                 "zend"
             ],
-            "time": "2015-02-26 00:22:43"
+            "time": "2015-05-06 12:16:25"
         },
         {
             "name": "ppi/datasource-module",
-            "version": "dev-develop",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/ppi-datasource-module.git",
-                "reference": "09657c029a1693356ca567a10f4505e8bfa1d5f4"
+                "reference": "15ad89ff55ed9c68c9e5ae90f4a8c9015885a75d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/ppi-datasource-module/zipball/09657c029a1693356ca567a10f4505e8bfa1d5f4",
-                "reference": "09657c029a1693356ca567a10f4505e8bfa1d5f4",
+                "url": "https://api.github.com/repos/ppi/ppi-datasource-module/zipball/15ad89ff55ed9c68c9e5ae90f4a8c9015885a75d",
+                "reference": "15ad89ff55ed9c68c9e5ae90f4a8c9015885a75d",
                 "shasum": ""
             },
             "require": {
-                "ppi/datasource": "dev-develop",
-                "ppi/framework": "dev-develop"
+                "ppi/datasource": "dev-master",
+                "ppi/framework": "dev-master"
             },
             "require-dev": {
                 "phpunit/phpunit": "3.7.*"
@@ -1135,24 +1079,24 @@
                 "ppi",
                 "zend"
             ],
-            "time": "2015-04-13 21:54:40"
+            "time": "2015-05-06 08:41:04"
         },
         {
             "name": "ppi/distribution-module",
-            "version": "dev-develop",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/ppi-distribution-module.git",
-                "reference": "49b410c325c1a32e8abee355d9612a6496fad070"
+                "reference": "887d3418423cdb979ec04a60092faee5df4b1171"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/ppi-distribution-module/zipball/49b410c325c1a32e8abee355d9612a6496fad070",
-                "reference": "49b410c325c1a32e8abee355d9612a6496fad070",
+                "url": "https://api.github.com/repos/ppi/ppi-distribution-module/zipball/887d3418423cdb979ec04a60092faee5df4b1171",
+                "reference": "887d3418423cdb979ec04a60092faee5df4b1171",
                 "shasum": ""
             },
             "require": {
-                "ppi/framework": "dev-develop"
+                "ppi/framework": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -1183,25 +1127,24 @@
             "homepage": "https://github.com/ppi/ppi-distribution-module",
             "keywords": [
                 "framework",
-                "noiselabs",
                 "php",
                 "ppi",
                 "skeletonapp"
             ],
-            "time": "2015-05-01 23:28:50"
+            "time": "2015-05-06 12:17:06"
         },
         {
             "name": "ppi/framework",
-            "version": "dev-develop",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/framework.git",
-                "reference": "e89cd1cc3a3d968fc3dfa4c6da8660a112eea303"
+                "reference": "a5be6255dfc6a9fe780acf76a32a6ab84406d4c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/framework/zipball/e89cd1cc3a3d968fc3dfa4c6da8660a112eea303",
-                "reference": "e89cd1cc3a3d968fc3dfa4c6da8660a112eea303",
+                "url": "https://api.github.com/repos/ppi/framework/zipball/a5be6255dfc6a9fe780acf76a32a6ab84406d4c3",
+                "reference": "a5be6255dfc6a9fe780acf76a32a6ab84406d4c3",
                 "shasum": ""
             },
             "require": {
@@ -1221,10 +1164,10 @@
                 "symfony/routing": "2.6.*@stable",
                 "symfony/templating": "2.6.*@stable",
                 "symfony/yaml": "2.6.*@stable",
-                "zendframework/zend-eventmanager": "2.4.*@stable",
-                "zendframework/zend-loader": "2.4.*@stable",
-                "zendframework/zend-modulemanager": "2.4.*@stable",
-                "zendframework/zend-servicemanager": "2.4.*@stable"
+                "zendframework/zend-eventmanager": "2.3.*@stable",
+                "zendframework/zend-loader": "2.3.*@stable",
+                "zendframework/zend-modulemanager": "2.3.*@stable",
+                "zendframework/zend-servicemanager": "2.3.*@stable"
             },
             "require-dev": {
                 "fabpot/php-cs-fixer": "~1.5",
@@ -1256,30 +1199,30 @@
                     "homepage": "http://www.ppi.io/contributors"
                 }
             ],
-            "description": "PPI Framework - The PHP Meta Framework!",
+            "description": "PPI Framework - The PHP Interoperability Framework!",
             "homepage": "http://www.ppi.io",
             "keywords": [
                 "framework"
             ],
-            "time": "2015-05-05 14:43:14"
+            "time": "2015-05-06 12:13:10"
         },
         {
             "name": "ppi/mustache-module",
-            "version": "dev-develop",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/ppi-mustache-module.git",
-                "reference": "1e1fb118cf0c1d5c3732a3bcab86480875d58db5"
+                "reference": "8a8b3816e6f79dd01f67d93fdcec0ba0a9161dbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/ppi-mustache-module/zipball/1e1fb118cf0c1d5c3732a3bcab86480875d58db5",
-                "reference": "1e1fb118cf0c1d5c3732a3bcab86480875d58db5",
+                "url": "https://api.github.com/repos/ppi/ppi-mustache-module/zipball/8a8b3816e6f79dd01f67d93fdcec0ba0a9161dbe",
+                "reference": "8a8b3816e6f79dd01f67d93fdcec0ba0a9161dbe",
                 "shasum": ""
             },
             "require": {
                 "mustache/mustache": ">=2.0.2,<2.1",
-                "ppi/framework": "dev-develop"
+                "ppi/framework": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -1309,26 +1252,25 @@
                 "templating",
                 "view"
             ],
-            "time": "2015-02-25 23:48:25"
+            "time": "2015-05-06 12:23:52"
         },
         {
             "name": "ppi/plates-module",
-            "version": "dev-develop",
+            "version": "dev-master",
             "target-dir": "PPI/PlatesModule",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/ppi-plates-module.git",
-                "reference": "792d4828dd0dfe11bc3e75983a6ddd45549d8ce0"
+                "reference": "b3e396a9928e6c8fd25a292278699b81202021fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/ppi-plates-module/zipball/792d4828dd0dfe11bc3e75983a6ddd45549d8ce0",
-                "reference": "792d4828dd0dfe11bc3e75983a6ddd45549d8ce0",
+                "url": "https://api.github.com/repos/ppi/ppi-plates-module/zipball/b3e396a9928e6c8fd25a292278699b81202021fd",
+                "reference": "b3e396a9928e6c8fd25a292278699b81202021fd",
                 "shasum": ""
             },
             "require": {
-                "league/plates": "dev-master",
-                "ppi/framework": "dev-develop"
+                "league/plates": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -1358,26 +1300,26 @@
                 "templating",
                 "view"
             ],
-            "time": "2015-02-26 00:02:19"
+            "time": "2014-03-26 00:07:13"
         },
         {
             "name": "ppi/smarty-module",
-            "version": "dev-develop",
+            "version": "dev-master",
             "target-dir": "PPI/SmartyModule",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/ppi-smarty-module.git",
-                "reference": "93d8ac9121c185060e69e5676e7b3701422f280e"
+                "reference": "0625fc45241f3e80f58c595499c3c22d18b35510"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/ppi-smarty-module/zipball/93d8ac9121c185060e69e5676e7b3701422f280e",
-                "reference": "93d8ac9121c185060e69e5676e7b3701422f280e",
+                "url": "https://api.github.com/repos/ppi/ppi-smarty-module/zipball/0625fc45241f3e80f58c595499c3c22d18b35510",
+                "reference": "0625fc45241f3e80f58c595499c3c22d18b35510",
                 "shasum": ""
             },
             "require": {
-                "noiselabs/smarty-bundle": "dev-develop",
-                "ppi/framework": "dev-develop"
+                "noiselabs/smarty-bundle": "dev-master",
+                "ppi/framework": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -1403,25 +1345,25 @@
                 "templating",
                 "view"
             ],
-            "time": "2015-02-26 00:38:28"
+            "time": "2015-05-06 08:47:15"
         },
         {
             "name": "ppi/twig-module",
-            "version": "dev-develop",
+            "version": "dev-master",
             "target-dir": "PPI/TwigModule",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/ppi-twig-module.git",
-                "reference": "c86ea3c15a981472ee020da7c13a1a391b1ac642"
+                "reference": "ab1377f6c9b7ffdbe82ef83f9d17a57e20046a75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/ppi-twig-module/zipball/c86ea3c15a981472ee020da7c13a1a391b1ac642",
-                "reference": "c86ea3c15a981472ee020da7c13a1a391b1ac642",
+                "url": "https://api.github.com/repos/ppi/ppi-twig-module/zipball/ab1377f6c9b7ffdbe82ef83f9d17a57e20046a75",
+                "reference": "ab1377f6c9b7ffdbe82ef83f9d17a57e20046a75",
                 "shasum": ""
             },
             "require": {
-                "ppi/framework": "dev-develop",
+                "ppi/framework": "dev-master",
                 "twig/twig": "1.18.1"
             },
             "type": "library",
@@ -1452,35 +1394,31 @@
                 "twig",
                 "view"
             ],
-            "time": "2015-05-01 09:36:54"
+            "time": "2015-05-05 21:43:05"
         },
         {
             "name": "ppi/user-module",
-            "version": "dev-develop",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/ppi-user-module.git",
-                "reference": "f0a39970b84c1d5871b41869dec3f2e50e4415d5"
+                "reference": "1cd5e8428dca1ba14c4e0d3711794d5fc3c6aba3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/ppi-user-module/zipball/f0a39970b84c1d5871b41869dec3f2e50e4415d5",
-                "reference": "f0a39970b84c1d5871b41869dec3f2e50e4415d5",
+                "url": "https://api.github.com/repos/ppi/ppi-user-module/zipball/1cd5e8428dca1ba14c4e0d3711794d5fc3c6aba3",
+                "reference": "1cd5e8428dca1ba14c4e0d3711794d5fc3c6aba3",
                 "shasum": ""
             },
             "require": {
+                "ppi/framework": "dev-master",
                 "swiftmailer/swiftmailer": ">=4.2.0,<4.3-dev"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "UserModule\\": "src/",
-                    "UserModule\\Tests\\": "tests"
+                    "UserModule\\Tests\\": "tests/"
                 },
                 "classmap": [
                     "./Module.php"
@@ -1502,7 +1440,7 @@
                 "framework",
                 "user"
             ],
-            "time": "2015-05-01 15:57:40"
+            "time": "2015-05-06 12:34:15"
         },
         {
             "name": "psr/http-message",
@@ -1732,6 +1670,61 @@
             "time": "2015-05-01 12:45:48"
         },
         {
+            "name": "smarty/smarty",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smarty-php/smarty.git",
+                "reference": "d92714cc7e1567c103d4329df5bbc22080bf59c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/d92714cc7e1567c103d4329df5bbc22080bf59c8",
+                "reference": "d92714cc7e1567c103d4329df5bbc22080bf59c8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "libs/Smarty.class.php",
+                    "libs/SmartyBC.class.php",
+                    "libs/sysplugins/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Monte Ohrt",
+                    "email": "monte@ohrt.com"
+                },
+                {
+                    "name": "Uwe Tews",
+                    "email": "uwe.tews@googlemail.com"
+                },
+                {
+                    "name": "Rodney Rehm",
+                    "email": "rodney.rehm@medialize.de"
+                }
+            ],
+            "description": "Smarty - the compiling PHP template engine",
+            "homepage": "http://www.smarty.net",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2015-05-05 22:03:26"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v4.2.2",
             "source": {
@@ -1846,12 +1839,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/ClassLoader.git",
-                "reference": "861765b3e5f32979de5bd19ad2577cbb830a29d5"
+                "reference": "695134c9b39559297fa5d1dcff6a9054bb56facb"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/ClassLoader/zipball/695134c9b39559297fa5d1dcff6a9054bb56facb",
-                "reference": "861765b3e5f32979de5bd19ad2577cbb830a29d5",
+                "reference": "695134c9b39559297fa5d1dcff6a9054bb56facb",
                 "shasum": ""
             },
             "require": {
@@ -1878,17 +1871,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony ClassLoader Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-03-27 10:19:51"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-02 15:18:45"
         },
         {
             "name": "symfony/config",
@@ -1897,12 +1890,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config.git",
-                "reference": "c09b78a9984f2c7fc9e3d331aa576bb25ea54052"
+                "reference": "b6fddb4aa2daaa2b06f0040071ac131b4a1ecf25"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/Config/zipball/b6fddb4aa2daaa2b06f0040071ac131b4a1ecf25",
-                "reference": "c09b78a9984f2c7fc9e3d331aa576bb25ea54052",
+                "reference": "b6fddb4aa2daaa2b06f0040071ac131b4a1ecf25",
                 "shasum": ""
             },
             "require": {
@@ -1929,17 +1922,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Config Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-04-18 15:02:51"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-02 15:18:45"
         },
         {
             "name": "symfony/console",
@@ -1948,12 +1941,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "d46ae15633480fe35c6be26f1ee97ec02ab9eba4"
+                "reference": "ebc5679854aa24ed7d65062e9e3ab0b18a917272"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/Console/zipball/ebc5679854aa24ed7d65062e9e3ab0b18a917272",
-                "reference": "d46ae15633480fe35c6be26f1ee97ec02ab9eba4",
+                "reference": "ebc5679854aa24ed7d65062e9e3ab0b18a917272",
                 "shasum": ""
             },
             "require": {
@@ -1987,17 +1980,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Console Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-04-18 15:02:51"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-02 15:18:45"
         },
         {
             "name": "symfony/debug",
@@ -2006,12 +1999,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Debug.git",
-                "reference": "289e4e76fd2dc8689ae10a3312fff36c1a4d34fa"
+                "reference": "572006675e8eeb86440e2025836e9a81674bf59c"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/Debug/zipball/572006675e8eeb86440e2025836e9a81674bf59c",
-                "reference": "289e4e76fd2dc8689ae10a3312fff36c1a4d34fa",
+                "reference": "572006675e8eeb86440e2025836e9a81674bf59c",
                 "shasum": ""
             },
             "require": {
@@ -2048,17 +2041,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Debug Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-04-26 09:08:32"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-02 15:18:45"
         },
         {
             "name": "symfony/dependency-injection",
@@ -2067,12 +2060,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DependencyInjection.git",
-                "reference": "07e39835d8c573e5aa92f60357e31361f00de6b3"
+                "reference": "b575c160af001d3525ee733085bcc4ec7c8e1b51"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/DependencyInjection/zipball/b575c160af001d3525ee733085bcc4ec7c8e1b51",
-                "reference": "07e39835d8c573e5aa92f60357e31361f00de6b3",
+                "reference": "b575c160af001d3525ee733085bcc4ec7c8e1b51",
                 "shasum": ""
             },
             "require": {
@@ -2109,17 +2102,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony DependencyInjection Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-04-27 12:43:05"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-02 15:18:45"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -2235,12 +2228,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "a0c9d353abe5698ef2cba586b1e1601fc211cb75"
+                "reference": "704c64c8b12c8882640d5c0330a8414b1e06dc99"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/Finder/zipball/704c64c8b12c8882640d5c0330a8414b1e06dc99",
-                "reference": "a0c9d353abe5698ef2cba586b1e1601fc211cb75",
+                "reference": "704c64c8b12c8882640d5c0330a8414b1e06dc99",
                 "shasum": ""
             },
             "require": {
@@ -2266,17 +2259,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Finder Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-05-01 13:39:14"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-02 15:18:45"
         },
         {
             "name": "symfony/framework-bundle",
@@ -2285,12 +2278,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/FrameworkBundle.git",
-                "reference": "f786ccd102bc7198f46fe63babc51c18423d3756"
+                "reference": "25217a4c326b4837c259629ef3f3087863b42b2c"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/FrameworkBundle/zipball/25217a4c326b4837c259629ef3f3087863b42b2c",
-                "reference": "f786ccd102bc7198f46fe63babc51c18423d3756",
+                "reference": "25217a4c326b4837c259629ef3f3087863b42b2c",
                 "shasum": ""
             },
             "require": {
@@ -2350,17 +2343,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony FrameworkBundle",
-            "homepage": "http://symfony.com",
-            "time": "2015-05-01 14:09:32"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-04 14:53:25"
         },
         {
             "name": "symfony/http-foundation",
@@ -2369,12 +2362,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "775ba796ae4453381c1744826a123ce766dca1b9"
+                "reference": "8a0d00980ef9f6b47ddbf24bdfbf70fead760816"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/8a0d00980ef9f6b47ddbf24bdfbf70fead760816",
-                "reference": "775ba796ae4453381c1744826a123ce766dca1b9",
+                "reference": "8a0d00980ef9f6b47ddbf24bdfbf70fead760816",
                 "shasum": ""
             },
             "require": {
@@ -2404,17 +2397,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony HttpFoundation Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-04-27 12:43:05"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-02 15:18:45"
         },
         {
             "name": "symfony/http-kernel",
@@ -2423,12 +2416,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "62d42607fc308966bdfc5d76db9affe5623508c4"
+                "reference": "88a5a649398534b01b8839159d540cf0442201f5"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/88a5a649398534b01b8839159d540cf0442201f5",
-                "reference": "62d42607fc308966bdfc5d76db9affe5623508c4",
+                "reference": "88a5a649398534b01b8839159d540cf0442201f5",
                 "shasum": ""
             },
             "require": {
@@ -2482,17 +2475,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony HttpKernel Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-04-27 12:43:05"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-05 01:50:03"
         },
         {
             "name": "symfony/process",
@@ -2550,12 +2543,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing.git",
-                "reference": "dbaf191c58b124c5e73e054e532739a29b07d4ed"
+                "reference": "1455ec537940f7428ea6aa9411f3c4bca69413a0"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/Routing/zipball/1455ec537940f7428ea6aa9411f3c4bca69413a0",
-                "reference": "dbaf191c58b124c5e73e054e532739a29b07d4ed",
+                "reference": "1455ec537940f7428ea6aa9411f3c4bca69413a0",
                 "shasum": ""
             },
             "require": {
@@ -2594,23 +2587,23 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Routing Component",
-            "homepage": "http://symfony.com",
+            "homepage": "https://symfony.com",
             "keywords": [
                 "router",
                 "routing",
                 "uri",
                 "url"
             ],
-            "time": "2015-04-18 15:02:51"
+            "time": "2015-05-02 15:18:45"
         },
         {
             "name": "symfony/security-core",
@@ -2785,12 +2778,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Templating.git",
-                "reference": "bc4879a794c1fa51fd7bd4bbc5bea33b7071b776"
+                "reference": "e5c1620f7480883e1de7ad104af100d25c49cd59"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/Templating/zipball/e5c1620f7480883e1de7ad104af100d25c49cd59",
-                "reference": "bc4879a794c1fa51fd7bd4bbc5bea33b7071b776",
+                "reference": "e5c1620f7480883e1de7ad104af100d25c49cd59",
                 "shasum": ""
             },
             "require": {
@@ -2820,17 +2813,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Templating Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-03-13 17:37:22"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-02 15:18:45"
         },
         {
             "name": "symfony/translation",
@@ -2839,12 +2832,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Translation.git",
-                "reference": "24c6df24b0d118c5996231d73bb331847b43e2f7"
+                "reference": "398e0eedcb89243ad34a10d079a4b6ea4c0b61ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Translation/zipball/e019ff5cb9c951adb52732798544eb4165e9e846",
-                "reference": "24c6df24b0d118c5996231d73bb331847b43e2f7",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/398e0eedcb89243ad34a10d079a4b6ea4c0b61ff",
+                "reference": "398e0eedcb89243ad34a10d079a4b6ea4c0b61ff",
                 "shasum": ""
             },
             "require": {
@@ -2879,17 +2872,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Translation Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-05-01 14:09:32"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-05 16:51:00"
         },
         {
             "name": "symfony/yaml",
@@ -2898,12 +2891,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "7e9e156003c943f0023378691ee5b8366b77deda"
+                "reference": "f157ab074e453ecd4c0fa775f721f6e67a99d9e2"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/Yaml/zipball/f157ab074e453ecd4c0fa775f721f6e67a99d9e2",
-                "reference": "7e9e156003c943f0023378691ee5b8366b77deda",
+                "reference": "f157ab074e453ecd4c0fa775f721f6e67a99d9e2",
                 "shasum": ""
             },
             "require": {
@@ -2929,17 +2922,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Yaml Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-04-18 15:02:51"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-02 15:18:45"
         },
         {
             "name": "twig/twig",
@@ -3000,31 +2993,32 @@
         },
         {
             "name": "zendframework/zend-eventmanager",
-            "version": "2.4.0",
+            "version": "dev-develop",
+            "target-dir": "Zend/EventManager",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/Component_ZendEventManager.git",
-                "reference": "38df5b567d4ff4d22144745c503ba0502d0d5695"
+                "reference": "e232aeeab9ae6545ac21c8fc2728d54297969658"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/Component_ZendEventManager/zipball/38df5b567d4ff4d22144745c503ba0502d0d5695",
-                "reference": "38df5b567d4ff4d22144745c503ba0502d0d5695",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendEventManager/zipball/e232aeeab9ae6545ac21c8fc2728d54297969658",
+                "reference": "e232aeeab9ae6545ac21c8fc2728d54297969658",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.23",
+                "php": ">=5.3.3",
                 "zendframework/zend-stdlib": "self.version"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev",
-                    "dev-develop": "2.4-dev"
+                    "dev-master": "2.2-dev",
+                    "dev-develop": "2.3-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
+                "psr-0": {
                     "Zend\\EventManager\\": ""
                 }
             },
@@ -3032,25 +3026,25 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "homepage": "https://github.com/zendframework/zf2",
             "keywords": [
                 "eventmanager",
                 "zf2"
             ],
-            "time": "2015-04-01 18:05:26"
+            "time": "2014-01-04 13:01:02"
         },
         {
             "name": "zendframework/zend-loader",
-            "version": "2.4.0",
+            "version": "dev-develop",
+            "target-dir": "Zend/Loader",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/Component_ZendLoader.git",
-                "reference": "6868b8a0c346f17fb97724c3a63aa2cbf6b94865"
+                "reference": "c3a92b4ce71cd6727d384bcb898d82d430145e58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/Component_ZendLoader/zipball/6868b8a0c346f17fb97724c3a63aa2cbf6b94865",
-                "reference": "6868b8a0c346f17fb97724c3a63aa2cbf6b94865",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendLoader/zipball/c3a92b4ce71cd6727d384bcb898d82d430145e58",
+                "reference": "c3a92b4ce71cd6727d384bcb898d82d430145e58",
                 "shasum": ""
             },
             "require": {
@@ -3059,12 +3053,12 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev",
-                    "dev-develop": "2.4-dev"
+                    "dev-master": "2.2-dev",
+                    "dev-develop": "2.3-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
+                "psr-0": {
                     "Zend\\Loader\\": ""
                 }
             },
@@ -3072,25 +3066,25 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "homepage": "https://github.com/zendframework/zf2",
             "keywords": [
                 "loader",
                 "zf2"
             ],
-            "time": "2015-04-01 18:09:26"
+            "time": "2014-03-06 18:00:14"
         },
         {
             "name": "zendframework/zend-modulemanager",
-            "version": "2.4.0",
+            "version": "dev-develop",
+            "target-dir": "Zend/ModuleManager",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/Component_ZendModuleManager.git",
-                "reference": "cbe16b0eafe734a062ed0182381e64b9c953dccf"
+                "reference": "0b35072b567aea79d95271b3ca73458424208175"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/Component_ZendModuleManager/zipball/cbe16b0eafe734a062ed0182381e64b9c953dccf",
-                "reference": "cbe16b0eafe734a062ed0182381e64b9c953dccf",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendModuleManager/zipball/0b35072b567aea79d95271b3ca73458424208175",
+                "reference": "0b35072b567aea79d95271b3ca73458424208175",
                 "shasum": ""
             },
             "require": {
@@ -3102,6 +3096,7 @@
                 "zendframework/zend-config": "self.version",
                 "zendframework/zend-console": "self.version",
                 "zendframework/zend-loader": "self.version",
+                "zendframework/zend-mvc": "self.version",
                 "zendframework/zend-servicemanager": "self.version"
             },
             "suggest": {
@@ -3114,12 +3109,12 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev",
-                    "dev-develop": "2.4-dev"
+                    "dev-master": "2.2-dev",
+                    "dev-develop": "2.3-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
+                "psr-0": {
                     "Zend\\ModuleManager\\": ""
                 }
             },
@@ -3127,46 +3122,45 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "homepage": "https://github.com/zendframework/zf2",
             "keywords": [
                 "modulemanager",
                 "zf2"
             ],
-            "time": "2015-04-01 18:09:27"
+            "time": "2014-03-10 21:00:10"
         },
         {
             "name": "zendframework/zend-servicemanager",
-            "version": "2.4.0",
+            "version": "dev-develop",
+            "target-dir": "Zend/ServiceManager",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/Component_ZendServiceManager.git",
-                "reference": "d3c27c708a148a30608f313a5b7a61a531bd9cb9"
+                "reference": "4911c6c6f58d7058e351e6fe8ecff14666da1259"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/Component_ZendServiceManager/zipball/d3c27c708a148a30608f313a5b7a61a531bd9cb9",
-                "reference": "d3c27c708a148a30608f313a5b7a61a531bd9cb9",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendServiceManager/zipball/4911c6c6f58d7058e351e6fe8ecff14666da1259",
+                "reference": "4911c6c6f58d7058e351e6fe8ecff14666da1259",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.23"
+                "php": ">=5.3.3"
             },
             "require-dev": {
                 "zendframework/zend-di": "self.version"
             },
             "suggest": {
-                "ocramius/proxy-manager": "ProxyManager 0.5.* to handle lazy initialization of services",
                 "zendframework/zend-di": "Zend\\Di component"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev",
-                    "dev-develop": "2.4-dev"
+                    "dev-master": "2.2-dev",
+                    "dev-develop": "2.3-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
+                "psr-0": {
                     "Zend\\ServiceManager\\": ""
                 }
             },
@@ -3174,25 +3168,25 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "homepage": "https://github.com/zendframework/zf2",
             "keywords": [
                 "servicemanager",
                 "zf2"
             ],
-            "time": "2015-04-01 18:09:28"
+            "time": "2014-03-03 21:00:12"
         },
         {
             "name": "zendframework/zend-stdlib",
-            "version": "2.4.0",
+            "version": "dev-develop",
+            "target-dir": "Zend/Stdlib",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/Component_ZendStdlib.git",
-                "reference": "eab586f4c18af3fa63c977611939f1f4a3cf1030"
+                "reference": "3acce3d524c5c5b7e92c90b0c2763068c1efaf2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/Component_ZendStdlib/zipball/eab586f4c18af3fa63c977611939f1f4a3cf1030",
-                "reference": "eab586f4c18af3fa63c977611939f1f4a3cf1030",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendStdlib/zipball/3acce3d524c5c5b7e92c90b0c2763068c1efaf2c",
+                "reference": "3acce3d524c5c5b7e92c90b0c2763068c1efaf2c",
                 "shasum": ""
             },
             "require": {
@@ -3200,25 +3194,23 @@
             },
             "require-dev": {
                 "zendframework/zend-eventmanager": "self.version",
-                "zendframework/zend-filter": "self.version",
                 "zendframework/zend-serializer": "self.version",
                 "zendframework/zend-servicemanager": "self.version"
             },
             "suggest": {
                 "zendframework/zend-eventmanager": "To support aggregate hydrator usage",
-                "zendframework/zend-filter": "To support naming strategy hydrator usage",
                 "zendframework/zend-serializer": "Zend\\Serializer component",
                 "zendframework/zend-servicemanager": "To support hydrator plugin manager usage"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev",
-                    "dev-develop": "2.4-dev"
+                    "dev-master": "2.2-dev",
+                    "dev-develop": "2.3-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
+                "psr-0": {
                     "Zend\\Stdlib\\": ""
                 }
             },
@@ -3226,12 +3218,11 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "homepage": "https://github.com/zendframework/zf2",
             "keywords": [
                 "stdlib",
                 "zf2"
             ],
-            "time": "2015-04-01 18:09:29"
+            "time": "2014-03-13 16:12:22"
         }
     ],
     "packages-dev": [],
