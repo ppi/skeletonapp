@@ -24,8 +24,9 @@ docker logs -f ppi
 Now you can now browse to your ppi application at http://192.168.66.66
 
 OSX
-------------
-Just ensure you have Vagrant installed and run:
+----
+
+Just ensure you have Vagrant and Ansible installed and run:
 
 ```
 vagrant up && vagrant ssh -c "docker logs -f ppi"
