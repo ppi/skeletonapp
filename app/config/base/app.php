@@ -7,7 +7,6 @@ $config['modules'] = array(
         'Application',
         'UserModule',
         'BlogModule',
-        'PPI\ComposerModule'
     ),
     'module_listener_options' => array(
         'cache_dir'                => '%app.cache_dir%',

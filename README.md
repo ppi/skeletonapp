@@ -18,7 +18,7 @@ Install vagrant and ansible
 vagrant up
 ```
 
-Now you can now browse to your ppi application at http://192.168.66.66
+Now you can now browse to your ppi application at http://192.168.33.99
 
 OSX
 ---
@@ -28,7 +28,7 @@ Install vagrant and ansible
 vagrant up
 ```
 
-Now you can now browse to your ppi application at http://192.168.66.66
+Now you can now browse to your ppi application at http://192.168.33.99
 
 Rolling your own
 ------------

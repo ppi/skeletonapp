@@ -20,17 +20,15 @@
       }
     ],
     "require": {
-        "ppi/framework": "dev-master",
+        "ppi/framework": "2.1.x-dev",
         "ppi/cache-module": "dev-master",
         "ppi/datasource-module": "dev-master",
         "ppi/distribution-module": "dev-master",
         "ppi/user-module": "dev-master",
         "ppi/blog-module": "dev-master",
-        "ppi/composer-module": "dev-master",
         "ppi/smarty-module": "dev-master",
         "ppi/twig-module": "dev-master",
-        "ppi/mustache-module": "dev-master",
-        "ppi/plates-module": "dev-master"
+        "ppi/mustache-module": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
@@ -44,7 +42,6 @@
             "PPI\\DistributionModule\\Composer\\ScriptHandler::installRequirementsFile"
         ]
     },
-    "minimum-stability": "dev",
     "extra": {
         "ppi-app-dir": "app",
         "ppi-web-dir": "public",
@@ -52,6 +49,11 @@
     },
     "config": {
         "component-dir": "public/libs"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "branch-alias": {
+      "dev-master": "2.1-dev"
     }
 }
 
