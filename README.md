@@ -10,21 +10,13 @@ PPI bootstraps framework components for you from the top frameworks such as Zend
 Installation
 ------------
 
-Linux
------
-Install vagrant and ansible
+Linux & OSX
+-----------
+If you don't already have them, you will need to install Vagrant, Ansible, Composer and Bower. Once you have these, simply run the following commands:
 
 ```
-vagrant up
-```
-
-Now you can now browse to your ppi application at http://192.168.33.99
-
-OSX
----
-Install vagrant and ansible
-
-```
+composer install
+bower install
 vagrant up
 ```
 
