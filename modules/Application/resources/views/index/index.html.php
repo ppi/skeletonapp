@@ -1,11 +1,16 @@
 <?php $view->extend('::base.html.php'); ?>
 
+<?php $view['slots']->start('include_js_body'); ?>
+    <script src="<?=$view['assets']->getUrl('js/home.js');?>"></script>
+<?php $view['slots']->stop(); ?>
+
 <div id="landing">
     <div class="landing-wrapper">
         <img src="<?=$view['assets']->getUrl('modules/framework/images/ppi-logo-white.png'); ?>" />
         <div class="buttons">
             <a href="http://ppi.readthedocs.org/en/2.1/" target="_blank">Read the Docs</a><!--
-            --><a href="https://github.com/ppi/framework" target="_blank">Discover on GitHub</a>
+            --><a href="https://github.com/ppi/framework" target="_blank">Discover on GitHub</a><!--
+            --><a class="find-out-more" href="#landing-two">Find out More <i class="fa fa-fw fa-caret-down"></i></a>
         </div>
     </div>
 </div>

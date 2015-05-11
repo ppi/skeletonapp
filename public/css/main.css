@@ -49,8 +49,15 @@ h3 {
     border:1px solid #303030;
     outline:none;
 }
+#landing .landing-wrapper .buttons a {
+    margin-left:5px;
+}
 #landing .landing-wrapper .buttons a:first-child {
-    margin-right:5px;
+    margin-left:0;
+}
+#landing .landing-wrapper .buttons a:last-child {
+    background:#202020;
+    border-color:#161616;
 }
 
 .list-container {
