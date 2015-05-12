@@ -37,7 +37,7 @@
             <div class="landing-list">
                 <h3>Configuration</h3>
                 <ul>
-                    <li><a href="/check.php">Checker</a></li>
+                    <li><a href="<?=$view['assets']->getUrl('check.php');?>">Environment Checker</a></li>
                 </ul>
             </div>
 
