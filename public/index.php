@@ -1,5 +1,7 @@
 <?php
 
+ini_set('display_errors', 'on');
+
 // All relative paths start from the main directory, not from /public/
 chdir(dirname(__DIR__));
 
