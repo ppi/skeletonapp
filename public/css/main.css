@@ -2,7 +2,7 @@ html, body {
     min-height:100%;
     height:100%;
     position:relative;
-    background:#161616;
+    background:#284545;
 }
 h2 {
     margin:0;
@@ -13,7 +13,7 @@ h3 {
 #container {
     height:100%;
 }
-#landing, #landing-two {
+#landing {
     height:100%;
     position:relative;
     background:#284545;
@@ -21,23 +21,25 @@ h3 {
     text-align:center;
     padding:50px;
 }
-#landing-two {
-    background:#202020;
-    text-align:left;
-    padding:50px;
-    color:#fff;
-    border:none;
-}
+
 #landing img, #landing-two img {
     width:120px;
     margin-bottom:50px;
 }
 #landing .landing-wrapper {
     position:relative;
-    top:50%;
+    top:25%;
     margin-top:-100px;
     height:215px;
 }
+
+.landing-wrapper .congrats {
+    font-size: 1.3em;
+    padding:5px;
+    color:#fff;
+    border:none
+}
+
 #landing .landing-wrapper .buttons a {
     width:200px;
     background:#406c6c;
@@ -65,26 +67,22 @@ h3 {
     margin-top:50px;
 }
 .landing-list {
-    width:30%;
+    width:400px;
     height:200px;
     padding:1% 1.5%;
-    float:left;
-    margin-left:5%;
+    text-align: center;
     background:rgba(255, 255, 255, 0.05);
     border-radius:4px;
+    margin: 0 auto;
 }
-.landing-list:first-child {
-    margin-left:0;
-}
+
 .landing-list ul {
     list-style:none;
     padding:0;
     margin:0;
 }
-.landing-list:first-child ul {
-    border:none;
-}
+
 .landing-list a {
-    color:#406c6c;
+    color: #bababa;
     font-size: 1.2em;
 }

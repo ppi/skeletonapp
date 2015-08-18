@@ -128,10 +128,10 @@ ctXHWrg/Nh9ngiFIyhUdjeBAg/Y5CAW38ehxiDsaoG8t3d2xUPzGEwIHt06FwMAtxHMZj6BNZ/5okX1i
 </div>
 <div id="footer">
     <div class="container">
-        <p class="muted credit"><a href="http://ppi.io" class="btn btn-small"><b>PPI Framework 2.1.0-DEV</b></a>&nbsp;
-            App crashed and not your fault? <a href="https://github.com/ppi/framework/issues/new">Blame us</a>.
-            It's your fault but don't know how to fix it? <a href="http://www.ppi.io/chat">Chat with the PPI community</a>.
-            Don't wanna fix it? <a href="http://dynamic.xkcd.com/random/comic/">Procrastinate</a>.</p>
+        <p class="muted credit"><a href="http://ppi.io" class="btn btn-small"><b>PPI Framework 2.1</b></a>&nbsp;
+            App crashed and not your fault? <a href="https://github.com/ppi/framework/issues/new">Let us know</a>.
+            Want help to fix it? <a href="https://gitter.im/ppi/framework">Chat with the PPI community</a>.
+            Don't wanna fix it? <a href="http://dynamic.xkcd.com/random/comic/" target="_blank">Procrastinate</a>.</p>
     </div>
 </div>
 <script>
