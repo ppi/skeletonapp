@@ -20,15 +20,15 @@
       }
     ],
     "require": {
-        "ppi/framework": "2.1.x-dev",
-        "ppi/cache-module": "dev-master",
-        "ppi/datasource-module": "dev-master",
-        "ppi/distribution-module": "dev-master",
-        "ppi/user-module": "dev-master",
-        "ppi/blog-module": "dev-master",
-        "ppi/smarty-module": "dev-master",
-        "ppi/twig-module": "dev-master",
-        "ppi/mustache-module": "dev-master"
+        "ppi/framework": "2.1.0-alpha2",
+        "ppi/cache-module": "~1.0",
+        "ppi/datasource-module": "~1.0",
+        "ppi/distribution-module": "~1.0",
+        "ppi/user-module": "~1.0",
+        "ppi/blog-module": "~1.0",
+        "ppi/smarty-module": "~1.0",
+        "ppi/twig-module": "~1.0",
+        "ppi/mustache-module": "~1.0"
     },
     "scripts": {
         "post-install-cmd": [
