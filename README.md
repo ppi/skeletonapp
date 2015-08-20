@@ -3,16 +3,18 @@ PPI  Skeleton Application
 
 Introduction
 ------------
-This is a simple, skeleton application using the ZF2 MVC layer and module
+This is a simple, skeleton application using the PPI MVC layer and module
 systems. This application is meant to be used as a starting place for those
-looking to get their feet wet with ZF2.
+looking to get their feet wet with PPI.
 
 
 What is PPI ?
 --------------
-PPI is the the PHP Interoperability Framework. It provides an equal and open platform to empower PHP developers to pick the best tools from the best PHP frameworks
+PPI is the the PHP Interoperability Framework. It provides an equal and open platform to empower PHP developers to
+pick the best tools from the best PHP frameworks
 
-PPI bootstraps framework components for you from the top frameworks such as ZendFrameworks2, Symfony2, Laravel4, FuelPHP, Doctrine2
+PPI bootstraps framework components for you from the top frameworks such as ZendFrameworks2, Symfony2, Laravel4,
+FuelPHP, Doctrine2
 
 
 Installation using Vagrant and Ansible
@@ -29,7 +31,8 @@ sudo yum install vagrant ansible node
 
 ### Vagrant server
 
-This project supports a basic [Vagrant](http://docs.vagrantup.com/v2/getting-started/index.html) configuration with an inline shell provisioner to run the Skeleton Application in a [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
+This project supports a basic [Vagrant](http://docs.vagrantup.com/v2/getting-started/index.html) configuration with
+an inline shell provisioner to run the Skeleton Application in a [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
 
 1. Run vagrant up command
 
