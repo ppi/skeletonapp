@@ -34,10 +34,7 @@ sudo yum install vagrant ansible node
 This project supports a basic [Vagrant](http://docs.vagrantup.com/v2/getting-started/index.html) configuration with
 an inline shell provisioner to run the Skeleton Application in a [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
 
-1. Run vagrant up command
-
-    vagrant up
-
+1. Run vagrant up command: `$ vagrant up`
 2. Visit [http://localhost](http://localhost) in your browser
 
 Look in [Vagrantfile](Vagrantfile) for configuration details.
@@ -46,6 +43,7 @@ Look in [Vagrantfile](Vagrantfile) for configuration details.
 
 To setup apache, setup a virtual host to point to the public/ directory of the
 project and you should be ready to go! It should look something like below:
+
     <VirtualHost *:80>
         ServerName    skeletonapp.ppi
         DocumentRoot  "/var/www/skeleton/public"
@@ -72,23 +70,23 @@ To setup nginx, open your `/path/to/nginx/nginx.conf` and add an
 [include directive](http://nginx.org/en/docs/ngx_core_module.html#include) below
 into `http` block if it does not already exist:
 
-   server {
+    server {
        listen 80;
        server_name skeletonapp.ppi;
        root /var/www/skeleton/public;
        index index.php;
-
+    
        location / {
            try_files $uri /index.php$is_args$args;
        }
-
+    
        location ~ \.php$ {
            fastcgi_pass 127.0.0.1:9000;
            include fastcgi_params;
            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
            fastcgi_param HTTPS off;
        }
-   }
+    }
 
 Restart the nginx, now you should be ready to go!
 
@@ -99,7 +97,28 @@ Documentation
 
 Contributing
 ------------
-Fork the repo, push your changes to your fork, and submit a pull request.
+
+PPI is an open source, community-driven project. If you'd like to contribute, check out our issues list. You can find us
+on IRC, Google Plus or Twitter ([@ppi_framework][@twitter]).
+
+If you're submitting a pull request, please do so on your own branch on [GitHub][@gitweb].
+ 
+Start by forking the PPI Skeletonapp repository and cloning your fork locally:
+
+    $ git clone git@github.com:YOUR_USERNAME/skeletonapp.git
+    $ git remote add upstream git://github.com/ppi/skeletonapp.git
+    $ git checkout -b feature/BRANCH_NAME master
+
+After your work is finished rebase the feature branch and push it:
+
+    $ git checkout master
+    $ git fetch upstream
+    $ git merge upstream/master
+    $ git checkout feature/BRANCH_NAME
+    $ git rebase master
+    $ git push --force origin feature/BRANCH_NAME
+
+Go to GitHub again and make a pull request on the ppi/framework repository. Thank you for making PPI better!
 
 
 
