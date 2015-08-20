@@ -6,21 +6,21 @@
     "keywords": ["framework", "ppi", "symfony", "zend", "doctrine", "laravel", "fuelphp", "mongo", "pdo", "ppi", "skeletonapp", "bootstrap", "html5", "jquery", "mustache"],
     "type": "library",
     "authors": [
-      {
-          "name": "Paul Dragoonis",
-          "email": "paul@ppi.io"
-      },
-      {
-          "name": "Vítor Brandão",
-          "email": "vitor@ppi.io"
-      },
-      {
-          "name": "PPI Community",
-          "homepage": "http://www.ppi.io/contributors"
-      }
+          {
+              "name": "Paul Dragoonis",
+              "email": "paul@ppi.io"
+          },
+          {
+              "name": "Vítor Brandão",
+              "email": "vitor@ppi.io"
+          },
+          {
+              "name": "PPI Community",
+              "homepage": "http://www.ppi.io/contributors"
+          }
     ],
     "require": {
-        "ppi/framework": "2.1.0-alpha2",
+        "ppi/framework": "2.1.x-dev",
         "ppi/cache-module": "~1.0",
         "ppi/datasource-module": "~1.0",
         "ppi/distribution-module": "~1.0",
@@ -53,7 +53,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "branch-alias": {
-      "dev-master": "2.1-dev"
+        "dev-master": "2.1-dev"
     }
 }
 

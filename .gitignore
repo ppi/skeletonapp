@@ -1,5 +1,6 @@
-# PPI directories
+# PPI files and directories
 app/cache/*
+app/FrameworkRequirements.php
 app/logs/*
 public/modules/*
 vendor
