@@ -20,15 +20,8 @@
       }
     ],
     "require": {
-        "ppi/framework": "2.1.0-alpha2",
-        "ppi/cache-module": "~1.0",
-        "ppi/datasource-module": "~1.0",
-        "ppi/distribution-module": "~1.0",
-        "ppi/user-module": "~1.0",
-        "ppi/blog-module": "~1.0",
-        "ppi/smarty-module": "~1.0",
-        "ppi/twig-module": "~1.0",
-        "ppi/mustache-module": "~1.0"
+        "ppi/framework": "dev-feature/laravel-router",
+        "ppi/laravel-router": "dev-develop"
     },
     "scripts": {
         "post-install-cmd": [
@@ -53,7 +46,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "branch-alias": {
-      "dev-master": "2.1-dev"
+        "dev-develop": "2.1-dev"
     }
 }
 
