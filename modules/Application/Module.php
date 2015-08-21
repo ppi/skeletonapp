@@ -14,7 +14,8 @@ class Module extends AbstractModule
     public function getRoutes()
     {
 //        return $this->getSymfonyRoutes();
-        return $this->getAuraRoutes();
+//        return $this->getAuraRoutes();
+        return $this->getLaravelRoutes();
     }
 
     public function getAuraRoutes()
@@ -25,6 +26,11 @@ class Module extends AbstractModule
     public function getSymfonyRoutes()
     {
         return $this->loadYamlRoutes(__DIR__ . '/resources/routes/symfony.yml');
+    }
+
+    public function getLaravelRoutes()
+    {
+        return $this->loadLaravelRoutes(__DIR__ . '/resources/routes/laravel.php');
     }
 
     /**
