@@ -1,3 +1,3 @@
 Homepage:
-    pattern:  /
+    pattern:  /symfony
     defaults: { _controller: "Application:Index:index"}

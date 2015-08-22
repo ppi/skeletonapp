@@ -13,8 +13,8 @@ class Module extends AbstractModule
      */
     public function getRoutes()
     {
-//        return $this->getSymfonyRoutes();
-//        return $this->getAuraRoutes();
+        // return $this->getSymfonyRoutes();
+       // return $this->getAuraRoutes();
         return $this->getLaravelRoutes();
     }
 
