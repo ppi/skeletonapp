@@ -926,16 +926,16 @@
         },
         {
             "name": "ppi/distribution-module",
-            "version": "1.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/ppi-distribution-module.git",
-                "reference": "cfd3d90758196914622cf732dffb3cee682e4f45"
+                "reference": "7a6b6090692f0d388bd24d93ada0458dd6eb5cc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/ppi-distribution-module/zipball/cfd3d90758196914622cf732dffb3cee682e4f45",
-                "reference": "cfd3d90758196914622cf732dffb3cee682e4f45",
+                "url": "https://api.github.com/repos/ppi/ppi-distribution-module/zipball/7a6b6090692f0d388bd24d93ada0458dd6eb5cc0",
+                "reference": "7a6b6090692f0d388bd24d93ada0458dd6eb5cc0",
                 "shasum": ""
             },
             "require": {
@@ -974,7 +974,7 @@
                 "ppi",
                 "skeletonapp"
             ],
-            "time": "2015-08-19 21:35:10"
+            "time": "2015-08-22 20:59:14"
         },
         {
             "name": "ppi/framework",
@@ -982,12 +982,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/framework.git",
-                "reference": "83e3aebfd14522f499eafe74d49ec68e88e3d5fe"
+                "reference": "20bfa96909c42082faec9ac8ad97143a88acd21a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/framework/zipball/83e3aebfd14522f499eafe74d49ec68e88e3d5fe",
-                "reference": "83e3aebfd14522f499eafe74d49ec68e88e3d5fe",
+                "url": "https://api.github.com/repos/ppi/framework/zipball/20bfa96909c42082faec9ac8ad97143a88acd21a",
+                "reference": "20bfa96909c42082faec9ac8ad97143a88acd21a",
                 "shasum": ""
             },
             "require": {
@@ -1052,7 +1052,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-08-20 21:55:35"
+            "time": "2015-08-22 16:22:59"
         },
         {
             "name": "ppi/mustache-module",
