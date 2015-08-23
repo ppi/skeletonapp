@@ -1,11 +1,23 @@
 <?php
 
 use PPI\Framework\Router\LaravelRouter;
+use Psr\Http\Message\RequestInterface as R;
 
 /**
  * @var LaravelRouter $router
  */
-$router->get('/', function() { return 'HELLO LARAVEL USER'; });
 
-//$router->get('/laravel', ['as' => 'Homepage', 'uses' => 'Application\Controller\Index@index']);
-$router->get('/laravel', ['as' => 'Homepage', 'Application\Controller\Index@index']);
+$router->get('/', [
+    'as' => 'Homepage',
+    'uses' => 'Application\Controller\LaravelExampleController@index'
+]);
+
+$router->get('/hello', function(R $request) {
+    return 'HELLO ' . $request->query->get('user');
+});
+
+$router->get('/laravel1', function() { return 'HELLO LARAVEL USER'; });
+
+
+
+$router->get('/laravel2', 'Application\Controller\LaravelExampleController@index2');

@@ -20,8 +20,8 @@
       }
     ],
     "require": {
-        "ppi/framework": "dev-feature/laravel-router",
-        "ppi/laravel-router": "dev-develop"
+        "ppi/framework": "2.1.x-dev",
+        "ppi/laravel-router": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
