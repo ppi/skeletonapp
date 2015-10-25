@@ -5,7 +5,7 @@ use Application\Controller\Shared as SharedController;
 
 class Index extends SharedController
 {
-    public function indexAction()
+    public function indexAction($request)
     {
         return $this->render('Application:index:index.html.php');
     }
@@ -15,8 +15,8 @@ class Index extends SharedController
         return $this->indexAction();
     }
 
-    public function __invoke()
+    public function __invoke($request)
     {
-        return $this->indexAction();
+        return $this->indexAction($request);
     }
 }
