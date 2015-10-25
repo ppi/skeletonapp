@@ -9,8 +9,8 @@
         <img src="<?=$view['assets']->getUrl('modules/framework/images/ppi-logo-white.png'); ?>" />
         <p class="congrats">Congratulations! You have successfully installed a new PPI application.</p>
         <div class="buttons">
-            <a href="http://ppi.readthedocs.org/en/2.1/" target="_blank">Read The Docs</a>
-            <a href="https://github.com/ppi/framework" target="_blank">Discover on GitHub</a>
+            <a href="http://docs.ppi.io/latest/" target="_blank">Read The Docs</a>
+            <a href="https://github.com/ppi/skeletonapp" target="_blank">Discover on GitHub</a>
             <a href="<?=$view['assets']->getUrl('check.php');?>">Check your environment</a>
             <a class="find-out-more" href="https://gitter.im/ppi/framework" target="_blank">Contact us</a>
         </div>
