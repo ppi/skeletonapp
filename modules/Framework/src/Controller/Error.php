@@ -11,7 +11,7 @@ class Error extends BaseController {
         if($this->getEnv() !== 'production') {
             throw new ResourceNotFoundException('Page not found');
         } else {
-            return $this->render('Framework:error:404_dev.html.php');
+            return $this->render('Framework:error:404.html.php');
         }
     }
     
