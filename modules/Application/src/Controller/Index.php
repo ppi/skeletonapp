@@ -2,21 +2,17 @@
 namespace Application\Controller;
 
 use Application\Controller\Shared as SharedController;
+use Psr\Http\Message\RequestInterface;
 
 class Index extends SharedController
 {
-    public function indexAction($request)
+
+    /**
+     * @param RequestInterface $request
+     * @return string
+     */
+    public function __invoke(RequestInterface $request)
     {
         return $this->render('Application:index:index.html.php');
-    }
-
-    public function loadAction()
-    {
-        return $this->indexAction();
-    }
-
-    public function __invoke($request)
-    {
-        return $this->indexAction($request);
     }
 }
