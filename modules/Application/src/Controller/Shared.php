@@ -2,8 +2,6 @@
 namespace Application\Controller;
 
 use PPI\Framework\Module\Controller as BaseController;
-use UserModule\Entity\User as UserEntity;
-use UserModule\Entity\AuthUser as AuthUserEntity;
 
 class Shared extends BaseController
 {
