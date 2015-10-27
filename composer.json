@@ -28,8 +28,7 @@
         "ppi/blog-module": "~1.0",
         "ppi/smarty-module": "~1.0",
         "ppi/twig-module": "~1.0",
-        "ppi/mustache-module": "~1.0",
-        "ppi/aura-router": "~1.0"
+        "ppi/mustache-module": "~1.0"
     },
     "scripts": {
         "post-install-cmd": [
