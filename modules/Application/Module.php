@@ -1,11 +1,11 @@
 <?php
+
 namespace Application;
 
 use PPI\Framework\Module\AbstractModule;
 
 class Module extends AbstractModule
 {
-
     /**
      * @return array
      */
@@ -20,11 +20,12 @@ class Module extends AbstractModule
      */
     public function getRoutes()
     {
-        return $this->loadAuraRoutes(__DIR__ . '/resources/routes/aura.php');
+        return $this->loadSymfonyRoutes(__DIR__ . '/resources/routes/symfony.yml');
     }
 
-
-
+    /**
+     * @return array
+     */
     public function getAutoloaderConfig()
     {
         return array(
