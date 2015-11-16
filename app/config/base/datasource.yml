@@ -1,9 +1,0 @@
-framework:
-    datasource:
-        connections:
-            main:
-                type:   "pdo_mysql"
-                host:   "mysql"
-                dbname: "ppi2_skeleton"
-                user:   "root"
-                pass:   "ppi"

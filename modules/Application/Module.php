@@ -3,6 +3,7 @@
 namespace Application;
 
 use PPI\Framework\Module\AbstractModule;
+use Application\Service\TestService;
 
 class Module extends AbstractModule
 {
@@ -23,9 +24,6 @@ class Module extends AbstractModule
         return $this->loadSymfonyRoutes(__DIR__ . '/resources/routes/symfony.yml');
     }
 
-    /**
-     * @return array
-     */
     public function getAutoloaderConfig()
     {
         return array(
