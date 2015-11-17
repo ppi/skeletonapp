@@ -21,8 +21,7 @@
     ],
     "require": {
         "ppi/framework": "2.1.x-dev",
-        "ppi/distribution-module": "~1.0",
-        "ppi/twig-module": "^1.0"
+        "ppi/distribution-module": "~1.0"
     },
     "scripts": {
         "post-install-cmd": [
