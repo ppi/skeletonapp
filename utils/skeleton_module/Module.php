@@ -10,7 +10,7 @@ class Module extends AbstractModule
     /**
      * Get the routes for this module
      *
-     * @return \Symfony\Component\Routing\RouteCollection
+     * @return [ROUTING_GETROUTES_RETVAL]
      */
     public function getRoutes()
     {
