@@ -21,14 +21,8 @@
     ],
     "require": {
         "ppi/framework": "2.1.x-dev",
-        "ppi/cache-module": "~1.0",
-        "ppi/datasource-module": "~1.0",
         "ppi/distribution-module": "~1.0",
-        "ppi/user-module": "~1.0",
-        "ppi/blog-module": "~1.0",
-        "ppi/smarty-module": "~1.0",
-        "ppi/twig-module": "~1.0",
-        "ppi/mustache-module": "~1.0"
+        "ppi/twig-module": "^1.0"
     },
     "scripts": {
         "post-install-cmd": [
@@ -56,4 +50,3 @@
         "dev-master": "2.1-dev"
     }
 }
-
