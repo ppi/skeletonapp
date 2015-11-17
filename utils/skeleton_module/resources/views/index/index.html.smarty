@@ -1,0 +1,4 @@
+{extends 'file:[MODULE_NAME]:index:base.html.smarty'}
+{block name=body}
+<p>Welcome to your new module: [MODULE_NAME]</p>
+{/block}

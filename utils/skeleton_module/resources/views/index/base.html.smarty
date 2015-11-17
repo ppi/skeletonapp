@@ -1,0 +1,9 @@
+<html>
+<head>
+    <title>{block name=title}Module [MODULE_NAME]{/block}</title>
+</head>
+<body>
+<h1>Base smarty template for [MODULE_NAME]</h1>
+{block name=body}{/block}
+</body>
+</html>
