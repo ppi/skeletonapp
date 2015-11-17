@@ -11,6 +11,6 @@ class Index extends SharedController
      */
     public function indexAction()
     {
-        return $this->render('Application:index:index.html.php', compact('greeting'));
+        return $this->render('Application:index:index.html.php');
     }
 }

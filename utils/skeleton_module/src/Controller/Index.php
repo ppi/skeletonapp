@@ -8,6 +8,6 @@ class Index extends SharedController
 {
     public function indexAction(RequestInterface $request)
     {
-        return $this->render('[MODULE_NAME]:index:index.html.php');
+        return $this->render('[MODULE_NAME]:index:index.html.[TPL_ENGINE_EXT]');
     }
 }

@@ -1,0 +1,3 @@
+HelloModule_Index:
+    pattern: /HelloModule/index
+    defaults: { _controller: "HelloModule:Index:index"}

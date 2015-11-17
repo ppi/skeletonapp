@@ -14,7 +14,6 @@
             <a href="<?=$view['assets']->getUrl('check.php');?>">Check your environment</a>
             <a class="find-out-more" href="https://gitter.im/ppi/framework" target="_blank">Contact us</a>
         </div>
-
     </div>
 </div>
 

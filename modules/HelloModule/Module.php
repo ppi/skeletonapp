@@ -1,6 +1,6 @@
 <?php
 
-namespace [MODULE_NAME];
+namespace HelloModule;
 
 use PPI\Framework\Module\AbstractModule;
 
@@ -14,7 +14,7 @@ class Module extends AbstractModule
      */
     public function getRoutes()
     {
-        return $this->[ROUTING_LOAD_METHOD](__DIR__ . '/resources/routes/[ROUTING_DEF_FILE]');
+        return $this->loadSymfonyRoutes(__DIR__ . '/resources/routes/symfony.yml');
     }
 
     /**
