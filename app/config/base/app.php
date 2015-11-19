@@ -1,35 +1,35 @@
 <?php
-$config =  array();
+$config = [];
 
-$config['modules'] = array(
-    'active_modules' => array(
-        'Framework',
-        'Application',
-        'HelloModule'
-    ),
-    'module_listener_options' => array(
-        'cache_dir'                => '%app.cache_dir%',
-        'config_cache_enabled'     => false,
-        'config_cache_key'         => '%app.name%',
-        'module_map_cache_enabled' => false,
-        'module_map_cache_key'     => '%app.name%',
-        'module_paths'      => array(
-            './modules',
-            './vendor'
-        )
-    ),
-);
+$config['modules'] = [
+    'Framework',
+    'Application',
+//    'HelloModule'
+];
+$config['active_modules'] = $config['modules'];
 
-$config['framework'] = array(
-    'templating' => array(
-        'engines'     => array('php', 'twig'),
-    ),
-    'skeleton_module' => array(
+$config['module_listener_options'] = [
+    'cache_dir'                => '%app.cache_dir%',
+    'config_cache_enabled'     => false,
+    'config_cache_key'         => '%app.name%',
+    'module_map_cache_enabled' => false,
+    'module_map_cache_key'     => '%app.name%',
+    'module_paths'      => [
+        './modules',
+        './vendor'
+    ]
+];
+
+$config['framework'] = [
+    'templating' => [
+        'engines'     => ['php'],
+    ],
+    'skeleton_module' => [
         'path' => './utils/skeleton_module'
-    )
-);
+    ]
+];
 
-$config['datasource'] = array(
+$config['datasource'] = [
     'connections' => require __DIR__ . '/datasource.php'
-);
+];
 return $config;
