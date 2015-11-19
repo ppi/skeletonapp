@@ -3,8 +3,7 @@ $config = [];
 
 $config['modules'] = [
     'Framework',
-    'Application',
-//    'HelloModule'
+    'Application'
 ];
 $config['active_modules'] = $config['modules'];
 
