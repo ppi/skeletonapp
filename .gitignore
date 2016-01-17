@@ -1,7 +1,7 @@
 # PPI files and directories
-app/cache/*
+app/cache/
 app/FrameworkRequirements.php
-app/logs/*
+app/logs/
 public/modules/*
 vendor
 composer.phar
