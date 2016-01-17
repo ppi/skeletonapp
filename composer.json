@@ -20,8 +20,8 @@
           }
     ],
     "require": {
-        "ppi/framework": "2.1.x-dev",
-        "ppi/distribution-module": "~1.0"
+        "ppi/framework": "2.2.x-dev",
+        "ppi/distribution-module": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
@@ -46,6 +46,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "branch-alias": {
-        "dev-master": "2.1-dev"
+        "dev-master": "2.2-dev"
     }
 }
