@@ -24,13 +24,14 @@ class Example extends BaseStorage
      */
     public function getByID($id)
     {
-        $row = $this->ds->createQueryBuilder()
-            ->select('t.*')
+        $st = $this->ds->createQueryBuilder()
+            ->select('*')
             ->from($this->getTableName(), 't')
             ->where('t.id = :id')
             ->setParameter(':id', $id)
-            ->execute()
-            ->fetch($this->getFetchMode());
+            ->execute();
+
+        $row = $st->fetch($this->getFetchMode());
 
         if ($row === false) {
             throw new \Exception('Unable to obtain row for id: ' . $id);
@@ -40,7 +41,7 @@ class Example extends BaseStorage
     }
 
     /**
-     * Get entity objects from all users rows
+     * Get entity objects from all rows
      *
      * @return array This will return an array of Entity.
      */
@@ -48,11 +49,12 @@ class Example extends BaseStorage
     {
         $entities = array();
 
-        $rows = $this->ds->createQueryBuilder()
+        $st = $this->ds->createQueryBuilder()
             ->select('*')
             ->from($this->getTableName(), 't')
-            ->execute()
-            ->fetchAll($this->getFetchMode());
+            ->execute();
+
+        $rows = $st->fetchAll($this->getFetchMode());
 
         foreach ($rows as $row) {
             $entities[] = new Entity($row);
@@ -69,7 +71,7 @@ class Example extends BaseStorage
      * @param string $filter_type The type of search you want to run.
      * @return array This will return an array of Entity.
      */
-    public function search($fields, $value, $filter_type = 'search')
+    public function search(array $fields, $value, $filter_type = 'search')
     {
         switch ($filter_type) {
             case 'search':
@@ -84,8 +86,8 @@ class Example extends BaseStorage
                        ->setParameter(':' . $field, "%" . $value . "%");
                 }
 
-                $qb->execute();
-                $rows = $qb->execute();
+                $st   = $qb->execute();
+                $rows = $st->fetchAll($this->getFetchMode());
 
                 foreach ($rows as $row) {
                     $entities[] = new Entity($row);

@@ -105,12 +105,11 @@ class DoctrineDbalBase
      */
     public function countAll()
     {
-        $row = $this->ds->createQueryBuilder()
-            ->select('count(' . $this->getPrimary() . ') as total')
+        $st = $this->ds->createQueryBuilder()
+            ->select($this->getPrimary())
             ->from($this->getTableName(), 't')
-            ->execute()
-            ->fetch($this->getFetchMode());
+            ->execute();
 
-        return $row['total'];
+        return $st->rowCount();
     }
 }
