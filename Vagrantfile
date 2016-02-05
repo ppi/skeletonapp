@@ -11,10 +11,10 @@ Vagrant.require_version ">= 1.5"
 Vagrant.configure("2") do |config|
 
     config.vm.provider :virtualbox do |v|
-        v.name = "ppi-lamp"
+        v.name = "ppi-skeleton-lamp"
         v.customize [
             "modifyvm", :id,
-            "--name", "ppi-lamp",
+            "--name", "ppi-skeleton-lamp",
             "--memory", 1024,
             "--natdnshostresolver1", "on",
             "--cpus", 1,
@@ -25,7 +25,7 @@ Vagrant.configure("2") do |config|
     
     config.vm.box_url = "https://vagrantcloud.com/ubuntu/boxes/trusty64/versions/14.04/providers/virtualbox.box"
     
-    config.vm.network :private_network, ip: "192.168.33.99"
+    config.vm.network :private_network, ip: "192.168.33.100"
     config.ssh.forward_agent = true
 
     #############################################################
@@ -38,8 +38,8 @@ Vagrant.configure("2") do |config|
         ansible.inventory_path = "ansible/inventories/dev"
         ansible.limit = 'all'
         ansible.extra_vars = {
-            private_interface: "192.168.33.99",
-            hostname: "ppi-lamp"
+            private_interface: "192.168.33.100",
+            hostname: "ppi-skeleton-lamp"
         }
     end
     
