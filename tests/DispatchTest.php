@@ -20,17 +20,7 @@ class DispatchTest extends \PHPUnit_Framework_TestCase
 
 	public function testDispatch()
 	{
-		// Setup autoloading and include PPI
-		require_once realpath(__DIR__ . '/../app/init.php');
-
-		// Create...
-		$app = new PPI\Framework\App(array(
-			'environment' => 'dev',
-		    'rootDir' => realpath(__DIR__.'/../app'),
-		));
-
-		$app->loadConfig($app->getEnvironment() . '/app.php');
-
+		$app = $this->createApp('dev');
 		$request = HttpRequest::create('/');
 		$response = HttpResponse::create();
 
@@ -41,23 +31,24 @@ class DispatchTest extends \PHPUnit_Framework_TestCase
 
 	public function testDispatchProd()
 	{
-		// Setup autoloading and include PPI
-		require_once realpath(__DIR__ . '/../app/init.php');
-
-		// Create...
-		$app = new PPI\Framework\App(array(
-			'environment' => 'prod',
-		    'rootDir' => realpath(__DIR__.'/../app'),
-		));
-
-		$app->loadConfig($app->getEnvironment() . '/app.php');
-
+		$app = $this->createApp('prod');
 		$request = HttpRequest::create('/');
 		$response = HttpResponse::create();
 
 		$response = $app->dispatch($request, $response);
 
 		$this->assertEquals(200, $response->getStatusCode());
+	}
+
+	private function createApp($env)
+	{
+		$app = new PPI\Framework\App(array(
+			'environment' => $env,
+		    'rootDir' => realpath(__DIR__.'/../app'),
+		));
+		$app->loadConfig($app->getEnvironment() . '/app.php');
+		
+		return $app;
 	}
 
 
