@@ -20,7 +20,7 @@ use PPI\Framework\App;
 class DispatchTest extends \PHPUnit_Framework_TestCase
 {
 
-	public function testIndex()
+	public function testDispatch()
 	{
 		// Setup autoloading and include PPI
 		require_once realpath(__DIR__ . '/../app/init.php');
@@ -38,7 +38,30 @@ class DispatchTest extends \PHPUnit_Framework_TestCase
 
 		$response = $app->dispatch($request, $response);
 
-		$this->assertEquals(200, $response->getStatusCode()); exit;
+		$this->assertEquals(200, $response->getStatusCode());
 	}
+
+	public function testDispatchProd()
+	{
+		// Setup autoloading and include PPI
+		require_once realpath(__DIR__ . '/../app/init.php');
+
+		// Create...
+		$app = new PPI\Framework\App(array(
+			'environment' => 'prod',
+		    'rootDir' => realpath(__DIR__.'/../app'),
+		));
+
+		$app->loadConfig($app->getEnvironment() . '/app.php');
+
+		$request = HttpRequest::create('/');
+		$response = HttpResponse::create();
+
+		$response = $app->dispatch($request, $response);
+
+		$this->assertEquals(200, $response->getStatusCode());
+	}
+
+
 
 }
