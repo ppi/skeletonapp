@@ -13,8 +13,6 @@ use PPI\Framework\Http\Response as HttpResponse;
 use PPI\Framework\App;
 
 /**
- * Class AppTest.
- *
  * @author Paul Dragoonis <paul@ppi.io>
  */
 class DispatchTest extends \PHPUnit_Framework_TestCase
