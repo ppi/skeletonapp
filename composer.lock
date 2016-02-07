@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "00d4a631031207a20deccca58ebebde4",
+    "hash": "0d2a3768700b77bf4799904efdc7ae28",
     "content-hash": "97cf6664a9f3b01412f370bb8a497bce",
     "packages": [
         {
@@ -322,13 +322,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/ppi-distribution-module.git",
-                "reference": "c2d0a59b29963605aded81afa14a5e276f48a579"
+                "reference": "3eeb45fc09ceca36246e027cf71321b531ad1909"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/ppi-distribution-module/zipball/c2d0a59b29963605aded81afa14a5e276f48a579",
-                "reference": "c2d0a59b29963605aded81afa14a5e276f48a579",
+                "url": "https://api.github.com/repos/ppi/ppi-distribution-module/zipball/3eeb45fc09ceca36246e027cf71321b531ad1909",
+                "reference": "3eeb45fc09ceca36246e027cf71321b531ad1909",
                 "shasum": ""
+            },
+            "require": {
+                "ppi/framework": "~2.1"
             },
             "type": "library",
             "autoload": {
@@ -363,7 +366,7 @@
                 "ppi",
                 "skeletonapp"
             ],
-            "time": "2015-12-15 23:21:39"
+            "time": "2016-02-07 23:37:28"
         },
         {
             "name": "ppi/framework",
@@ -578,7 +581,7 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony CMF community",
+                    "name": "Symfony CMF Community",
                     "homepage": "https://github.com/symfony-cmf/Routing/contributors"
                 }
             ],
