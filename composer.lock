@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "387a200422a0c1020b640e42c9649a85",
-    "content-hash": "628d994faa80e477ca59219e7fbaafc0",
+    "hash": "00d4a631031207a20deccca58ebebde4",
+    "content-hash": "97cf6664a9f3b01412f370bb8a497bce",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -367,16 +367,16 @@
         },
         {
             "name": "ppi/framework",
-            "version": "dev-master",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/framework.git",
-                "reference": "dd3792bf4f3ecac82208388b970d25baeb788b66"
+                "reference": "6ef30b9033e88df1db16593dc1f1f83da625c73d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/framework/zipball/dd3792bf4f3ecac82208388b970d25baeb788b66",
-                "reference": "dd3792bf4f3ecac82208388b970d25baeb788b66",
+                "url": "https://api.github.com/repos/ppi/framework/zipball/6ef30b9033e88df1db16593dc1f1f83da625c73d",
+                "reference": "6ef30b9033e88df1db16593dc1f1f83da625c73d",
                 "shasum": ""
             },
             "require": {
@@ -444,7 +444,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2016-02-05 09:29:21"
+            "time": "2016-02-07 19:03:38"
         },
         {
             "name": "psr/http-message",
@@ -3372,7 +3372,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "ppi/framework": 20,
         "ppi/distribution-module": 20
     },
     "prefer-stable": true,
