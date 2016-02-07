@@ -46,6 +46,9 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "branch-alias": {
-        "dev-master": "2.2-dev"
+        "tests-dispatch": "2.2-dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
     }
 }
