@@ -5,6 +5,7 @@ app/logs/
 public/modules/*
 vendor
 composer.phar
+composer.lock
 
 # Backup files created by IDEs
 *~
