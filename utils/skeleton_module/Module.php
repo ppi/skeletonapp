@@ -6,16 +6,7 @@ use PPI\Framework\Module\AbstractModule;
 
 class Module extends AbstractModule
 {
-
-    /**
-     * Get the routes for this module
-     *
-     * @return [ROUTING_GETROUTES_RETVAL]
-     */
-    public function getRoutes()
-    {
-        return $this->[ROUTING_LOAD_METHOD](__DIR__ . '/resources/routes/[ROUTING_DEF_FILE]');
-    }
+    [ROUTING_TRAIT]
 
     /**
      * Get the configuration for this module
