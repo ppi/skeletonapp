@@ -9,11 +9,6 @@ class SymfonyKernel extends BaseKernel
 
     private $loader;
 
-    public function __construct()
-    {
-
-    }
-
     public function registerBundles()
     {
         $env = 'dev';

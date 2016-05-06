@@ -1,2 +1,2 @@
 bundles:
-  - Application\Controller\Index
+  - Symfony\Bundle\FrameworkBundle\FrameworkBundle

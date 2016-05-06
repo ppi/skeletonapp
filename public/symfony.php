@@ -11,12 +11,15 @@ PPI\Framework\Autoload::register();
 use Symfony\Component\Debug\Debug;
 Debug::enable();
 
-//var_dump(PPI\Framework\Autoload::$_options['loader']); exit;
-//var_dump(__FILE__, new \Application\Controller\Index()); exit;
-
 include __DIR__ . '/../app/SymfonyKernel.php';
-$kernel = new SymfonyKernel();
+$env = 'dev';
+$debug = true;
+$kernel = new SymfonyKernel($env, $debug);
+
 $configLoader = new \PPI\Framework\Config\ConfigLoader(realpath(__DIR__.'/../app/config/dev/')); // @todo - what should this path be?
+$configLoader->load('app.php');
+
+//var_dump($configLoader->getLoader()->load('app.php')); exit;
 $kernel->registerContainerConfiguration($configLoader->getLoader());
 $bundles = $kernel->registerBundles();
 $kernel->boot();
