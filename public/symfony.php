@@ -16,11 +16,13 @@ $env = 'dev';
 $debug = true;
 $kernel = new SymfonyKernel($env, $debug);
 
-$configLoader = new \PPI\Framework\Config\ConfigLoader(realpath(__DIR__.'/../app/config/dev/')); // @todo - what should this path be?
-$configLoader->load('app.php');
+$configLoader = new \PPI\Framework\Config\ConfigLoader(); // @todo - what should this path be?
+//$configLoader->load('app.php');
 
 //var_dump($configLoader->getLoader()->load('app.php')); exit;
-$kernel->registerContainerConfiguration($configLoader->getLoader());
+//$kernel->registerContainerConfiguration($configLoader->getLoader());
+$kernel->setConfigPath(realpath(__DIR__.'/../app/config/dev/'));
+
 $bundles = $kernel->registerBundles();
 $kernel->boot();
 
