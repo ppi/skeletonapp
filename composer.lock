@@ -370,16 +370,16 @@
         },
         {
             "name": "ppi/framework",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppi/framework.git",
-                "reference": "6ef30b9033e88df1db16593dc1f1f83da625c73d"
+                "reference": "d6e1eb144e8201836c80d3166d5b921ea017a84d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppi/framework/zipball/6ef30b9033e88df1db16593dc1f1f83da625c73d",
-                "reference": "6ef30b9033e88df1db16593dc1f1f83da625c73d",
+                "url": "https://api.github.com/repos/ppi/framework/zipball/d6e1eb144e8201836c80d3166d5b921ea017a84d",
+                "reference": "d6e1eb144e8201836c80d3166d5b921ea017a84d",
                 "shasum": ""
             },
             "require": {
@@ -447,7 +447,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2016-02-07 19:03:38"
+            "time": "2016-02-16 22:37:11"
         },
         {
             "name": "psr/http-message",
@@ -581,7 +581,7 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony CMF Community",
+                    "name": "Symfony CMF community",
                     "homepage": "https://github.com/symfony-cmf/Routing/contributors"
                 }
             ],
