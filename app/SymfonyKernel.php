@@ -66,7 +66,7 @@ class SymfonyKernel extends BaseKernel
     
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
-        $loader->load('app.php');
+        $loader->load('symfony_config.yml');
     }
 
     protected function getContainerLoader(ContainerInterface $container)
