@@ -6,7 +6,6 @@ if (!file_exists($path = dirname(__DIR__) . '/vendor/autoload.php')) {
 $loader = require $path;
 
 PPI\Framework\Autoload::config(array('loader' => $loader));
-PPI\Framework\Autoload::add('Application\\', __DIR__ . '/../modules/Application/src');
 PPI\Framework\Autoload::register();
 
 use Symfony\Component\Debug\Debug;
@@ -17,9 +16,9 @@ Debug::enable();
 
 include __DIR__ . '/../app/SymfonyKernel.php';
 $kernel = new SymfonyKernel();
-$configLoader = new \PPI\Framework\Config\ConfigLoader(__DIR__ . '/config'); // @todo - what should this path be?
-
+$configLoader = new \PPI\Framework\Config\ConfigLoader(realpath(__DIR__.'/../app/config/dev/')); // @todo - what should this path be?
 $kernel->registerContainerConfiguration($configLoader->getLoader());
 $bundles = $kernel->registerBundles();
+$kernel->boot();
 
 var_dump($bundles); exit;

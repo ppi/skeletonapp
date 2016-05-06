@@ -1,10 +1,10 @@
 <?php
 
-use Symfony\Component\HttpKernel\HttpKernel as BaseHttpKernel;
+use Symfony\Component\HttpKernel\Kernel as BaseKernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\Yaml\Yaml;
 
-class SymfonyKernel extends BaseHttpKernel
+class SymfonyKernel extends BaseKernel
 {
 
     private $loader;

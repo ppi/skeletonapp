@@ -20,6 +20,7 @@ $config['module_listener_options'] = [
 ];
 
 $config['framework'] = [
+    'secret' => 'dsiufh$%^b5^B&%',
     'templating' => [
         'engines'     => ['php'],
     ],
