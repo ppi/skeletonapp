@@ -1,3 +1,4 @@
 bundles:
   - Symfony\Bundle\FrameworkBundle\FrameworkBundle
+  - Symfony\Bundle\TwigBundle\TwigBundle
   - Nelmio\ApiDocBundle\NelmioApiDocBundle
