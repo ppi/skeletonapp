@@ -1,4 +1,6 @@
 bundles:
   - Symfony\Bundle\FrameworkBundle\FrameworkBundle
+  - Symfony\Bundle\SecurityBundle\SecurityBundle
   - Symfony\Bundle\TwigBundle\TwigBundle
   - Nelmio\ApiDocBundle\NelmioApiDocBundle
+#  - FOS\UserBundle\FOSUserBundle

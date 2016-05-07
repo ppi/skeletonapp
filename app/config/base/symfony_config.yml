@@ -1,3 +1,6 @@
+#imports:
+#    - { resource: "symfony/security.yml" }
+
 framework:
     secret: mysecret
     router:
