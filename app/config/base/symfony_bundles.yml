@@ -3,4 +3,5 @@ bundles:
   - Symfony\Bundle\SecurityBundle\SecurityBundle
   - Symfony\Bundle\TwigBundle\TwigBundle
   - Nelmio\ApiDocBundle\NelmioApiDocBundle
+  - TestBundle\TestBundle
 #  - FOS\UserBundle\FOSUserBundle

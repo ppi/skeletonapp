@@ -87,7 +87,7 @@ class SymfonyKernel extends BaseKernel
         $bundles = [];
         foreach($bundlesList as $bundle) {
             if(!class_exists($bundle)) {
-                throw new \Exception(__METHOD__, __LINE__);
+                throw new \Exception('Unable to load bundle class named: ' . $bundle);
             }
             $bundles[] = new $bundle;
         }
