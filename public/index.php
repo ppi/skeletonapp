@@ -27,10 +27,12 @@ $app = new PPI\Framework\App(array(
 // ...configure...
 $app->loadConfig($app->getEnvironment().'/app.php');
 $symfonyKernel = include 'symfony.php';
+
 $app->boot();
 
 $sfContainer = $symfonyKernel->getContainer();
 $app->getServiceManager()->set('SymfonyContainer', $sfContainer);
+
 $sfRouter = $sfContainer->get('router');
 $ppiChainRouter = $app->getServiceManager()->get('router');
 $ppiChainRouter->add($sfRouter);
