@@ -1,3 +1,9 @@
 framework:
     secret: mysecret
     router:
+        resource: '%kernel.root_dir%/config/dev/symfony_routing.yml'
+
+    templating:
+        engines: ['twig']
+
+nelmio_api_doc: ~

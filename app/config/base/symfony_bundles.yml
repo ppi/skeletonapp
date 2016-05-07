@@ -1,0 +1,3 @@
+bundles:
+  - Symfony\Bundle\FrameworkBundle\FrameworkBundle
+  - Nelmio\ApiDocBundle\NelmioApiDocBundle

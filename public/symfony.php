@@ -12,14 +12,16 @@ use Symfony\Component\Debug\Debug;
 Debug::enable();
 
 include __DIR__ . '/../app/SymfonyKernel.php';
-$env = 'dev';
-$debug = true;
-$kernel = new SymfonyKernel($env, $debug);
 
-$configLoader = new \PPI\Framework\Config\ConfigLoader(); // @todo - what should this path be?
-$kernel->setConfigPath(realpath(__DIR__.'/../app/config/base/'));
+$env = 'dev'; $debug = true;
+$configDir = realpath(__DIR__.'/../app/config/' . $env);
+
+$kernel = new SymfonyKernel($env, $debug);
+$kernel->setAppConfigDir($configDir);
+$kernel->setAppConfigFile('symfony_config.yml');
+$kernel->setBundlesConfigFile($configDir . '/symfony_bundles.yml');
 
 $bundles = $kernel->registerBundles();
 $kernel->boot();
-$router = $kernel->getContainer()->get('router');
-var_dump($router); exit;
+
+return $kernel;

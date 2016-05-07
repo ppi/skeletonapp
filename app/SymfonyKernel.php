@@ -26,25 +26,56 @@ class SymfonyKernel extends BaseKernel
     /**
      * @var string
      */
-    private $configPath;
+    private $appConfigDir;
 
-    public function setConfigPath($configPath)
+    /**
+     * @var string
+     */
+    private $appConfigFile;
+
+    /**
+     * @var string
+     */
+    private $bundlesConfigFile;
+
+    /**
+     * @param string $configDir
+     */
+    public function setAppConfigDir($configDir)
     {
-        $this->configPath = $configPath;
+        $this->appConfigDir = $configDir;
     }
 
+    /**
+     * @param string $appConfigFile
+     */
+    public function setAppConfigFile($appConfigFile)
+    {
+        $this->appConfigFile = $appConfigFile;
+    }
+
+    /**
+     * @param string $bundlesConfigFile
+     */
+    public function setBundlesConfigFile($bundlesConfigFile)
+    {
+        $this->bundlesConfigFile = $bundlesConfigFile;
+    }
+
+    /**
+     * @return array
+     * @throws Exception
+     */
     public function registerBundles()
     {
-        $env = 'dev';
-        $bundlesListPath = __DIR__ . '/config/' . $env . '/symfony_bundles.yml';
-        if(!is_readable($bundlesListPath)) {
+        if(!is_readable($this->bundlesConfigFile)) {
             throw new \Exception(__METHOD__, __LINE__);
         }
 
-        $config = Yaml::parse($bundlesListPath);
+        $config = Yaml::parse($this->bundlesConfigFile);
 
         if(!isset($config['bundles'])) {
-            throw new \Exception(__METHOD__, __LINE__);
+            throw new \Exception('Cannot find any symfony bundles to load');
         }
 
         $bundlesList = $config['bundles'];
@@ -66,12 +97,12 @@ class SymfonyKernel extends BaseKernel
     
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
-        $loader->load('symfony_config.yml');
+        $loader->load($this->appConfigFile);
     }
 
     protected function getContainerLoader(ContainerInterface $container)
     {
-        $locator = new FileLocator($this, $this->configPath);
+        $locator = new FileLocator($this, $this->appConfigDir);
         $resolver = new LoaderResolver(array(
             new XmlFileLoader($container, $locator),
             new YamlFileLoader($container, $locator),

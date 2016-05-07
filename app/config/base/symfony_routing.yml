@@ -1,0 +1,4 @@
+# app/config/base/symfony_routing.yml
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
