@@ -10,12 +10,12 @@ Debug::enable();
 
 include __DIR__ . '/../app/SymfonyKernel.php';
 
-$configDir = realpath(__DIR__.'/../app/config/' . $env);
+$configDir = realpath(__DIR__.'/../app/config/' . $env . '/symfony/');
 
 $kernel = new SymfonyKernel($env, $debug);
 $kernel->setAppConfigDir($configDir);
-$kernel->setAppConfigFile('symfony_config.yml');
-$kernel->setBundlesConfigFile($configDir . '/symfony_bundles.yml');
+$kernel->setAppConfigFile('config.yml');
+$kernel->setBundlesConfigFile($configDir . '/bundles.yml');
 
 $bundles = $kernel->registerBundles();
 $kernel->boot();

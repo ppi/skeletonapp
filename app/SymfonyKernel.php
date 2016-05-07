@@ -81,7 +81,7 @@ class SymfonyKernel extends BaseKernel
         $bundlesList = $config['bundles'];
 
         if(!is_array($bundlesList)) {
-            throw new \Exception(__METHOD__, __LINE__);
+            throw new \Exception('Bundles config should be an array, but it is of type: ' . gettype($bundlesList));
         }
 
         $bundles = [];

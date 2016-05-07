@@ -6,7 +6,7 @@ NelmioApiDocBundle:
 TestBundle:
     resource: "@TestBundle/Resources/config/routing.yml"
 
-#
+
 #fos_user:
 #    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
-
+#

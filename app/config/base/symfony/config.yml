@@ -1,0 +1,12 @@
+#imports:
+#    - { resource: "symfony/security.yml" }
+
+framework:
+    secret: mysecret
+    router:
+        resource: '%kernel.root_dir%/config/dev/symfony/routing.yml'
+
+    templating:
+        engines: ['twig']
+
+nelmio_api_doc: ~
