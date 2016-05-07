@@ -10,7 +10,6 @@ Debug::enable();
 
 include __DIR__ . '/../app/SymfonyKernel.php';
 
-$env = 'dev'; $debug = true;
 $configDir = realpath(__DIR__.'/../app/config/' . $env);
 
 $kernel = new SymfonyKernel($env, $debug);
