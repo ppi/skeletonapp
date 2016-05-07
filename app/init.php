@@ -23,8 +23,4 @@ PPI\Framework\Autoload::config(array(
 ));
 PPI\Framework\Autoload::register();
 
-use Doctrine\Common\Annotations\AnnotationRegistry;
-
-AnnotationRegistry::registerLoader(array($loader, 'loadClass'));
-
 return $loader;

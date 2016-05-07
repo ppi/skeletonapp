@@ -12,6 +12,9 @@ include __DIR__ . '/../app/SymfonyKernel.php';
 
 $configDir = realpath(__DIR__.'/../app/config/' . $env . '/symfony/');
 
+use Doctrine\Common\Annotations\AnnotationRegistry;
+AnnotationRegistry::registerLoader(array($loader, 'loadClass'));
+
 $kernel = new SymfonyKernel($env, $debug);
 $kernel->setAppConfigDir($configDir);
 $kernel->setAppConfigFile('config.yml');
