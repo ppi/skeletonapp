@@ -4,4 +4,6 @@ bundles:
   - Symfony\Bundle\TwigBundle\TwigBundle
   - Nelmio\ApiDocBundle\NelmioApiDocBundle
   - TestBundle\TestBundle
-#  - FOS\UserBundle\FOSUserBundle
+  - Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle
+  - Doctrine\Bundle\DoctrineBundle\DoctrineBundle
+  - FOS\UserBundle\FOSUserBundle

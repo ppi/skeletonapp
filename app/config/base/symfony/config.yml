@@ -1,12 +1,46 @@
-#imports:
-#    - { resource: "symfony/security.yml" }
+imports:
+    - { resource: "parameters.yml" }
+    - { resource: "security.yml" }
+
+nelmio_api_doc: ~
+swiftmailer: ~
 
 framework:
     secret: mysecret
+    form:            ~
+    csrf_protection: ~
+    validation:      { enable_annotations: true }
+    session:
+        # http://symfony.com/doc/current/reference/configuration/framework.html#handler-id
+        handler_id:  session.handler.native_file
+        save_path:   "%kernel.root_dir%/../var/sessions/%kernel.environment%"
+
     router:
         resource: '%kernel.root_dir%/config/dev/symfony/routing.yml'
 
     templating:
         engines: ['twig']
 
-nelmio_api_doc: ~
+
+
+
+fos_user:
+    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    firewall_name: main
+    user_class: TestBundle\Entity\User
+
+
+doctrine:
+    dbal:
+        driver:   pdo_mysql
+        host:     "%database_host%"
+        port:     "%database_port%"
+        dbname:   "%database_name%"
+        user:     "%database_user%"
+        password: "%database_password%"
+        charset:  UTF8
+
+    orm:
+        auto_generate_proxy_classes: "%kernel.debug%"
+        naming_strategy: doctrine.orm.naming_strategy.underscore
+        auto_mapping: true
