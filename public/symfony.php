@@ -5,9 +5,6 @@ if (!file_exists($path = dirname(__DIR__) . '/vendor/autoload.php')) {
 }
 $loader = require $path;
 
-PPI\Framework\Autoload::config(array('loader' => $loader));
-PPI\Framework\Autoload::register();
-
 use Symfony\Component\Debug\Debug;
 Debug::enable();
 
