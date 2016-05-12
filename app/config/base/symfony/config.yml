@@ -21,6 +21,8 @@ framework:
     templating:
         engines: ['twig']
 
+    translator: ~
+
 
 
 

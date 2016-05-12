@@ -25,7 +25,7 @@ $output = new ConsoleOutput();
 $env = $input->getParameterOption(array('--env', '-e'), getenv('PPI_ENV') ?: 'dev');
 $debug = getenv('PPI_DEBUG') !== '0' && !$input->hasParameterOption(array('--no-debug', '')) && $env !== 'prod';
 
-$sfKernel = include 'symfony.php';
+$sfKernel = include 'sfkernel.php';
 
 $application = new Application($sfKernel);
 $application->doRun($input, $output);

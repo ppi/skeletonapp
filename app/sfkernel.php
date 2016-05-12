@@ -16,12 +16,13 @@ $env = isset($env) ? $env : 'dev';
 $debug = isset($debug) ? $debug : true;
 
 $kernel = new SymfonyKernel($env, $debug);
+
 $kernel->setAppConfigDir($configDir);
 $kernel->setAppConfigFile('config.yml');
 $kernel->setCacheDir(realpath(__DIR__ . '/cache'));
 $kernel->setLogDir(realpath(__DIR__ . '/logs'));
 $kernel->setBundlesConfigFile(realpath($configDir . '/bundles.yml'));
-$kernel->setRootDir(realpath(__DIR__));
+$kernel->setRootDir(__DIR__);
 
 $bundles = $kernel->registerBundles();
 
