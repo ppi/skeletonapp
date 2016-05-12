@@ -31,6 +31,7 @@ $symfonyKernel = include 'symfony.php';
 $app->boot(); // Boot PPI
 
 // Register SymfonyContainer into PPI Container
+
 $sfContainer = $symfonyKernel->getContainer();
 $app->getServiceManager()->set('SymfonyContainer', $sfContainer);
 
@@ -40,4 +41,4 @@ $ppiChainRouter = $app->getServiceManager()->get('router');
 $ppiChainRouter->add($sfRouter);
 
 // Dispatch PPI System
-$app->run();
+$app->run(null, null, $symfonyKernel);
