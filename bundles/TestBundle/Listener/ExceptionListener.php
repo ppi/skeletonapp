@@ -9,6 +9,12 @@ class ExceptionListener
 {
     public function onKernelException(GetResponseForExceptionEvent $event)
     {
+
+        if (!$event->isMasterRequest()) {
+            // don't do anything if it's not the master request
+            return;
+        }
+
         $exception = $event->getException();
         $data = array(
             'error' => array(
@@ -20,7 +26,8 @@ class ExceptionListener
 
         $status = ob_get_status();
         if (!empty($status)) {
-            ob_clean();
+            ob_end_clean();
+            ob_start();
         }
 
         $response = $handler->createResponse($exception);
