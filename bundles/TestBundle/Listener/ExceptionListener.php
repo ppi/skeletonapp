@@ -24,6 +24,8 @@ class ExceptionListener
         );
         $handler = new ExceptionHandler(true, 'UTF-8', 'PPI Framework', '2.2', true);
 
+        // SF2 has its own custom output buffer registered which calls \Symfony\Component\Debug\ExceptionHandler::cleanOutput
+        // This truncates the HTML markup output and gives you a dodgy page, so we delete it and start a fresh one.
         $status = ob_get_status();
         if (!empty($status)) {
             ob_end_clean();
