@@ -28,7 +28,7 @@ $app = new PPI\Framework\App(array(
 $app->loadConfig($app->getEnvironment().'/app.php');
 
 // Give me a symfony kernel pls!
-$symfonyKernel = include 'symfony.php';
+$symfonyKernel = include __DIR__ . '/../app/sfkernel.php';
 
 $app->boot(); // Boot PPI
 

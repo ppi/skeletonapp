@@ -13,7 +13,7 @@ framework:
     session:
         # http://symfony.com/doc/current/reference/configuration/framework.html#handler-id
         handler_id:  session.handler.native_file
-        save_path:   "%kernel.root_dir%/../var/sessions/%kernel.environment%"
+        save_path:   "%kernel.root_dir%/sessions/%kernel.environment%"
 
     router:
         resource: '%kernel.root_dir%/config/dev/symfony/routing.yml'

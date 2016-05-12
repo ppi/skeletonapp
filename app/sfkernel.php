@@ -10,15 +10,18 @@ use Doctrine\Common\Annotations\AnnotationRegistry;
 
 AnnotationRegistry::registerLoader(array($loader, 'loadClass'));
 
-$configDir = realpath(__DIR__ . '/../app/config/' . $env . '/symfony/');
+$configDir = realpath(__DIR__ . '/config/' . $env . '/symfony/');
+
+$env = isset($env) ? $env : 'dev';
+$debug = isset($debug) ? $debug : true;
 
 $kernel = new SymfonyKernel($env, $debug);
 $kernel->setAppConfigDir($configDir);
 $kernel->setAppConfigFile('config.yml');
-$kernel->setCacheDir(realpath(__DIR__ . '/../app/cache'));
-$kernel->setLogDir(realpath(__DIR__ . '/../app/logs'));
+$kernel->setCacheDir(realpath(__DIR__ . '/cache'));
+$kernel->setLogDir(realpath(__DIR__ . '/logs'));
 $kernel->setBundlesConfigFile(realpath($configDir . '/bundles.yml'));
-$kernel->setRootDir(realpath(__DIR__ . '/../app'));
+$kernel->setRootDir(realpath(__DIR__));
 
 $bundles = $kernel->registerBundles();
 
