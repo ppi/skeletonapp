@@ -37,4 +37,4 @@ $app->getServiceManager()->set('SymfonyContainer', $sfContainer);
 
 // Dispatch PPI System
 $app->setSymfonyKernel($symfonyKernel);
-$app->run(null, null);
+$app->run();
