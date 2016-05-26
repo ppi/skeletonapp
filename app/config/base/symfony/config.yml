@@ -9,6 +9,7 @@ framework:
     secret: mysecret
     form:            ~
     csrf_protection: ~
+    translator: ~
     validation:      { enable_annotations: true }
     session:
         # http://symfony.com/doc/current/reference/configuration/framework.html#handler-id
@@ -20,9 +21,6 @@ framework:
 
     templating:
         engines: ['twig']
-
-    translator: ~
-
 
 
 
@@ -49,6 +47,6 @@ doctrine:
 
 services:
     ppi.exception_listener:
-      class: TestBundle\Listener\ExceptionListener
+      class: PPI\Framework\Exception\SymfonyExceptionListener
       tags:
             - { name: kernel.event_listener, event: kernel.exception, method: onKernelException, priority: 1 }
