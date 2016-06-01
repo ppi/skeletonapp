@@ -1,0 +1,13 @@
+imports:
+    - { resource: "parameters.yml" }
+
+framework:
+    secret: ThisTokenIsNotSoSecretChangeIt
+    router:
+        resource: '%kernel.root_dir%/config/dev/symfony/routing.yml'
+
+services:
+    ppi.exception_listener:
+      class: PPI\Framework\Exception\SymfonyExceptionListener
+      tags:
+            - { name: kernel.event_listener, event: kernel.exception, method: onKernelException, priority: 1 }
