@@ -26,17 +26,11 @@ $app = new PPI\Framework\App(array(
 
 // ...configure...
 $app->loadConfig($app->getEnvironment().'/app.php');
+$app->boot(); // Boot PPI
 
 // Give me a symfony kernel pls!
 $symfonyKernel = include __DIR__ . '/../app/sfkernel.php';
-
-$app->boot(); // Boot PPI
-
-// Register SymfonyContainer into PPI Container
-
-$sfContainer = $symfonyKernel->getContainer();
-$app->getServiceManager()->set('SymfonyContainer', $sfContainer);
+$app->setSymfonyKernel($symfonyKernel);
 
 // Dispatch PPI System
-$app->setSymfonyKernel($symfonyKernel);
 $app->run();
